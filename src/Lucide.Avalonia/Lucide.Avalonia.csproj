@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<Description>Implementation of the Lucide icon library for AvaloniaUI</Description>
+		<RepositoryUrl>https://github.com/dme-compunet/Lucide.Avalonia</RepositoryUrl>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageTags>csharp avalonia-ui icons lucide </PackageTags>
+		<PackageIcon>logo.light.png</PackageIcon>
+		<Authors>Compunet</Authors>
+		<Version>0.1.0</Version>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\..\res\logo\logo.light.png" Pack="True" PackagePath="" Visible="False" />
+		<None Include="..\..\README.md" Pack="True" PackagePath="" Visible="False" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Avalonia" Version="11.2.2" />
+	</ItemGroup>
+
+</Project>

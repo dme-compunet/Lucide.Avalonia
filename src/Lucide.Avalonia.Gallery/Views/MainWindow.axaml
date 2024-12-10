@@ -1,0 +1,146 @@
+<suki:SukiWindow xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:Lucide.Avalonia.Gallery.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+		xmlns:suki="using:SukiUI.Controls"
+        x:Class="Lucide.Avalonia.Gallery.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+		BackgroundStyle="GradientDarker"
+		MinWidth="520"
+		MinHeight="420"
+        Icon="/Assets/lucide-logo.ico"
+        Title="Lucide Icons - Gallery">
+
+	<Design.DataContext>
+		<vm:MainWindowViewModel/>
+	</Design.DataContext>
+
+	<suki:SukiWindow.LogoContent>
+		<Viewbox Height="18" 
+				 Opacity=".9"
+				 Margin="0 0 0 4">
+			<Path Data="{StaticResource LucideIcon}"
+				  Stroke="{DynamicResource SukiText}"
+				  StrokeThickness="2">
+			</Path>
+		</Viewbox>
+	</suki:SukiWindow.LogoContent>
+
+	<suki:SukiWindow.Resources>
+		<StreamGeometry x:Key="LucideIcon">
+			F1 M14 12C14 9.79086 12.2091 8 10 8C7.79086 8 6 9.79086 6 12C6 16.4183 9.58172 20 14 20C18.4183 20 22 16.4183 22 12C22 8.446 20.455 5.25285 18 3.05557F1 M10 12C10 14.2091 11.7909 16 14 16C16.2091 16 18 14.2091 18 12C18 7.58172 14.4183 4 10 4C5.58172 4 2 7.58172 2 12C2 15.5841 3.57127 18.8012 6.06253 21
+		</StreamGeometry>
+	</suki:SukiWindow.Resources>
+
+	<Grid Margin="20" ColumnDefinitions="200 20 *">
+
+		<suki:GlassCard Grid.Column="0">
+
+			<DockPanel LastChildFill="False">
+
+				<StackPanel Spacing="20" DockPanel.Dock="Top">
+
+					<TextBlock FontSize="20" FontWeight="SemiBold" Text="Customizer"/>
+
+					<DockPanel>
+						<Slider DockPanel.Dock="Bottom"
+								Margin="-8 8"
+								Minimum="16"
+								Maximum="48"
+								TickFrequency="1"
+								IsSnapToTickEnabled="True"
+								Value="{Binding Size}"/>
+						<TextBlock Classes="Caption" DockPanel.Dock="Right">
+							<Run Text="{Binding Size}"/>
+							<Run Text="px"/>
+						</TextBlock>
+						<TextBlock Text="Size:" FontWeight="SemiBold" DockPanel.Dock="Left"/>
+					</DockPanel>
+
+					<DockPanel>
+						<Slider DockPanel.Dock="Bottom"
+								Margin="-8 8"
+								Minimum="0.5"
+								Maximum="3.0"
+								TickFrequency="0.05"
+								IsSnapToTickEnabled="True"
+								Value="{Binding StrokeWidth}"/>
+						<TextBlock Classes="Caption" DockPanel.Dock="Right">
+							<Run Text="{Binding StrokeWidth}"/>
+							<Run Text="px"/>
+						</TextBlock>
+						<TextBlock Text="Stroke width:" FontWeight="SemiBold" DockPanel.Dock="Left"/>
+					</DockPanel>
+
+					<Button Content="Reset" Classes="Basic" Cursor="Hand" Command="{Binding ResetCommand}"/>
+
+				</StackPanel>
+
+				<StackPanel DockPanel.Dock="Bottom">
+					<Button Content="Switch Theme" Cursor="Hand" Command="{Binding SwitchBaseThemeCommand}"/>
+				</StackPanel>
+
+			</DockPanel>
+
+		</suki:GlassCard>
+
+		<suki:GlassCard Grid.Column="2">
+
+			<DockPanel>
+
+				<TextBox DockPanel.Dock="Top"
+						 Watermark="Search icons..."
+						 Text="{Binding SearchText}">
+				</TextBox>
+
+				<ScrollViewer Margin="0 20 0 0">
+
+					<ItemsControl ItemsSource="{Binding Icons}">
+						<ItemsControl.ItemTemplate>
+							<DataTemplate x:DataType="vm:IconViewModel">
+								<suki:GlassCard Margin="6"
+												Padding="10"
+												CornerRadius="8"
+												Cursor="Hand"
+												IsAnimated="False"
+												ToolTip.Tip="{Binding Tip}">
+
+									<LucideIcon Kind="{Binding Kind}"
+												Size="{Binding Size}"
+												StrokeWidth="{Binding StrokeWidth}"/>
+
+									<suki:GlassCard.ContextMenu>
+										<ContextMenu>
+											<MenuItem Header="Copy name"
+													  Command="{Binding CopyNameCommand}"
+													  Icon="{LucideIconContent Copy, 16, 2}"/>
+											<MenuItem Header="Copy control"
+													  Command="{Binding CopyControlCommand}"
+													  Icon="{LucideIconContent Copy, 16, 2}"/>
+											<MenuItem Header="Copy content extension"
+													  Command="{Binding CopyExtensionCommand}"
+													  Icon="{LucideIconContent Copy, 16, 2}"/>
+										</ContextMenu>
+									</suki:GlassCard.ContextMenu>
+
+								</suki:GlassCard>
+							</DataTemplate>
+						</ItemsControl.ItemTemplate>
+						<ItemsControl.ItemsPanel>
+							<ItemsPanelTemplate>
+								<WrapPanel/>
+							</ItemsPanelTemplate>
+						</ItemsControl.ItemsPanel>
+					</ItemsControl>
+
+				</ScrollViewer>
+
+			</DockPanel>
+
+		</suki:GlassCard>
+
+	</Grid>
+
+</suki:SukiWindow>
