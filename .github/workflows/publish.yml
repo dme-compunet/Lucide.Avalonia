@@ -2,8 +2,6 @@ name: Build & Publish
 
 on:
   push:
-    branches:
-      - master
     tags:
       - "*.*.*"
   workflow_dispatch:
@@ -25,12 +23,10 @@ jobs:
           dotnet-version: 9.0.x
 
       - name: Build
-        run: |
-          dotnet build -c Release src/Lucide.Avalonia/Lucide.Avalonia.csproj -p:Version=${{ env.VERSION }}
+        run: dotnet build -c Release src/Lucide.Avalonia/Lucide.Avalonia.csproj -p:Version=${{ env.VERSION }}
 
       - name: Pack
-        run: |
-          dotnet pack -c Release -o . src/Lucide.Avalonia/Lucide.Avalonia.csproj -p:Version=${{ env.VERSION }}
+        run: dotnet pack -c Release -o . src/Lucide.Avalonia/Lucide.Avalonia.csproj -p:Version=${{ env.VERSION }}
 
       - name: Publish
         run: dotnet nuget push *.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json --skip-duplicate
