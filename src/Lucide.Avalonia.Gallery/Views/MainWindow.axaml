@@ -22,7 +22,7 @@
 				 Opacity=".9"
 				 Margin="0 0 0 4">
 			<Path Data="{StaticResource LucideIcon}"
-				  Stroke="{DynamicResource SukiText}"
+				  Stroke="{DynamicResource SukiPrimaryColor}"
 				  StrokeThickness="2">
 			</Path>
 		</Viewbox>

@@ -12,13 +12,13 @@
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<PackageTags>csharp avalonia-ui icons lucide </PackageTags>
-		<PackageIcon>logo.light.png</PackageIcon>
+		<PackageIcon>lucide-logo-nuget.png</PackageIcon>
 		<Authors>Compunet</Authors>
 		<Version>0.1.0</Version>
 	</PropertyGroup>
 
 	<ItemGroup>
-		<None Include="..\..\res\logo\logo.light.png" Pack="True" PackagePath="" Visible="False" />
+		<None Include="..\..\res\logo\lucide-logo-nuget.png" Pack="True" PackagePath="" Visible="False" />
 		<None Include="..\..\README.md" Pack="True" PackagePath="" Visible="False" />
 	</ItemGroup>
 
