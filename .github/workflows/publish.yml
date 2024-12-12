@@ -49,4 +49,6 @@ jobs:
           7z a lucide-gallery.7z bin\*.exe bin\*.dll
 
       - name: Upload Native Gallary
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: gh release upload ${{ env.VERSION }} lucide-gallery.7z#'Gallary (Native)'
