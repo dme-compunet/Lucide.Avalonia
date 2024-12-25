@@ -38,7 +38,10 @@ jobs:
         git add ./src/Lucide.Avalonia/IconToGeometry.cs
         git add ./src/Lucide.Avalonia/LucideIconKind.cs
         git add ./src/Lucide.Avalonia/Metadata/LucideIconInfo.cs
-        git commit -m "✨ Update Icon Collection"
-        git push
+        if [ -n "$(git status --porcelain)" ]; then
+          git commit -m "✨ Update Icon Collection"
+          git push
+        else
+          echo "No changes to commit"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
