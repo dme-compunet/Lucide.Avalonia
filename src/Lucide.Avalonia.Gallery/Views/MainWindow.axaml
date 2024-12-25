@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
 		xmlns:suki="using:SukiUI.Controls"
+        xmlns:theme="using:SukiUI.Theme"
         x:Class="Lucide.Avalonia.Gallery.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
 		BackgroundStyle="GradientDarker"
@@ -91,8 +92,10 @@
 			<DockPanel>
 
 				<TextBox DockPanel.Dock="Top"
+						 Padding="6 8 8 6"
 						 Watermark="Search icons..."
-						 Text="{Binding SearchText}">
+						 Text="{Binding SearchText}"
+						 theme:TextBoxExtensions.AddDeleteButton="True">
 				</TextBox>
 
 				<ScrollViewer Margin="0 20 0 0">
