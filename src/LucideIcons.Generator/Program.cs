@@ -1,15 +1,28 @@
-﻿Utilities.DownloadSvgIcons();
+﻿if (args.Length != 2)
+{
+    ExitWithError("Two arguments are required: <lucide-repository-path> and <generated-cs-files-path>.");
+}
 
-var root = "lucide/icons";
-var destination = "../Lucide.Avalonia/";
+var lucideRepositoryPath = args[0];
+var generatedCsFilesPath = args[1];
 
-var sb = new StringBuilder();
+if (Directory.Exists(generatedCsFilesPath) == false)
+{
+    ExitWithError($"The directory '{generatedCsFilesPath}' does not exist.");
+}
 
-var paths = Directory.GetFiles(root, "*.svg");
+lucideRepositoryPath = Path.Combine(lucideRepositoryPath, "icons");
+
+if (Directory.Exists(lucideRepositoryPath) == false)
+{
+    ExitWithError($"The directory '{lucideRepositoryPath}' does not exist.");
+}
+
+var paths = Directory.GetFiles(lucideRepositoryPath, "*.svg");
 
 if (paths.Length == 0)
 {
-    throw new InvalidOperationException();
+    ExitWithError("No SVG files found in the specified directory.");
 }
 
 var iconKindBuilder = new LucideIconKindBuilder();
@@ -20,7 +33,7 @@ foreach (var path in paths)
 {
     var name = Path.GetFileNameWithoutExtension(path);
 
-    Utilities.NormalizeName(ref name, sb);
+    Utilities.NormalizeName(ref name);
 
     Console.WriteLine(name);
 
@@ -29,10 +42,16 @@ foreach (var path in paths)
     iconToGeometryBuilder.AddIcon(name, path);
 }
 
-var iconKindPath = Path.Combine(destination, "LucideIconKind.cs");
-var iconInfoPath = Path.Combine(destination, "LucideIconInfo.cs");
-var iconToGeometryPath = Path.Combine(destination, "IconToGeometry.cs");
+var iconKindPath = Path.Combine(generatedCsFilesPath, "LucideIconKind.cs");
+var iconInfoPath = Path.Combine(generatedCsFilesPath, "Metadata", "LucideIconInfo.cs");
+var iconToGeometryPath = Path.Combine(generatedCsFilesPath, "IconToGeometry.cs");
 
 File.WriteAllText(iconKindPath, iconKindBuilder.Build());
 File.WriteAllText(iconInfoPath, iconInfoBuilder.Build());
 File.WriteAllText(iconToGeometryPath, iconToGeometryBuilder.Build());
+
+static void ExitWithError(string message)
+{
+    Console.Error.WriteLine(message);
+    Environment.Exit(1);
+}
