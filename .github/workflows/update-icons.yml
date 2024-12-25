@@ -1,0 +1,41 @@
+name: Update Icon Collection
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with: 
+        dotnet-version: 9.0.x
+
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Checkout lucide-icons
+      run: git clone https://github.com/lucide-icons/lucide.git
+
+    - name: Run Generator
+      run: |
+        dotnet restore $GENERATOR_PROJECT_PATH
+        dotnet run --project $GENERATOR_PROJECT_PATH $LUCIDE_REPOSITORY_PATH $GENERATED_CS_FILES_PATH
+      env:
+        GENERATOR_PROJECT_PATH: ./src/LucideIcons.Generator
+        LUCIDE_REPOSITORY_PATH: ./lucide
+        GENERATED_CS_FILES_PATH: ./src/Lucide.Avalonia/
+
+    - name: Push Changes
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git add ./src/Lucide.Avalonia/IconToGeometry.cs
+        git add ./src/Lucide.Avalonia/LucideIconKind.cs
+        git add ./src/Lucide.Avalonia/Metadata/LucideIconInfo.cs
+        git commit -m "✨ Update Icon Collection"
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -25,6 +25,8 @@ if (paths.Length == 0)
     ExitWithError("No SVG files found in the specified directory.");
 }
 
+paths = [.. paths.OrderBy(path => Path.GetFileNameWithoutExtension(path))];
+
 var iconKindBuilder = new LucideIconKindBuilder();
 var iconInfoBuilder = new LucideIconInfoBuilder();
 var iconToGeometryBuilder = new IconToGeometryBuilder();
