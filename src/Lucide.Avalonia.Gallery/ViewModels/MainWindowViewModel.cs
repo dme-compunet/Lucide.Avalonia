@@ -17,6 +17,7 @@ public partial class MainWindowViewModel : ReactiveViewModel
     public MainWindowViewModel()
     {
         this.WhenAnyValue(x => x.Size, x => x.StrokeWidth)
+            .Throttle(TimeSpan.FromSeconds(.1))
             .Subscribe(_ => UpdateIcons());
 
         this.WhenAnyValue(x => x.SearchText)

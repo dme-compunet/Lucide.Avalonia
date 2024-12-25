@@ -122,6 +122,11 @@
 											<MenuItem Header="Copy content extension"
 													  Command="{Binding CopyExtensionCommand}"
 													  Icon="{LucideIconContent Copy, 16, 2}"/>
+											<ContextMenu.Styles>
+												<Style Selector="LucideIcon">
+													<Setter Property="StrokeWidth" Value="1.5"/>
+												</Style>
+											</ContextMenu.Styles>
 										</ContextMenu>
 									</suki:GlassCard.ContextMenu>
 
