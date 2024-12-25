@@ -38,7 +38,7 @@ jobs:
         git add ./src/Lucide.Avalonia/IconToGeometry.cs
         git add ./src/Lucide.Avalonia/LucideIconKind.cs
         git add ./src/Lucide.Avalonia/Metadata/LucideIconInfo.cs
-        if [ -n "$(git status --porcelain)" ]; then
+        if [ -n "$(git diff --cached --name-only)" ]; then
           git commit -m "✨ Update Icon Collection"
           git push
         else
