@@ -39,7 +39,7 @@ jobs:
         git add ./src/Lucide.Avalonia/LucideIconKind.cs
         git add ./src/Lucide.Avalonia/Metadata/LucideIconInfo.cs
         if [ -n "$(git diff --cached --name-only)" ]; then
-          git commit -m "✨ Update Icon Collection"
+          git commit -m "🔄 Update Icon Collection"
           git push
         else
           echo "No changes to commit"
