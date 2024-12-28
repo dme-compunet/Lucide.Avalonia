@@ -30,7 +30,6 @@ public class IconToGeometryBuilder
         sb.AppendLine("            return geometry;");
         sb.AppendLine("        }");
         sb.AppendLine();
-        sb.AppendLine();
         sb.AppendLine("        geometry = Geometry.Parse(CreateGeometryString(kind));");
         sb.AppendLine();
         sb.AppendLine("         _geometryCache.Add(kind, geometry);");

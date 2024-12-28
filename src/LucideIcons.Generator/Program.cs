@@ -1,4 +1,6 @@
-﻿if (args.Length != 2)
+﻿Console.WriteLine("Starting the icon generation process...");
+
+if (args.Length != 2)
 {
     ExitWithError("Two arguments are required: <lucide-repository-path> and <generated-cs-files-path>.");
 }
@@ -37,7 +39,7 @@ foreach (var path in paths)
 
     Utilities.NormalizeName(ref name);
 
-    Console.WriteLine(name);
+    Console.WriteLine($"Creating icon: {name}");
 
     iconKindBuilder.AddIcon(name);
     iconInfoBuilder.AddIcon(name, path);
@@ -48,12 +50,17 @@ var iconKindPath = Path.Combine(generatedCsFilesPath, "LucideIconKind.cs");
 var iconInfoPath = Path.Combine(generatedCsFilesPath, "Metadata", "LucideIconInfo.cs");
 var iconToGeometryPath = Path.Combine(generatedCsFilesPath, "IconToGeometry.cs");
 
+Console.WriteLine("Writing generated files...");
+
 File.WriteAllText(iconKindPath, iconKindBuilder.Build());
 File.WriteAllText(iconInfoPath, iconInfoBuilder.Build());
 File.WriteAllText(iconToGeometryPath, iconToGeometryBuilder.Build());
 
+Console.WriteLine("Icon generation process completed.");
+
 static void ExitWithError(string message)
 {
     Console.Error.WriteLine(message);
+
     Environment.Exit(1);
 }
