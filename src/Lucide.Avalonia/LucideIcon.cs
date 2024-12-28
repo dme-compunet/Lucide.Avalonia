@@ -13,11 +13,11 @@ public class LucideIcon : Control
     public static readonly StyledProperty<double> StrokeWidthProperty =
         AvaloniaProperty.Register<LucideIcon, double>(nameof(StrokeWidth), 1.5);
 
-    public static readonly StyledProperty<LucideIconKind> KindProperty =
-        AvaloniaProperty.Register<LucideIcon, LucideIconKind>(nameof(Kind));
+    public static readonly StyledProperty<LucideIconKind?> KindProperty =
+        AvaloniaProperty.Register<LucideIcon, LucideIconKind?>(nameof(Kind));
 
-    private readonly Pen _strokePen;
-    private Geometry _geometry;
+    private Pen? _stroke;
+    private Geometry? _geometry;
 
     public double Size
     {
@@ -36,7 +36,7 @@ public class LucideIcon : Control
         get => GetValue(StrokeWidthProperty);
         set => SetValue(StrokeWidthProperty, value);
     }
-    public LucideIconKind Kind
+    public LucideIconKind? Kind
     {
         get => GetValue(KindProperty);
         set => SetValue(KindProperty, value);
@@ -53,24 +53,30 @@ public class LucideIcon : Control
         AffectsMeasure<LucideIcon>(SizeProperty);
     }
 
-    public LucideIcon()
-    {
-        _geometry = Geometry.Parse(IconToGeometry.CreateGeometryString(Kind));
-        _strokePen = new Pen(Foreground, StrokeWidth, null, PenLineCap.Round, PenLineJoin.Round);
-    }
-
     protected override void OnPropertyChanged(AvaloniaPropertyChangedEventArgs change)
     {
         if (change.Property == KindProperty)
         {
-            var kind = change.GetNewValue<LucideIconKind>();
+            var kind = change.GetNewValue<LucideIconKind?>();
 
-            _geometry = Geometry.Parse(IconToGeometry.CreateGeometryString(kind));
+            _geometry = kind == null
+                        ? null
+                        : IconToGeometry.CreateGeometry(kind.Value);
         }
         else if (change.Property == ForegroundProperty || change.Property == StrokeWidthProperty)
         {
-            _strokePen.Brush = Foreground;
-            _strokePen.Thickness = StrokeWidth;
+            var brush = Foreground;
+            var width = StrokeWidth;
+
+            if (_stroke == null)
+            {
+                _stroke = new Pen(brush, width, null, PenLineCap.Round, PenLineJoin.Round);
+            }
+            else
+            {
+                _stroke.Brush = brush;
+                _stroke.Thickness = width;
+            }
         }
 
         base.OnPropertyChanged(change);
@@ -82,11 +88,16 @@ public class LucideIcon : Control
 
     public override void Render(DrawingContext context)
     {
+        if (_geometry is null)
+        {
+            return;
+        }
+
         AddScale(context);
 
         context.DrawRectangle(Brushes.Transparent, null, new Rect(0, 0, Bounds.Width, Bounds.Height));
 
-        context.DrawGeometry(null, _strokePen, _geometry);
+        context.DrawGeometry(null, _stroke, _geometry);
     }
 
     private void AddScale(DrawingContext context)
