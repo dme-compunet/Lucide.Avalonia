@@ -36,5 +36,6 @@ Implementation of the [Lucide icon library](https://github.com/lucide-icons/luci
 
 ## 🔗 Additional Links
 
+- [AvaloniaUI](https://github.com/AvaloniaUI/Avalonia)
 - [Lucide Icons](https://lucide.dev/icons)
 - [NuGet Package](https://www.nuget.org/packages/Lucide.Avalonia)
