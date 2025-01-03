@@ -48,7 +48,7 @@
 					<DockPanel>
 						<Slider DockPanel.Dock="Bottom"
 								Margin="-8 8"
-								Minimum="16"
+								Minimum="14"
 								Maximum="48"
 								TickFrequency="1"
 								IsSnapToTickEnabled="True"
@@ -75,12 +75,19 @@
 						<TextBlock Text="Stroke width:" FontWeight="SemiBold" DockPanel.Dock="Left"/>
 					</DockPanel>
 
-					<Button Content="Reset" Classes="Basic" Cursor="Hand" Command="{Binding ResetCommand}"/>
+					<Button Content="Reset" 
+							Classes="Basic" 
+							Cursor="Hand" 
+							Command="{Binding ResetCommand}"/>
 
 				</StackPanel>
 
 				<StackPanel DockPanel.Dock="Bottom">
-					<Button Content="Switch Theme" Cursor="Hand" Command="{Binding SwitchBaseThemeCommand}"/>
+					<Button Content="{LucideIconContent SunMoon, StrokeWidth=1}" 
+							Classes="Icon"
+							Cursor="Hand" 
+							HorizontalAlignment="Left"
+							Command="{Binding SwitchBaseThemeCommand}"/>
 				</StackPanel>
 
 			</DockPanel>
@@ -98,52 +105,56 @@
 						 theme:TextBoxExtensions.AddDeleteButton="True">
 				</TextBox>
 
-				<ScrollViewer Margin="0 20 0 0">
+				<suki:BusyArea BusyText="Loading..." IsBusy="{Binding IsBusy}">
 
-					<ItemsControl ItemsSource="{Binding Icons}">
-						<ItemsControl.ItemTemplate>
-							<DataTemplate x:DataType="vm:IconViewModel">
-								<suki:GlassCard Margin="6"
-												Padding="10"
-												CornerRadius="8"
-												Cursor="Hand"
-												IsAnimated="False"
-												ToolTip.Tip="{Binding Tip}">
+					<ScrollViewer Margin="0 20 0 0">
 
-									<LucideIcon Kind="{Binding Kind}"
-												Size="{Binding Size}"
-												StrokeWidth="{Binding StrokeWidth}"/>
+						<ItemsControl ItemsSource="{Binding Icons}">
+							<ItemsControl.ItemTemplate>
+								<DataTemplate x:DataType="vm:IconViewModel">
+									<suki:GlassCard Margin="6"
+													Padding="10"
+													CornerRadius="8"
+													Cursor="Hand"
+													IsAnimated="False"
+													ToolTip.Tip="{Binding Tip}">
 
-									<suki:GlassCard.ContextMenu>
-										<ContextMenu>
-											<MenuItem Header="Copy name"
-													  Command="{Binding CopyNameCommand}"
-													  Icon="{LucideIconContent Copy, 16, 2}"/>
-											<MenuItem Header="Copy control"
-													  Command="{Binding CopyControlCommand}"
-													  Icon="{LucideIconContent Copy, 16, 2}"/>
-											<MenuItem Header="Copy content extension"
-													  Command="{Binding CopyExtensionCommand}"
-													  Icon="{LucideIconContent Copy, 16, 2}"/>
-											<ContextMenu.Styles>
-												<Style Selector="LucideIcon">
-													<Setter Property="StrokeWidth" Value="1.5"/>
-												</Style>
-											</ContextMenu.Styles>
-										</ContextMenu>
-									</suki:GlassCard.ContextMenu>
+										<LucideIcon Kind="{Binding Kind}"
+													Size="{Binding Size}"
+													StrokeWidth="{Binding StrokeWidth}"/>
 
-								</suki:GlassCard>
-							</DataTemplate>
-						</ItemsControl.ItemTemplate>
-						<ItemsControl.ItemsPanel>
-							<ItemsPanelTemplate>
-								<WrapPanel/>
-							</ItemsPanelTemplate>
-						</ItemsControl.ItemsPanel>
-					</ItemsControl>
+										<suki:GlassCard.ContextMenu>
+											<ContextMenu>
+												<MenuItem Header="Copy name"
+														  Command="{Binding CopyNameCommand}"
+														  Icon="{LucideIconContent Copy, 16, 2}"/>
+												<MenuItem Header="Copy control"
+														  Command="{Binding CopyControlCommand}"
+														  Icon="{LucideIconContent Copy, 16, 2}"/>
+												<MenuItem Header="Copy content extension"
+														  Command="{Binding CopyExtensionCommand}"
+														  Icon="{LucideIconContent Copy, 16, 2}"/>
+												<ContextMenu.Styles>
+													<Style Selector="LucideIcon">
+														<Setter Property="StrokeWidth" Value="1.5"/>
+													</Style>
+												</ContextMenu.Styles>
+											</ContextMenu>
+										</suki:GlassCard.ContextMenu>
 
-				</ScrollViewer>
+									</suki:GlassCard>
+								</DataTemplate>
+							</ItemsControl.ItemTemplate>
+							<ItemsControl.ItemsPanel>
+								<ItemsPanelTemplate>
+									<WrapPanel/>
+								</ItemsPanelTemplate>
+							</ItemsControl.ItemsPanel>
+						</ItemsControl>
+
+					</ScrollViewer>
+					
+				</suki:BusyArea>
 
 			</DockPanel>
 

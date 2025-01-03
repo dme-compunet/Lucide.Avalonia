@@ -3,8 +3,10 @@
 [Reactive]
 public partial class MainWindowViewModel : ReactiveViewModel
 {
-    private readonly Lazy<IconViewModel[]> _icons = new(IconViewModel.CreateIconCollection);
+    private readonly Lazy<IconViewModel[]> _allIconsLazy = new(IconViewModel.CreateIconCollection);
     private readonly Lazy<FrozenDictionary<LucideIconKind, LucideIconInfo>> _iconsInfo = new(CreateIconCollectionInfo);
+
+    public partial bool IsBusy { get; set; }
 
     public partial double Size { get; set; } = 24;
 
@@ -12,7 +14,7 @@ public partial class MainWindowViewModel : ReactiveViewModel
 
     public partial string? SearchText { get; set; }
 
-    public partial IEnumerable<IconViewModel>? Icons { get; set; }
+    public partial IconViewModel[]? Icons { get; set; }
 
     public MainWindowViewModel()
     {
@@ -21,10 +23,13 @@ public partial class MainWindowViewModel : ReactiveViewModel
             .Subscribe(_ => UpdateIcons());
 
         this.WhenAnyValue(x => x.SearchText)
-            .Throttle(TimeSpan.FromSeconds(.2))
-            .Subscribe(async x => Icons = await FilterIconsAsync(x));
+            .Throttle(TimeSpan.FromSeconds(.4))
+            .Subscribe(FilterIconsAsync);
 
-        Task.Run(() => Icons = _icons.Value);
+        Task.Run(() =>
+        {
+            Icons = _allIconsLazy.Value;
+        });
     }
 
     public void ResetCommand()
@@ -49,14 +54,17 @@ public partial class MainWindowViewModel : ReactiveViewModel
         }
     }
 
-    private IconViewModel[] FilterIcons(string? value)
+    private void FilterIcons(string? value)
     {
-        var icons = _icons.Value;
-        var result = new List<IconViewModel>(icons.Length);
+        var icons = _allIconsLazy.Value;
+
+        var queue = new PriorityQueue<IconViewModel, int>(icons.Length);
 
         if (string.IsNullOrWhiteSpace(value))
         {
-            return icons;
+            Icons = icons;
+
+            return;
         }
 
         value = value.ToLower();
@@ -65,16 +73,35 @@ public partial class MainWindowViewModel : ReactiveViewModel
         {
             var info = _iconsInfo.Value[icon.Kind];
 
-            if (info.Contains(value))
+            if (info.Contains(value, out var priority))
             {
-                result.Add(icon);
+                queue.Enqueue(icon, priority);
             }
         }
 
-        return [.. result];
+        var list = new List<IconViewModel>(queue.Count);
+
+        while (queue.Count > 0)
+        {
+            list.Add(queue.Dequeue());
+        }
+
+        Icons = [.. list];
     }
 
-    private Task<IconViewModel[]> FilterIconsAsync(string? filter) => Task.Run(() => FilterIcons(filter));
+    private async void FilterIconsAsync(string? filter)
+    {
+        IsBusy = true;
+
+        await Task.Delay(100);
+
+        await Task.Run(() =>
+        {
+            FilterIcons(filter);
+        });
+
+        IsBusy = false;
+    }
 
     private static FrozenDictionary<LucideIconKind, LucideIconInfo> CreateIconCollectionInfo()
     {
