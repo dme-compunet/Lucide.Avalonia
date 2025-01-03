@@ -25,11 +25,10 @@ jobs:
     - name: Run Generator
       run: |
         dotnet restore $GENERATOR_PROJECT_PATH
-        dotnet run --project $GENERATOR_PROJECT_PATH $LUCIDE_REPOSITORY_PATH $GENERATED_CS_FILES_PATH
-      env:
-        GENERATOR_PROJECT_PATH: ./src/LucideIcons.Generator
-        LUCIDE_REPOSITORY_PATH: ./lucide
-        GENERATED_CS_FILES_PATH: ./src/Lucide.Avalonia/
+        dotnet run --project ./src/LucideIcons.Generator ./lucide ./src/Lucide.Avalonia/
+
+    - name: Verify Generated Code
+      run: dotnet run --project ./src/Lucide.Avalonia/
 
     - name: Push Changes
       run: |
