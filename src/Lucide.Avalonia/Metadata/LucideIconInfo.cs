@@ -10,8 +10,10 @@ public class LucideIconInfo
 
     public required string[] Tags { get; init; }
 
-    public bool Contains(string? value)
+    public bool Contains(string? value, out int priority)
     {
+        priority = 0;
+
         if (string.IsNullOrEmpty(value))
         {
             return true;
@@ -19,8 +21,22 @@ public class LucideIconInfo
 
         value = value.ToLower();
 
-        if (Kind.ToString().Contains(value, StringComparison.OrdinalIgnoreCase))
+        var kind = Kind.ToString().ToLower();
+
+        if (kind == value)
         {
+            return true;
+        }
+
+        if (kind.StartsWith(value))
+        {
+            priority = 1;
+            return true;
+        }
+
+        if (kind.Contains(value))
+        {
+            priority = 2;
             return true;
         }
 
@@ -28,6 +44,7 @@ public class LucideIconInfo
         {
             if (category.Contains(value))
             {
+                priority = 3;
                 return true;
             }
         }
@@ -36,6 +53,7 @@ public class LucideIconInfo
         {
             if (tag.Contains(value))
             {
+                priority = 4;
                 return true;
             }
         }
