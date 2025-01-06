@@ -24,11 +24,11 @@ jobs:
 
     - name: Run Generator
       run: |
-        dotnet restore $GENERATOR_PROJECT_PATH
+        dotnet restore ./src/LucideIcons.Generator
         dotnet run --project ./src/LucideIcons.Generator ./lucide ./src/Lucide.Avalonia/
 
     - name: Verify Generated Code
-      run: dotnet run --project ./src/Lucide.Avalonia/
+      run: dotnet build ./src/Lucide.Avalonia/
 
     - name: Push Changes
       run: |
