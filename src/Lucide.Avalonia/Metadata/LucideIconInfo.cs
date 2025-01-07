@@ -1680,7 +1680,7 @@ public class LucideIconInfo
                 Kind = kind,
                 Contributors = ["maxim-s-barabash", "ericfennis", "karsa-mistmere", "jguddas"],
                 Categories = ["account", "buildings"],
-                Tags = ["business", "company", "enterprise", "skyscraper", "organisation", "organization"],
+                Tags = ["business", "company", "enterprise", "skyscraper", "organisation", "organization", "city"],
             },
             LucideIconKind.Bus => new LucideIconInfo
             {
