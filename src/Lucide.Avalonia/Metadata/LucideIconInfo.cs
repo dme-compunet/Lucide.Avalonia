@@ -5385,6 +5385,13 @@ public class LucideIconInfo
                 Categories = ["buildings", "medical"],
                 Tags = ["home", "living", "medical", "new", "addition", "building", "residence", "architecture"],
             },
+            LucideIconKind.HouseWifi => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["akshaymemane", "jguddas", "karsa-mistmere"],
+                Categories = ["home", "buildings", "connectivity"],
+                Tags = ["home", "living", "building", "wifi", "connectivity"],
+            },
             LucideIconKind.IceCreamBowl => new LucideIconInfo
             {
                 Kind = kind,
@@ -10151,6 +10158,13 @@ public class LucideIconInfo
                 Contributors = ["colebemis", "csandman", "ericfennis", "karsa-mistmere"],
                 Categories = ["notifications", "shapes", "development"],
                 Tags = ["warning", "alert", "danger", "exclamation mark", "linter"],
+            },
+            LucideIconKind.TriangleDashed => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["colebemis", "csandman", "ericfennis", "karsa-mistmere", "Yohh"],
+                Categories = ["shapes"],
+                Tags = ["equilateral", "delta", "shape", "pyramid", "hierarchy", "dashed"],
             },
             LucideIconKind.TriangleRight => new LucideIconInfo
             {
