@@ -1045,6 +1045,13 @@ public class LucideIconInfo
                 Categories = ["connectivity", "devices"],
                 Tags = ["power", "electricity", "energy", "accumulator", "charge"],
             },
+            LucideIconKind.BatteryPlus => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["colebemis", "ericfennis", "jguddas", "johnletey", "Footagesus"],
+                Categories = ["devices"],
+                Tags = ["power", "electricity", "energy", "accumulator", "charge", "plus", "economy", "health", "add", "new", "maximum", "upgrade", "extra", "+"],
+            },
             LucideIconKind.BatteryWarning => new LucideIconInfo
             {
                 Kind = kind,
@@ -6281,6 +6288,13 @@ public class LucideIconInfo
                 Categories = ["navigation", "travel", "account"],
                 Tags = ["location", "waypoint", "marker", "drop"],
             },
+            LucideIconKind.MapPlus => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["colebemis", "karsa-mistmere", "ericfennis", "Seanw265"],
+                Categories = ["navigation"],
+                Tags = ["location", "navigation", "travel", "new", "add", "create"],
+            },
             LucideIconKind.Martini => new LucideIconInfo
             {
                 Kind = kind,
@@ -7089,7 +7103,7 @@ public class LucideIconInfo
             LucideIconKind.Package => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["colebemis", "csandman", "ericfennis", "karsa-mistmere", "danielbayley", "jguddas"],
+                Contributors = ["colebemis", "csandman", "ericfennis", "karsa-mistmere", "danielbayley", "jguddas", "sezze"],
                 Categories = ["files", "development"],
                 Tags = ["box", "container", "storage", "sealed", "delivery", "undelivered", "unopened", "packed", "archive", "zip", "module"],
             },
