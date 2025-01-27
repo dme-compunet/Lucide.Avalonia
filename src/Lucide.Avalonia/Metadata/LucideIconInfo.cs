@@ -1309,7 +1309,7 @@ public class LucideIconInfo
                 Kind = kind,
                 Contributors = ["danielbayley"],
                 Categories = ["tools", "home"],
-                Tags = ["nut", "screw", "settings", "preferences", "configuration", "controls", "edit", "diy", "fixed", "build", "contruction", "parts"],
+                Tags = ["nut", "screw", "settings", "preferences", "configuration", "controls", "edit", "diy", "fixed", "build", "construction", "parts"],
             },
             LucideIconKind.Bomb => new LucideIconInfo
             {
@@ -3038,7 +3038,7 @@ public class LucideIconInfo
                 Kind = kind,
                 Contributors = ["colebemis", "karsa-mistmere"],
                 Categories = ["account"],
-                Tags = ["computing", "settings", "cog", "edit", "gear", "preferences"],
+                Tags = ["computing", "settings", "cog", "edit", "gear", "preferences", "controls", "configuration", "fixed", "build", "construction", "parts"],
             },
             LucideIconKind.Coins => new LucideIconInfo
             {
@@ -3785,9 +3785,9 @@ public class LucideIconInfo
             LucideIconKind.Expand => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["mittalyashu", "ericfennis"],
-                Categories = ["text"],
-                Tags = ["scale", "fullscreen"],
+                Contributors = ["mittalyashu", "ericfennis", "jguddas"],
+                Categories = ["text", "arrows"],
+                Tags = ["scale", "fullscreen", "maximize", "minimize", "contract"],
             },
             LucideIconKind.ExternalLink => new LucideIconInfo
             {
