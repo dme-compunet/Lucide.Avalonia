@@ -2620,6 +2620,13 @@ public class LucideIconInfo
                 Categories = ["shapes", "math", "development"],
                 Tags = ["diameter", "zero", "Ø", "nothing", "null", "void", "ban", "math", "divide", "division", "half", "split", "/"],
             },
+            LucideIconKind.CircleSmall => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["jamiemlaw"],
+                Categories = ["shapes", "medical"],
+                Tags = ["shape", "bullet", "gender", "genderless"],
+            },
             LucideIconKind.CircleStop => new LucideIconInfo
             {
                 Kind = kind,
@@ -6295,6 +6302,20 @@ public class LucideIconInfo
                 Categories = ["navigation"],
                 Tags = ["location", "navigation", "travel", "new", "add", "create"],
             },
+            LucideIconKind.Mars => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["jguddas", "jamiemlaw"],
+                Categories = ["medical"],
+                Tags = ["gender", "sex", "male", "masculine", "man", "boy"],
+            },
+            LucideIconKind.MarsStroke => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["jamiemlaw"],
+                Categories = ["medical"],
+                Tags = ["gender", "androgyne", "transgender"],
+            },
             LucideIconKind.Martini => new LucideIconInfo
             {
                 Kind = kind,
@@ -6980,6 +7001,13 @@ public class LucideIconInfo
                 Contributors = ["karsa-mistmere", "jguddas", "ericfennis"],
                 Categories = ["communication", "finance", "devices"],
                 Tags = ["contactless", "payment", "near-field communication"],
+            },
+            LucideIconKind.NonBinary => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["jamiemlaw"],
+                Categories = ["medical"],
+                Tags = ["gender", "nonbinary", "enby"],
             },
             LucideIconKind.Notebook => new LucideIconInfo
             {
@@ -10089,6 +10117,13 @@ public class LucideIconInfo
                 Categories = ["transportation"],
                 Tags = ["railway", "metro", "subway", "underground", "track", "line", "tourism"],
             },
+            LucideIconKind.Transgender => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["jamiemlaw"],
+                Categories = ["medical", "accessibility"],
+                Tags = ["gender", "inclusive"],
+            },
             LucideIconKind.Trash => new LucideIconInfo
             {
                 Kind = kind,
@@ -10536,6 +10571,20 @@ public class LucideIconInfo
                 Contributors = ["karsa-mistmere", "ericfennis", "jguddas"],
                 Categories = ["account", "gaming"],
                 Tags = ["mask", "masquerade", "impersonate", "secret", "incognito"],
+            },
+            LucideIconKind.Venus => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["jguddas", "jamiemlaw"],
+                Categories = ["medical"],
+                Tags = ["gender", "sex", "female", "feminine", "woman", "girl"],
+            },
+            LucideIconKind.VenusAndMars => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["jamiemlaw"],
+                Categories = ["medical"],
+                Tags = ["gender", "sex", "intersex", "androgynous", "hermaphrodite"],
             },
             LucideIconKind.Vibrate => new LucideIconInfo
             {
