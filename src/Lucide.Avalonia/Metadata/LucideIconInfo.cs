@@ -2618,7 +2618,7 @@ public class LucideIconInfo
                 Kind = kind,
                 Contributors = ["danielbayley"],
                 Categories = ["shapes", "math", "development"],
-                Tags = ["diameter", "zero", "Ø", "nothing", "null", "void", "ban", "math", "divide", "division", "half", "split", "/"],
+                Tags = ["diameter", "zero", "ø", "nothing", "null", "void", "ban", "math", "divide", "division", "half", "split", "/", "average", "avg", "mean", "median", "normal"],
             },
             LucideIconKind.CircleSmall => new LucideIconInfo
             {
@@ -8668,6 +8668,13 @@ public class LucideIconInfo
                 Categories = ["account", "security", "development", "gaming"],
                 Tags = ["unshielded", "cybersecurity", "insecure", "unsecured", "safety", "unsafe", "protection", "unprotected", "guardian", "unguarded", "unarmored", "unarmoured", "defenseless", "defenceless", "undefended", "defender", "threat", "prevention", "unprevented", "antivirus", "vigilance", "vigilant", "detection", "undetected", "scan", "find", "exploit", "vulnerability", "vulnerable", "weakness", "infection", "comprimised", "data leak", "audit", "admin", "verification", "unverified", "uncertified", "uncertain", "unknown", "inactive", "crest", "question mark", "?"],
             },
+            LucideIconKind.ShieldUser => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["sebinemeth", "ksk3110", "karsa-mistmere", "colebemis"],
+                Categories = ["account", "security", "development"],
+                Tags = ["shield", "user", "admin", "protection", "protected", "safety", "guard"],
+            },
             LucideIconKind.ShieldX => new LucideIconInfo
             {
                 Kind = kind,
@@ -9367,6 +9374,13 @@ public class LucideIconInfo
                 Contributors = ["smnandre"],
                 Categories = ["development", "math"],
                 Tags = ["calculate", "formula", "math", "operator", "root", "square", "symbol"],
+            },
+            LucideIconKind.SquareRoundCorner => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["liamb13", "jguddas"],
+                Categories = ["design", "development", "layout"],
+                Tags = ["border", "radius", "style", "design", "corner", "layout", "round", "rounded"],
             },
             LucideIconKind.SquareScissors => new LucideIconInfo
             {
