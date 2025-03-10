@@ -3372,7 +3372,7 @@ public class LucideIconInfo
             LucideIconKind.Dam => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["AndreasSas"],
+                Contributors = ["AnnaSasDev"],
                 Categories = ["buildings", "sustainability"],
                 Tags = ["electricity", "energy", "water"],
             },
@@ -6102,7 +6102,7 @@ public class LucideIconInfo
             LucideIconKind.Logs => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["AndreasSas"],
+                Contributors = ["AnnaSasDev"],
                 Categories = ["text"],
                 Tags = ["options", "list", "menu", "order", "queue", "tasks", "logs"],
             },
@@ -8307,7 +8307,7 @@ public class LucideIconInfo
             LucideIconKind.SaveOff => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["AndreasSas"],
+                Contributors = ["AnnaSasDev"],
                 Categories = ["text", "files"],
                 Tags = ["floppy disk", "unsalvageable"],
             },
@@ -8804,7 +8804,7 @@ public class LucideIconInfo
             LucideIconKind.Signature => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["AndreasSas", "jguddas"],
+                Contributors = ["AnnaSasDev", "jguddas"],
                 Categories = ["text"],
                 Tags = ["text", "format", "input", "contract", "autograph", "handwriting", "sign", "cursive", "ink", "scribble", "authorize", "personal", "agreement", "legal", "document", "identity", "authentic", "approval", "verification", "unique"],
             },
