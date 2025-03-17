@@ -1,6 +1,4 @@
-﻿using System.Text;
-
-namespace LucideIcons.Generator;
+﻿namespace LucideIcons.Generator;
 
 public class IconToGeometryBuilder
 {
@@ -17,43 +15,49 @@ public class IconToGeometryBuilder
     {
         var sb = new StringBuilder();
 
-        sb.AppendLine("namespace Lucide.Avalonia;");
-        sb.AppendLine();
-        sb.AppendLine("internal static class IconToGeometry");
-        sb.AppendLine("{");
-        sb.AppendLine("    private static readonly Dictionary<LucideIconKind, Geometry> _geometryCache = [];");
-        sb.AppendLine();
-        sb.AppendLine("    public static Geometry CreateGeometry(LucideIconKind kind)");
-        sb.AppendLine("    {");
-        sb.AppendLine("        if (_geometryCache.TryGetValue(kind, out var geometry))");
-        sb.AppendLine("        {");
-        sb.AppendLine("            return geometry;");
-        sb.AppendLine("        }");
-        sb.AppendLine();
-        sb.AppendLine("        geometry = Geometry.Parse(CreateGeometryString(kind));");
-        sb.AppendLine();
-        sb.AppendLine("         _geometryCache.Add(kind, geometry);");
-        sb.AppendLine();
-        sb.AppendLine("        return geometry;");
-        sb.AppendLine("    }");
-        sb.AppendLine();
-        sb.AppendLine("    public static string CreateGeometryString(LucideIconKind kind)");
-        sb.AppendLine("    {");
-        sb.AppendLine("        return kind switch");
-        sb.AppendLine("        {");
+        sb.AppendLine("""
+            namespace Lucide.Avalonia;
 
-        foreach (var icon in _icons)
+            internal static class IconToGeometry
+            {
+                private readonly record struct Entry(LucideIconKind Key, string Geometry);
+
+                private static readonly Dictionary<LucideIconKind, Geometry> _geometryCache = [];
+                private static readonly FrozenDictionary<LucideIconKind, string> _geometries;
+
+                static IconToGeometry()
+                {
+                    Entry[] entries =
+                    [
+            """);
+
+        foreach (var (name, geometry) in _icons)
         {
-            sb.AppendLine($"            LucideIconKind.{icon.Name} => \"{icon.Geometry}\",");
+            sb.AppendLine($"            new(LucideIconKind.{name}, \"{geometry}\"),");
         }
 
-        sb.AppendLine("            _ => throw new InvalidOperationException()");
-        sb.AppendLine("        };");
-        sb.AppendLine("    }");
-        sb.AppendLine("}");
+        sb.AppendLine("""
+                    ];
+
+                    _geometries = entries.ToFrozenDictionary(x => x.Key, x => x.Geometry);
+                }
+
+                public static Geometry CreateGeometry(LucideIconKind icon)
+                {
+                    if (_geometryCache.TryGetValue(icon, out var geometry))
+                    {
+                        return geometry;
+                    }
+
+                    geometry = Geometry.Parse(_geometries[icon]);
+
+                    _geometryCache.Add(icon, geometry);
+
+                    return geometry;
+                }
+            }
+            """);
 
         return sb.ToString();
     }
-
-    public override string ToString() => Build();
 }
