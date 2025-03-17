@@ -2865,6 +2865,13 @@ public class LucideIconInfo
                 Categories = ["time"],
                 Tags = ["time", "watch", "alarm", "sort", "order", "ascending", "descending", "increasing", "decreasing", "rising", "falling"],
             },
+            LucideIconKind.ClockFading => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["colebemis", "jguddas"],
+                Categories = ["time"],
+                Tags = ["time", "watch", "alarm"],
+            },
             LucideIconKind.Cloud => new LucideIconInfo
             {
                 Kind = kind,
@@ -5528,7 +5535,7 @@ public class LucideIconInfo
             LucideIconKind.Infinity => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["mittalyashu", "danielbayley", "karsa-mistmere"],
+                Contributors = ["mittalyashu", "danielbayley", "karsa-mistmere", "jamiemlaw"],
                 Categories = ["multimedia"],
                 Tags = ["unlimited", "forever", "loop", "math"],
             },
@@ -8290,6 +8297,13 @@ public class LucideIconInfo
                 Categories = ["connectivity", "devices", "multimedia"],
                 Tags = ["antenna", "receiver", "dish aerial", "saucer"],
             },
+            LucideIconKind.SaudiRiyal => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["null78", "jguddas"],
+                Categories = ["finance"],
+                Tags = ["currency", "money", "payment"],
+            },
             LucideIconKind.Save => new LucideIconInfo
             {
                 Kind = kind,
@@ -8737,6 +8751,13 @@ public class LucideIconInfo
                 Contributors = ["karsa-mistmere"],
                 Categories = ["home", "travel"],
                 Tags = ["shower", "bath", "bathroom", "amenities", "services"],
+            },
+            LucideIconKind.Shrimp => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["karsa-mistmere"],
+                Categories = ["animals"],
+                Tags = ["seafood", "shellfish", "crustacean", "prawn", "scallop", "whelk", "arthropod", "littleneck", "quahog", "cherrystone"],
             },
             LucideIconKind.Shrink => new LucideIconInfo
             {
