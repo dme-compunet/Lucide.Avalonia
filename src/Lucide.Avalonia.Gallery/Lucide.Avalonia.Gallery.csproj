@@ -34,10 +34,10 @@
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
+		<PackageReference Include="SukiUI" Version="6.0.0" />
 	</ItemGroup>
 
 	<ItemGroup>
 		<ProjectReference Include="..\Lucide.Avalonia\Lucide.Avalonia.csproj" />
-		<ProjectReference Include="..\..\SukiUI\SukiUI\SukiUI.csproj" />
 	</ItemGroup>
 </Project>
