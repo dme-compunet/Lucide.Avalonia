@@ -1,4 +1,4 @@
-name: Update Icon Collection
+name: Update Icon Collection (Bot)
 
 on:
   schedule:
@@ -27,21 +27,10 @@ jobs:
         dotnet restore ./src/LucideIcons.Generator
         dotnet run --project ./src/LucideIcons.Generator ./lucide ./src/Lucide.Avalonia/
 
-    - name: Verify Generated Code
+    - name: Check Generated Code
       run: dotnet build ./src/Lucide.Avalonia/
 
-    - name: Push Changes
-      run: |
-        git config --global user.name 'github-actions[bot]'
-        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        git add ./src/Lucide.Avalonia/IconToGeometry.cs
-        git add ./src/Lucide.Avalonia/LucideIconKind.cs
-        git add ./src/Lucide.Avalonia/Metadata/LucideIconInfo.cs
-        if [ -n "$(git diff --cached --name-only)" ]; then
-          git commit -m "🔄 Update Icon Collection"
-          git push
-        else
-          echo "No changes to commit"
-        fi
+    - name: Push Changes (if any)
+      run: bash ./.github/scripts/update-icons.sh
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
