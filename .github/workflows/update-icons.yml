@@ -2,7 +2,7 @@ name: Update Icon Collection (Bot)
 
 on:
   schedule:
-    - cron: '0 2 * * 1'
+    - cron: '0 12 * * *'
     
   workflow_dispatch:
 
@@ -16,8 +16,17 @@ jobs:
       with: 
         dotnet-version: 9.0.x
 
+    - name: Setup Nushell
+      run: |
+        curl -fsSL https://apt.fury.io/nushell/gpg.key | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/fury-nushell.gpg
+        echo "deb https://apt.fury.io/nushell/ /" | sudo tee /etc/apt/sources.list.d/fury.list
+        sudo apt update
+        sudo apt install nushell
+
     - name: Checkout
       uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
 
     - name: Checkout lucide-icons
       run: git clone https://github.com/lucide-icons/lucide.git
@@ -31,6 +40,6 @@ jobs:
       run: dotnet build ./src/Lucide.Avalonia/
 
     - name: Push Changes (if any)
-      run: bash ./.github/scripts/update-icons.sh
+      run: bash .github/update-icons.sh
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
