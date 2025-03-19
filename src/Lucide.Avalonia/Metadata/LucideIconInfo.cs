@@ -4314,20 +4314,6 @@ public class LucideIconInfo
                 Categories = ["photography", "multimedia"],
                 Tags = ["movie", "video", "reel", "camera", "cinema", "entertainment"],
             },
-            LucideIconKind.Filter => new LucideIconInfo
-            {
-                Kind = kind,
-                Contributors = ["colebemis"],
-                Categories = ["layout"],
-                Tags = ["funnel", "hopper"],
-            },
-            LucideIconKind.FilterX => new LucideIconInfo
-            {
-                Kind = kind,
-                Contributors = ["gubser", "ericfennis"],
-                Categories = ["layout"],
-                Tags = ["funnel", "hopper"],
-            },
             LucideIconKind.Fingerprint => new LucideIconInfo
             {
                 Kind = kind,
@@ -4775,6 +4761,27 @@ public class LucideIconInfo
                 Contributors = ["danielbayley"],
                 Categories = ["layout", "multimedia", "design", "photography"],
                 Tags = ["expand", "zoom", "preview", "focus", "camera", "lens", "image"],
+            },
+            LucideIconKind.Funnel => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["colebemis", "lukedukeus", "jguddas", "karsa-mistmere"],
+                Categories = ["layout"],
+                Tags = ["filter", "hopper"],
+            },
+            LucideIconKind.FunnelPlus => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["gubser", "ericfennis", "lukedukeus", "jguddas", "karsa-mistmere"],
+                Categories = ["layout"],
+                Tags = ["filter", "hopper", "add", "create", "new"],
+            },
+            LucideIconKind.FunnelX => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["gubser", "ericfennis", "lukedukeus", "jguddas", "karsa-mistmere"],
+                Categories = ["layout"],
+                Tags = ["filter", "hopper", "remove", "delete"],
             },
             LucideIconKind.GalleryHorizontal => new LucideIconInfo
             {
