@@ -6,8 +6,7 @@ git add ./src/Lucide.Avalonia/Metadata/LucideIconInfo.cs
 if [ -n "$(git diff --cached --name-only)" ]; then
     git commit -m "🔄 Update Icon Collection"
     nu .github/create-tag.nu
-    git push
-    git push --tags
+    git push origin master --follow-tags
 else
     echo "No changes to commit"
 fi

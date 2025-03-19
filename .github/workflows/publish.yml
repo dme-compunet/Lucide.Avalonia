@@ -42,6 +42,7 @@ jobs:
           --title ${{ env.VERSION }}
           --generate-notes
           --verify-tag
+          --fail-on-no-commits
 
       - name: Build Native Gallery
         run: |
@@ -51,4 +52,4 @@ jobs:
       - name: Upload Native Gallary
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: gh release upload ${{ env.VERSION }} lucide-gallery.7z#'Gallary (Native)'
+        run: gh release upload ${{ env.VERSION }} lucide-gallery.7z#'Gallary (NativeAOT)'

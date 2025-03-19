@@ -42,4 +42,4 @@ jobs:
     - name: Push Changes (if any)
       run: bash .github/update-icons.sh
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
