@@ -1,8 +1,10 @@
 name: Release Gallery (NativeAOT)
 
 on:
-  release:
-    types: [created]
+  workflow_dispatch: 
+    inputs:
+      release_name: 
+        required: true
 
 jobs:
   build-and-upload:
@@ -17,9 +19,9 @@ jobs:
       - name: Build
         run: |
           dotnet publish $gallery_project_path -c Release -r win-x64 -o bin/
-          zip icons-gallery.zip bin/*.exe bin/*.dll
+          7z a icons-gallery.7z bin\*.exe bin\*.dll
 
       - name: Upload Gallery to Release
-        run: gh release upload ${{ github.event.release.tag_name }} icons-gallery.zip#'Icons-Gallery (NativeAOT)'
+        run: gh release upload ${{ inputs.release_name }} icons-gallery.7z#'Icons-Gallery (NativeAOT)'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
