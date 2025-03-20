@@ -18,7 +18,7 @@ jobs:
 
       - name: Build
         run: |
-          dotnet publish $gallery_project_path -c Release -r win-x64 -o bin/
+          dotnet publish src/Lucide.Avalonia.Gallery/Lucide.Avalonia.Gallery.csproj -c Release -r win-x64 -o bin/
           7z a icons-gallery.7z bin\*.exe bin\*.dll
 
       - name: Upload Gallery to Release

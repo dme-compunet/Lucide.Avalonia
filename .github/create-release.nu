@@ -1,5 +1,4 @@
 const project_path = "src/Lucide.Avalonia/Lucide.Avalonia.csproj"
-const gallery_project_path = "src/Lucide.Avalonia.Gallery/Lucide.Avalonia.Gallery.csproj"
 
 let repo_name = $env.REPO_NAME
 let nuget_api_key = $env.NUGET_API_KEY
