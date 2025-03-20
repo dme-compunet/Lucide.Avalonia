@@ -1,16 +1,21 @@
-name: Update Icon Collection (Bot)
+name: Build & Publish
 
 on:
-  schedule:
-    - cron: "0 12 * * *"
-
+  push:
+    tags:
+      - "*.*.*"
   workflow_dispatch:
 
 jobs:
-  build:
+  publish:
     runs-on: windows-latest
 
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
         with:
@@ -23,13 +28,8 @@ jobs:
           sudo apt update
           sudo apt install nushell
 
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
       - name: Release
-        run: nu .github/update-icons.nu
+        run: nu .github/create-release.nu
         env:
           REPO_NAME: ${{ github.event.repository.full_name }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
