@@ -1,0 +1,25 @@
+name: Release Gallery (NativeAOT)
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  build-and-upload:
+    runs-on: windows-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build
+        run: |
+          dotnet publish $gallery_project_path -c Release -r win-x64 -o bin/
+          zip icons-gallery.zip bin/*.exe bin/*.dll
+
+      - name: Upload Gallery to Release
+        run: gh release upload ${{ github.event.release.tag_name }} icons-gallery.zip#'Icons-Gallery (NativeAOT)'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

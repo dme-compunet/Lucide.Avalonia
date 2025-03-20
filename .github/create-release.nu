@@ -14,10 +14,3 @@ dotnet nuget push *.nupkg --api-key $nuget_api_key --source https://api.nuget.or
 
 # Create GitHub Release with the tag name
 gh release create $version --repo $repo_name --title $version --fail-on-no-commits --generate-notes --verify-tag
-
-# Build and zip gallery (native-aot)
-dotnet publish $gallery_project_path -c Release -r win-x64 -o bin/
-7z a icons-gallery.7z bin\*.exe bin\*.dll
-
-# Add gallery to GitHub Release assets
-gh release upload $version "icons-gallery.7z#'Icons-Gallery (NativeAOT)'"
