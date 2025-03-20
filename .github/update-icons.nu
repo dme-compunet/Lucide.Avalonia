@@ -1,12 +1,16 @@
 def generate-and-commit [] {
     # Clone the lucide library repo
-    git clone https://github.com/lucide-icons/lucide.git
+    # git clone https://github.com/lucide-icons/lucide.git
+    http get https://github.com/lucide-icons/lucide/archive/refs/heads/main.zip | save lucide-latest.zip
+    unzip lucide-latest.zip    
     
     # Run the generator
     dotnet restore ./src/LucideIcons.Generator
-    dotnet run --project ./src/LucideIcons.Generator ./lucide ./src/Lucide.Avalonia/
+    dotnet run --project ./src/LucideIcons.Generator ./lucide-main ./src/Lucide.Avalonia/
 
-    # Check generated code
+    rm lucide-main -r
+
+    # Verify generated code
     dotnet build ./src/Lucide.Avalonia/
     
     # Configure git user details
@@ -42,13 +46,9 @@ let has_changes = (git diff --cached --name-only | str length) > 0
 
 if $has_changes {
     git commit -m "🔄 Update Icon Collection"
-
-    # Create new tag for release
     git tag (increment-patch (git describe --tags --abbrev=0))
-
     git push --follow-tags
 
-    # Create Release
     source create-release.nu
 } else {
     print "No changes to commit"
