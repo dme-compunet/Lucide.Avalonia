@@ -1,4 +1,4 @@
-name: Build Gallery (Native)
+name: Build Gallery (NativeAOT)
 
 on:
   push:
@@ -27,6 +27,6 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: gallery-native
-          path: | 
+          path: |
             bin/*exe
             bin/*dll
