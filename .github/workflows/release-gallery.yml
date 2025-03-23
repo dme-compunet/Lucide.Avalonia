@@ -21,9 +21,9 @@ jobs:
       - name: Build
         run: |
           dotnet publish src/Lucide.Avalonia.Gallery/Lucide.Avalonia.Gallery.csproj -c Release -r win-x64 -o bin/
-          7z a icons-gallery.7z bin\*.exe bin\*.dll
+          7z a icons-gallery.zip bin\*.exe bin\*.dll
 
       - name: Upload Gallery to Release
-        run: gh release upload ${{ inputs.release_tag_name }} icons-gallery.7z#'Icons-Gallery (NativeAOT)'
+        run: gh release upload ${{ inputs.release_tag_name }} icons-gallery.zip#'Icons-Gallery (NativeAOT)'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
