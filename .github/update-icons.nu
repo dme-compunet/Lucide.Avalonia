@@ -47,8 +47,7 @@ let has_changes = (git diff --cached --name-only | str length) > 0
 if $has_changes {
     git commit -m "🔄 Update Icon Collection"
     git tag (increment-version (git describe --tags --abbrev=0))
-    git push --follow-tags
-
+    git push origin master --tags
     source create-release.nu
 } else {
     print "No changes to commit"
