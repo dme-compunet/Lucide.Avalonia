@@ -989,6 +989,27 @@ public class LucideIconInfo
                 Categories = ["finance"],
                 Tags = ["currency", "money", "payment"],
             },
+            LucideIconKind.BanknoteArrowDown => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["AnnaSasDev", "joffx", "ericfennis", "mittalyashu"],
+                Categories = ["finance"],
+                Tags = ["bill", "currency", "money", "payment", "funds", "transaction", "cash", "finance", "withdraw", "expense", "out", "payout", "refund", "debit", "spending", "decrease"],
+            },
+            LucideIconKind.BanknoteArrowUp => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["AnnaSasDev", "joffx", "ericfennis", "mittalyashu"],
+                Categories = ["finance"],
+                Tags = ["bill", "currency", "money", "payment", "funds", "transaction", "cash", "finance", "deposit", "earnings", "income", "in", "credit", "prepaid", "growth", "increase"],
+            },
+            LucideIconKind.BanknoteX => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["AnnaSasDev", "joffx", "ericfennis", "mittalyashu"],
+                Categories = ["finance"],
+                Tags = ["bill", "currency", "money", "payment", "funds", "transaction", "cash", "finance", "error", "failed", "rejected", "canceled", "declined", "lost", "delete", "remove"],
+            },
             LucideIconKind.Barcode => new LucideIconInfo
             {
                 Kind = kind,
