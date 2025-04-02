@@ -1287,6 +1287,7 @@ public enum LucideIconKind
     SpellCheck,
     SpellCheck2,
     Spline,
+    SplinePointer,
     Split,
     SprayCan,
     Sprout,

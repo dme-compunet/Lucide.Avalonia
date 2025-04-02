@@ -9060,6 +9060,13 @@ public class LucideIconInfo
                 Categories = ["design"],
                 Tags = ["path", "pen", "tool", "shape", "curve", "draw"],
             },
+            LucideIconKind.SplinePointer => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["kaleidosium", "mittalyashu", "ericfennis", "jguddas", "karsa-mistmere"],
+                Categories = ["arrows", "cursors", "design", "tools"],
+                Tags = ["path", "tool", "curve", "node", "click", "pointer", "target", "vector"],
+            },
             LucideIconKind.Split => new LucideIconInfo
             {
                 Kind = kind,
