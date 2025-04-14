@@ -9917,7 +9917,7 @@ public class LucideIconInfo
             LucideIconKind.Text => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["danielbayley", "karsa-mistmere"],
+                Contributors = ["danielbayley", "karsa-mistmere", "jguddas"],
                 Categories = ["text", "files", "cursors"],
                 Tags = ["find", "search", "data", "txt", "pdf", "document"],
             },
