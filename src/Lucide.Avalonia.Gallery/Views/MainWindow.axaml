@@ -125,18 +125,19 @@
 
 										<suki:GlassCard.ContextMenu>
 											<ContextMenu>
-												<MenuItem Header="Copy name"
+												<MenuItem Header="Copy icon name"
 														  Command="{Binding CopyNameCommand}"
-														  Icon="{LucideIconContent Copy, 16, 2}"/>
-												<MenuItem Header="Copy control"
-														  Command="{Binding CopyControlCommand}"
-														  Icon="{LucideIconContent Copy, 16, 2}"/>
+														  Icon="{LucideIconContent Copy}"/>
+												<MenuItem Header="Copy xaml element"
+														  Command="{Binding CopyXamlCommand}"
+														  Icon="{LucideIconContent CodeXml}"/>
 												<MenuItem Header="Copy content extension"
 														  Command="{Binding CopyExtensionCommand}"
-														  Icon="{LucideIconContent Copy, 16, 2}"/>
+														  Icon="{LucideIconContent Braces}"/>
 												<ContextMenu.Styles>
 													<Style Selector="LucideIcon">
-														<Setter Property="StrokeWidth" Value="1.5"/>
+														<Setter Property="Size" Value="16"/>
+														<Setter Property="StrokeWidth" Value="2"/>
 													</Style>
 												</ContextMenu.Styles>
 											</ContextMenu>

@@ -13,7 +13,7 @@ public partial class IconViewModel(LucideIconKind kind)
 
     public void CopyNameCommand() => SetClipboard($"{Kind}");
 
-    public void CopyControlCommand() => SetClipboard($"<LucideIcon Kind=\"{Kind}\"/>");
+    public void CopyXamlCommand() => SetClipboard($"<LucideIcon Kind=\"{Kind}\"/>");
 
     public void CopyExtensionCommand() => SetClipboard($"{{LucideIconContent {Kind}}}");
 
