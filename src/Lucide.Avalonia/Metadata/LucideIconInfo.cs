@@ -10085,14 +10085,14 @@ public class LucideIconInfo
             LucideIconKind.ToggleLeft => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["colebemis", "karsa-mistmere", "ericfennis"],
+                Contributors = ["colebemis", "karsa-mistmere", "ericfennis", "jamiemlaw"],
                 Categories = ["layout", "account", "development"],
                 Tags = ["on", "off", "switch", "boolean"],
             },
             LucideIconKind.ToggleRight => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["colebemis", "karsa-mistmere", "ericfennis"],
+                Contributors = ["colebemis", "karsa-mistmere", "ericfennis", "jamiemlaw"],
                 Categories = ["layout", "account", "development"],
                 Tags = ["on", "off", "switch", "boolean"],
             },
