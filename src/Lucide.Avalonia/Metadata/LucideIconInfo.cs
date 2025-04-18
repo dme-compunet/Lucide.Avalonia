@@ -1675,6 +1675,13 @@ public class LucideIconInfo
                 Categories = ["text", "design", "tools"],
                 Tags = ["draw", "paint", "color", "artist"],
             },
+            LucideIconKind.Bubbles => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["vqh2602", "jguddas"],
+                Categories = ["weather"],
+                Tags = ["water", "cleaning", "soap", "bath", "hygiene", "freshness", "wash", "foam", "cleanliness", "shampoo", "purity", "splash", "lightness", "airy", "relaxation", "spa", "bubbly", "fluid", "floating", "drop"],
+            },
             LucideIconKind.Bug => new LucideIconInfo
             {
                 Kind = kind,
@@ -5336,12 +5343,26 @@ public class LucideIconInfo
                 Categories = ["emoji", "account", "security"],
                 Tags = ["agreement", "charity", "help", "deal", "terms", "emotion", "together", "handshake"],
             },
+            LucideIconKind.HeartMinus => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["Ayberkyvs"],
+                Categories = ["medical", "account", "multimedia", "gaming", "social"],
+                Tags = ["unlike", "unfavorite", "remove", "damage", "ui & ux"],
+            },
             LucideIconKind.HeartOff => new LucideIconInfo
             {
                 Kind = kind,
                 Contributors = ["karsa-mistmere", "ericfennis", "danielbayley"],
                 Categories = ["social", "multimedia"],
                 Tags = ["unlike", "dislike", "hate", "emotion"],
+            },
+            LucideIconKind.HeartPlus => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["Ayberkyvs", "UsamaKhan"],
+                Categories = ["medical", "account", "multimedia", "gaming", "social"],
+                Tags = ["plus", "like", "favorite", "add", "health", "support"],
             },
             LucideIconKind.HeartPulse => new LucideIconInfo
             {
@@ -5787,7 +5808,7 @@ public class LucideIconInfo
             LucideIconKind.Layers2 => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["danielbayley"],
+                Contributors = ["danielbayley", "jguddas"],
                 Categories = ["design", "layout"],
                 Tags = ["stack", "pile", "pages", "sheets", "paperwork", "copies", "copy", "duplicate", "double", "shortcuts"],
             },
@@ -7607,7 +7628,7 @@ public class LucideIconInfo
             LucideIconKind.PiggyBank => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["ericfennis"],
+                Contributors = ["ericfennis", "jamiemlaw"],
                 Categories = ["finance"],
                 Tags = ["money", "savings"],
             },
@@ -7663,7 +7684,7 @@ public class LucideIconInfo
             LucideIconKind.Pipette => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["Andreto", "ericfennis", "karsa-mistmere"],
+                Contributors = ["Andreto", "ericfennis", "karsa-mistmere", "jguddas"],
                 Categories = ["text", "design", "science"],
                 Tags = ["eye dropper", "color picker", "lab", "chemistry"],
             },
@@ -8205,6 +8226,13 @@ public class LucideIconInfo
                 Contributors = ["colebemis", "csandman", "ericfennis", "danielbayley", "jguddas", "karsa-mistmere"],
                 Categories = ["arrows", "design", "photography"],
                 Tags = ["arrow", "left", "counter-clockwise", "restart", "reload", "rerun", "refresh", "backup", "undo", "replay", "redo", "retry", "rewind", "reverse"],
+            },
+            LucideIconKind.RotateCcwKey => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["karsa-mistmere", "pgbradbury", "jguddas"],
+                Categories = ["security", "account"],
+                Tags = ["password", "key", "refresh", "change"],
             },
             LucideIconKind.RotateCcwSquare => new LucideIconInfo
             {
