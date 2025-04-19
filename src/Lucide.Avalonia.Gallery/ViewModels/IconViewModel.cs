@@ -51,7 +51,12 @@ public partial class IconViewModel(LucideIconKind kind)
     //    return sb.ToString();
     //}
 
-    private static async void SetClipboard(string value) => await ClipboardService.Instance.SetClipboardAsync(value);
+    private static async void SetClipboard(string text)
+    {
+        await ClipboardService.Instance.SetClipboardAsync(text);
+
+        NotificationService.Singleton.ShowNotification("Icon Copied!", $"The text \"{text}\" has been copied to clipboard.");
+    }
 
     public static IconViewModel[] CreateIconCollection()
     {

@@ -10,6 +10,7 @@ global using Lucide.Avalonia.Metadata;
 global using ReactiveUI;
 global using SukiUI;
 global using SukiUI.Controls;
+global using SukiUI.Toasts;
 global using System;
 global using System.Collections.Frozen;
 global using System.Collections.Generic;

@@ -1,10 +1,14 @@
-﻿namespace Lucide.Avalonia.Gallery.ViewModels;
+﻿using SukiUI.Toasts;
+
+namespace Lucide.Avalonia.Gallery.ViewModels;
 
 [Reactive]
 public partial class MainWindowViewModel : ReactiveViewModel
 {
     private readonly Lazy<IconViewModel[]> _allIconsLazy = new(IconViewModel.CreateIconCollection);
     private readonly Lazy<FrozenDictionary<LucideIconKind, LucideIconInfo>> _iconsInfo = new(CreateIconCollectionInfo);
+
+    public SukiToastManager ToastManager { get; } = NotificationService.Singleton.ToastManager;
 
     public partial bool IsBusy { get; set; }
 

@@ -35,6 +35,10 @@
 		</StreamGeometry>
 	</suki:SukiWindow.Resources>
 
+	<suki:SukiWindow.Hosts>
+		<suki:SukiToastHost Manager="{Binding ToastManager}"/>
+	</suki:SukiWindow.Hosts>
+
 	<Grid Margin="20" ColumnDefinitions="200 20 *">
 
 		<suki:GlassCard Grid.Column="0">
