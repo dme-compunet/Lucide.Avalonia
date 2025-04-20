@@ -8860,7 +8860,7 @@ public class LucideIconInfo
             LucideIconKind.Shredder => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["Alirashidy", "colebemis", "ericfennis", "danielbayley", "colebemis", "ericfennis", "danielbayley", "jguddas", "karsa-mistmere"],
+                Contributors = ["Alirashidy", "colebemis", "danielbayley", "ericfennis", "jguddas", "karsa-mistmere"],
                 Categories = ["mail", "files"],
                 Tags = ["file", "paper", "tear", "cut", "delete", "destroy", "remove", "erase", "document,", "destruction", "secure ", "security", "confidential", "data", "trash", "dispose", "disposal", "information", "waste", "permanent"],
             },
