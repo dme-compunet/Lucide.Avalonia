@@ -3656,6 +3656,13 @@ public class LucideIconInfo
                 Categories = ["home", "travel", "security"],
                 Tags = ["entrance", "entry", "exit", "ingress", "egress", "gate", "gateway", "emergency exit"],
             },
+            LucideIconKind.DoorClosedLocked => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["karsa-mistmere", "lukedukeus"],
+                Categories = ["home", "travel", "security"],
+                Tags = ["entrance", "entry", "exit", "ingress", "egress", "gate", "gateway", "emergency exit", "lock"],
+            },
             LucideIconKind.DoorOpen => new LucideIconInfo
             {
                 Kind = kind,
@@ -3995,7 +4002,7 @@ public class LucideIconInfo
             LucideIconKind.FileBadge2 => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["karsa-mistmere", "danielbayley"],
+                Contributors = ["karsa-mistmere", "danielbayley", "jguddas"],
                 Categories = ["files"],
                 Tags = ["award", "achievement", "badge", "rosette", "prize", "winner"],
             },
@@ -11047,6 +11054,13 @@ public class LucideIconInfo
                 Contributors = ["colebemis", "ericfennis"],
                 Categories = ["connectivity", "devices"],
                 Tags = ["disabled"],
+            },
+            LucideIconKind.WifiPen => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["karsa-mistmere", "jguddas", "danielbayley", "luisdlopera"],
+                Categories = ["connectivity", "devices"],
+                Tags = ["edit", "wifi", "pen", "change", "network"],
             },
             LucideIconKind.WifiZero => new LucideIconInfo
             {
