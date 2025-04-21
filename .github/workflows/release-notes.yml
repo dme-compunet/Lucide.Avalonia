@@ -1,0 +1,29 @@
+name: Release Notes Generator (Bot)
+
+on:
+  workflow_dispatch: 
+    inputs:
+      release_tag_name: 
+        required: true
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.release_tag_name }}
+          fetch-depth: 0
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 9.0.x
+
+      - name: Generate Release Notes
+        run: dotnet run --project src\Generator.ReleaseNotes ${{ inputs.release_tag_name }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPOSITORY_ID: ${{ github.event.repository.id }}

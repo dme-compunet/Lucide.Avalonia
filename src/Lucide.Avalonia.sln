@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lucide.Avalonia.Gallery", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SukiUI", "..\ext\SukiUI\SukiUI\SukiUI.csproj", "{68D873F7-2620-45CF-D536-4F46B845F8D7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generator.ReleaseNotes", "Generator.ReleaseNotes\Generator.ReleaseNotes.csproj", "{6984126F-B4F4-4F2D-9012-3AB3F8A65B4B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{68D873F7-2620-45CF-D536-4F46B845F8D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68D873F7-2620-45CF-D536-4F46B845F8D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68D873F7-2620-45CF-D536-4F46B845F8D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6984126F-B4F4-4F2D-9012-3AB3F8A65B4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6984126F-B4F4-4F2D-9012-3AB3F8A65B4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6984126F-B4F4-4F2D-9012-3AB3F8A65B4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6984126F-B4F4-4F2D-9012-3AB3F8A65B4B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
