@@ -1187,6 +1187,7 @@ public enum LucideIconKind
     Rows4,
     Rss,
     Ruler,
+    RulerDimensionLine,
     RussianRuble,
     Sailboat,
     Salad,

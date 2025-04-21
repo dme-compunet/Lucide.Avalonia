@@ -824,7 +824,7 @@ public class LucideIconInfo
             LucideIconKind.Baby => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["karsa-mistmere", "ericfennis"],
+                Contributors = ["karsa-mistmere", "ericfennis", "jguddas"],
                 Categories = ["accessibility", "people"],
                 Tags = ["child", "childproof", "children"],
             },
@@ -1881,7 +1881,7 @@ public class LucideIconInfo
             LucideIconKind.CalendarPlus => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["karsa-mistmere", "ericfennis"],
+                Contributors = ["karsa-mistmere", "ericfennis", "jguddas"],
                 Categories = ["time"],
                 Tags = ["date", "day", "month", "year", "event", "add", "subscribe", "create", "new"],
             },
@@ -2756,7 +2756,7 @@ public class LucideIconInfo
             LucideIconKind.ClipboardPaste => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["xnousnow", "ericfennis"],
+                Contributors = ["xnousnow", "ericfennis", "jguddas"],
                 Categories = ["text", "arrows"],
                 Tags = ["copy", "paste"],
             },
@@ -8357,6 +8357,13 @@ public class LucideIconInfo
             {
                 Kind = kind,
                 Contributors = ["Andreto", "ericfennis", "csandman", "karsa-mistmere"],
+                Categories = ["tools", "design", "layout"],
+                Tags = ["measurements", "centimeters", "cm", "millimeters", "mm", "metre", "foot", "feet", "inches", "units", "size", "length", "width", "height", "dimensions", "depth", "breadth", "extent", "stationery"],
+            },
+            LucideIconKind.RulerDimensionLine => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["jguddas"],
                 Categories = ["tools", "design", "layout"],
                 Tags = ["measurements", "centimeters", "cm", "millimeters", "mm", "metre", "foot", "feet", "inches", "units", "size", "length", "width", "height", "dimensions", "depth", "breadth", "extent", "stationery"],
             },
