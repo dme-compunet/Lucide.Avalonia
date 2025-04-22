@@ -1685,9 +1685,9 @@ public class LucideIconInfo
             LucideIconKind.Brush => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["ericfennis"],
+                Contributors = ["ericfennis", "chessurisme", "jguddas", "karsa-mistmere"],
                 Categories = ["text", "design", "tools"],
-                Tags = ["draw", "paint", "color", "artist"],
+                Tags = ["clean", "sweep", "refactor", "remove", "draw", "paint", "color", "artist"],
             },
             LucideIconKind.Bubbles => new LucideIconInfo
             {
