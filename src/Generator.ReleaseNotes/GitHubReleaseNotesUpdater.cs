@@ -8,11 +8,14 @@ public static class GitHubReleaseNotesUpdater
     {
         Console.WriteLine("Updating GitHub release notes...");
 
-        var token = Environment.GetEnvironmentVariable("GITHUB_TOKEN");
+        var token = Environment.GetEnvironmentVariable("GITHUB_TOKEN")
+                    ??
+                    throw new InvalidOperationException("GITHUB_TOKEN environment variable is not set.");
+
         var repositoryId = long.Parse(Environment.GetEnvironmentVariable("REPOSITORY_ID")
                                       ??
-                                      throw new InvalidOperationException());
-        
+                                      throw new InvalidOperationException("REPOSITORY_ID environment variable is not set."));
+
         var github = new GitHubClient(new ProductHeaderValue("release-notes-updater"))
         {
             Credentials = new Credentials(token)
