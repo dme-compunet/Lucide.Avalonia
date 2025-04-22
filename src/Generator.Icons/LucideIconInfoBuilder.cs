@@ -1,7 +1,7 @@
 ﻿using System.Text;
 using System.Text.Json;
 
-namespace LucideIcons.Generator;
+namespace Generator.Icons;
 
 public class LucideIconInfoBuilder
 {

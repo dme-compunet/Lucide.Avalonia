@@ -4,7 +4,7 @@ VisualStudioVersion = 17.5.2.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lucide.Avalonia", "Lucide.Avalonia\Lucide.Avalonia.csproj", "{3B0FC7C7-71BD-DEF4-7A43-5D07A632E4DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LucideIcons.Generator", "LucideIcons.Generator\LucideIcons.Generator.csproj", "{C0A447D5-C19A-44F7-9CE5-17ADF0A28BF5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generator.Icons", "Generator.Icons\Generator.Icons.csproj", "{C0A447D5-C19A-44F7-9CE5-17ADF0A28BF5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lucide.Avalonia.Gallery", "Lucide.Avalonia.Gallery\Lucide.Avalonia.Gallery.csproj", "{EDD7CDF6-3C2F-4587-80AD-32FF5BCCF748}"
 EndProject

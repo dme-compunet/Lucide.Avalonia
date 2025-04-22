@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace LucideIcons.Generator;
+namespace Generator.Icons;
 
 public class LucideIconKindBuilder
 {

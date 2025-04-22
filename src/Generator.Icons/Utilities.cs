@@ -1,4 +1,4 @@
-﻿namespace LucideIcons.Generator;
+﻿namespace Generator.Icons;
 
 public static class Utilities
 {

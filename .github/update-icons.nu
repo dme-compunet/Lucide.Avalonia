@@ -1,12 +1,11 @@
 def generate-and-commit [] {
     # Clone the lucide library repo
-    # git clone https://github.com/lucide-icons/lucide.git
     http get https://github.com/lucide-icons/lucide/archive/refs/heads/main.zip | save lucide-latest.zip
     unzip lucide-latest.zip    
     
     # Run the generator
-    dotnet restore ./src/LucideIcons.Generator
-    dotnet run --project ./src/LucideIcons.Generator ./lucide-main ./src/Lucide.Avalonia/
+    dotnet restore ./src/Generator.Icons
+    dotnet run --project ./src/Generator.Icons ./lucide-main ./src/Lucide.Avalonia/
 
     rm lucide-main -r
 

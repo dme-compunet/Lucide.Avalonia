@@ -1,4 +1,4 @@
-﻿global using LucideIcons.Generator;
+﻿global using Generator.Icons;
 global using SkiaSharp;
 global using Svg.Skia;
 global using SvgToXaml.Model.Drawing;
