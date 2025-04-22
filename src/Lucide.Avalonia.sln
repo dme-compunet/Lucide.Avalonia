@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SukiUI", "..\ext\SukiUI\Suk
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generator.ReleaseNotes", "Generator.ReleaseNotes\Generator.ReleaseNotes.csproj", "{6984126F-B4F4-4F2D-9012-3AB3F8A65B4B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Generators", "Generators", "{A54FE795-E59F-48E8-B4A9-8EEC517C0128}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,5 +46,9 @@ Global
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2B8DF243-C10F-49D4-9993-09C19AD61E40}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C0A447D5-C19A-44F7-9CE5-17ADF0A28BF5} = {A54FE795-E59F-48E8-B4A9-8EEC517C0128}
+		{6984126F-B4F4-4F2D-9012-3AB3F8A65B4B} = {A54FE795-E59F-48E8-B4A9-8EEC517C0128}
 	EndGlobalSection
 EndGlobal
