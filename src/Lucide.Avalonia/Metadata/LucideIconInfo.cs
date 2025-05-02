@@ -1689,6 +1689,13 @@ public class LucideIconInfo
                 Categories = ["text", "design", "tools"],
                 Tags = ["clean", "sweep", "refactor", "remove", "draw", "paint", "color", "artist"],
             },
+            LucideIconKind.BrushCleaning => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["karsa-mistmere"],
+                Categories = ["home", "tools", "design"],
+                Tags = ["cleaning", "utensil", "housekeeping", "tool", "sweeping", "scrubbing", "hygiene", "maintenance", "household", "cleaner", "chores", "equipment", "sanitation", "bristles", "handle", "home care", "sanitize", "purify", "wash", "disinfect", "sterilize", "scrub", "polish", "decontaminate", "wipe", "spotless", "remove", "empty", "erase", "purge", "eliminate"],
+            },
             LucideIconKind.Bubbles => new LucideIconInfo
             {
                 Kind = kind,
@@ -5189,6 +5196,13 @@ public class LucideIconInfo
                 Categories = ["food-beverage"],
                 Tags = ["food", "pork", "pig", "meat", "bone", "hock", "knuckle", "gammon", "cured"],
             },
+            LucideIconKind.Hamburger => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["danielbayley", "kemie", "karsa-mistmere", "jguddas", "jamiemlaw"],
+                Categories = ["food-beverage"],
+                Tags = ["burger", "cheeseburger", "meat", "beef", "patty", "bun", "fast food", "junk food", "takeaway", "takeout", "snack", "dish", "restaurant", "lunch", "meal", "savory", "savoury", "cookery", "cooking", "grilled", "barbecue", "barbeque", "bbq", "lettuce", "tomato", "relish", "pickles", "onions", "ketchup", "mustard", "mayonnaise"],
+            },
             LucideIconKind.Hammer => new LucideIconInfo
             {
                 Kind = kind,
@@ -6151,7 +6165,7 @@ public class LucideIconInfo
             LucideIconKind.LocateOff => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["fdev"],
+                Contributors = ["fdev", "jamiemlaw"],
                 Categories = ["navigation"],
                 Tags = ["map", "gps", "location", "cross"],
             },
@@ -7243,7 +7257,7 @@ public class LucideIconInfo
             LucideIconKind.Package2 => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["karsa-mistmere", "ericfennis"],
+                Contributors = ["karsa-mistmere", "ericfennis", "jguddas"],
                 Categories = ["files", "development"],
                 Tags = ["box", "container", "storage", "sealed", "packed", "unopened", "undelivered", "archive", "zip"],
             },
@@ -10722,7 +10736,7 @@ public class LucideIconInfo
             LucideIconKind.Users => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["colebemis", "csandman", "ericfennis", "karsa-mistmere"],
+                Contributors = ["colebemis", "csandman", "ericfennis", "karsa-mistmere", "jguddas"],
                 Categories = ["account"],
                 Tags = ["group", "people"],
             },
