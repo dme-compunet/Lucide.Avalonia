@@ -722,6 +722,7 @@ public enum LucideIconKind
     Globe,
     GlobeLock,
     Goal,
+    Gpu,
     Grab,
     GraduationCap,
     Grape,
