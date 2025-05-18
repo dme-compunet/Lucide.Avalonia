@@ -817,7 +817,7 @@ public class LucideIconInfo
             LucideIconKind.Axis3d => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["lscheibel"],
+                Contributors = ["lscheibel", "jguddas"],
                 Categories = ["design"],
                 Tags = ["gizmo", "coordinates"],
             },
@@ -2256,6 +2256,13 @@ public class LucideIconInfo
                 Categories = ["notifications"],
                 Tags = ["done", "received", "double", "todo", "tick", "complete", "task"],
             },
+            LucideIconKind.CheckLine => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["colebemis", "oosawy"],
+                Categories = ["notifications"],
+                Tags = ["done", "todo", "tick", "complete", "task"],
+            },
             LucideIconKind.ChefHat => new LucideIconInfo
             {
                 Kind = kind,
@@ -2343,7 +2350,7 @@ public class LucideIconInfo
             LucideIconKind.ChevronsLeftRightEllipsis => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["ericfennis"],
+                Contributors = ["ericfennis", "jguddas", "karsa-mistmere"],
                 Categories = ["communication", "devices", "multimedia", "gaming"],
                 Tags = ["internet", "network", "connection", "cable", "lan", "port", "router", "switch", "hub", "modem", "web", "online", "networking", "communication", "socket", "plug", "slot", "controller", "connector", "interface", "console", "signal", "data", "input", "output"],
             },
@@ -2647,6 +2654,13 @@ public class LucideIconInfo
                 Contributors = ["colebemis", "ericfennis"],
                 Categories = ["math", "development", "cursors", "gaming"],
                 Tags = ["add", "new", "increase", "increment", "positive", "calculate", "crosshair", "aim", "target", "scope", "sight", "reticule", "maximum", "upgrade", "extra", "operator", "join", "concatenate", "code", "coding", "+"],
+            },
+            LucideIconKind.CirclePoundSterling => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["karsa-mistmere", "jguddas", "danielbayley", "LieOnLion"],
+                Categories = ["finance"],
+                Tags = ["monetization", "coin", "penny", "marketing", "currency", "money", "payment", "british", "gbp", "£"],
             },
             LucideIconKind.CirclePower => new LucideIconInfo
             {
@@ -5815,9 +5829,9 @@ public class LucideIconInfo
             LucideIconKind.Landmark => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["connium", "ericfennis"],
+                Contributors = ["connium", "ericfennis", "karsa-mistmere"],
                 Categories = ["finance", "navigation", "buildings"],
-                Tags = ["bank", "building", "capitol", "finance", "money", "government", "institution"],
+                Tags = ["bank", "building", "capitol", "finance", "money", "museum", "art gallery", "hall", "institute", "pediment", "portico", "columns", "pillars", "classical", "architecture", "government", "institution"],
             },
             LucideIconKind.Languages => new LucideIconInfo
             {
@@ -9392,7 +9406,7 @@ public class LucideIconInfo
             LucideIconKind.SquareCode => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["danielbayley"],
+                Contributors = ["danielbayley", "jguddas", "karsa-mistmere", "ericfennis"],
                 Categories = ["text", "development"],
                 Tags = ["gist", "source", "programming", "html", "xml", "coding"],
             },
@@ -9430,6 +9444,13 @@ public class LucideIconInfo
                 Contributors = ["danielbayley"],
                 Categories = ["arrows", "cursors", "development", "tools"],
                 Tags = ["inspector", "element", "mouse", "click", "pointer", "box", "browser", "selector", "target", "dom", "node"],
+            },
+            LucideIconKind.SquareDashedTopSolid => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["llaenowyd", "mishkaio", "ericfennis", "karsa-mistmere", "chessurisme", "danielbayley", "colebemis", "juanpablofernandez"],
+                Categories = ["design", "development", "layout"],
+                Tags = ["square", "border", "width", "layout", "style", "design", "rectangular", "marquee", "dashed", "box", "rectangle", "aspect ratio", "1:1"],
             },
             LucideIconKind.SquareDivide => new LucideIconInfo
             {
@@ -10605,7 +10626,7 @@ public class LucideIconInfo
                 Kind = kind,
                 Contributors = ["karsa-mistmere"],
                 Categories = ["buildings", "navigation"],
-                Tags = ["building", "education", "childhood", "school"],
+                Tags = ["building", "education", "childhood", "school", "college", "academy", "institute"],
             },
             LucideIconKind.Unlink => new LucideIconInfo
             {
@@ -10983,7 +11004,7 @@ public class LucideIconInfo
                 Kind = kind,
                 Contributors = ["karsa-mistmere"],
                 Categories = ["buildings", "navigation"],
-                Tags = ["storage", "logistics", "building"],
+                Tags = ["storage", "storehouse", "depot", "depository", "repository", "stockroom", "logistics", "building"],
             },
             LucideIconKind.WashingMachine => new LucideIconInfo
             {
