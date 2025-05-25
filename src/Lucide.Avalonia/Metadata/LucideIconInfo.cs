@@ -1034,35 +1034,35 @@ public class LucideIconInfo
             LucideIconKind.Battery => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["colebemis", "ericfennis", "johnletey"],
+                Contributors = ["colebemis", "ericfennis", "johnletey", "jguddas"],
                 Categories = ["connectivity", "devices"],
                 Tags = ["power", "electricity", "energy", "accumulator", "charge"],
             },
             LucideIconKind.BatteryCharging => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["colebemis", "ericfennis", "csandman", "karsa-mistmere", "johnletey"],
+                Contributors = ["colebemis", "ericfennis", "csandman", "karsa-mistmere", "johnletey", "jguddas"],
                 Categories = ["connectivity", "devices"],
                 Tags = ["power", "electricity", "energy", "accumulator", "charge"],
             },
             LucideIconKind.BatteryFull => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["ericfennis", "karsa-mistmere", "johnletey"],
+                Contributors = ["ericfennis", "karsa-mistmere", "johnletey", "jguddas"],
                 Categories = ["connectivity", "devices"],
                 Tags = ["power", "electricity", "energy", "accumulator", "charge"],
             },
             LucideIconKind.BatteryLow => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["ericfennis", "johnletey", "karsa-mistmere"],
+                Contributors = ["ericfennis", "johnletey", "karsa-mistmere", "jguddas"],
                 Categories = ["connectivity", "devices"],
                 Tags = ["power", "electricity", "energy", "accumulator", "charge"],
             },
             LucideIconKind.BatteryMedium => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["ericfennis", "johnletey", "karsa-mistmere"],
+                Contributors = ["ericfennis", "johnletey", "karsa-mistmere", "jguddas"],
                 Categories = ["connectivity", "devices"],
                 Tags = ["power", "electricity", "energy", "accumulator", "charge"],
             },
@@ -1076,7 +1076,7 @@ public class LucideIconInfo
             LucideIconKind.BatteryWarning => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["Kaladii", "ericfennis"],
+                Contributors = ["Kaladii", "ericfennis", "jguddas"],
                 Categories = ["connectivity", "devices"],
                 Tags = ["power", "electricity", "energy", "accumulator", "charge", "exclamation mark"],
             },
@@ -2956,6 +2956,13 @@ public class LucideIconInfo
                 Categories = ["development"],
                 Tags = ["weather", "danger", "warning", "alert", "error", "sync", "network", "exclamation"],
             },
+            LucideIconKind.CloudCheck => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["colebemis", "csandman", "ericfennis", "karsa-mistmere", "jguddas", "lscheibel"],
+                Categories = ["development"],
+                Tags = ["sync", "network", "success", "done", "completed", "saved", "persisted"],
+            },
             LucideIconKind.CloudCog => new LucideIconInfo
             {
                 Kind = kind,
@@ -3876,9 +3883,9 @@ public class LucideIconInfo
             LucideIconKind.Eraser => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["maxwellito", "karsa-mistmere"],
+                Contributors = ["maxwellito", "karsa-mistmere", "jguddas"],
                 Categories = ["text"],
-                Tags = ["pencil", "drawing", "undo", "delete", "clear"],
+                Tags = ["pencil", "drawing", "undo", "delete", "clear", "trash", "remove"],
             },
             LucideIconKind.EthernetPort => new LucideIconInfo
             {
@@ -5567,6 +5574,13 @@ public class LucideIconInfo
                 Categories = ["security", "account"],
                 Tags = ["card", "badge", "identity", "authentication", "secure"],
             },
+            LucideIconKind.IdCardLanyard => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["python2911", "UsamaKhan", "jguddas"],
+                Categories = ["security", "account"],
+                Tags = ["id-card", "id-card-lanyard", "identity", "employee", "gate-pass"],
+            },
             LucideIconKind.Image => new LucideIconInfo
             {
                 Kind = kind,
@@ -6060,7 +6074,7 @@ public class LucideIconInfo
             LucideIconKind.ListCollapse => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["ocavue"],
+                Contributors = ["ocavue", "jguddas"],
                 Categories = ["text"],
                 Tags = ["items", "collapse", "expand", "details", "disclosure", "show", "hide", "toggle", "accordion", "more", "less", "fold", "unfold"],
             },
