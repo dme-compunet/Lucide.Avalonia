@@ -2018,6 +2018,13 @@ public class LucideIconInfo
                 Categories = ["transportation", "travel", "nature"],
                 Tags = ["trailer", "tow", "camping", "campsite", "mobile home", "holiday", "nomadic", "wilderness", "outdoors"],
             },
+            LucideIconKind.CardSim => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["danielbayley", "karsa-mistmere"],
+                Categories = ["connectivity", "communication", "multimedia", "devices"],
+                Tags = ["cellphone", "smartphone", "mobile", "network", "cellular", "service", "provider", "signal", "coverage", "disk", "data", "format", "storage", "flash", "digital", "contacts", "phone book", "contractual", "circuit board", "chip"],
+            },
             LucideIconKind.Carrot => new LucideIconInfo
             {
                 Kind = kind,
@@ -5181,6 +5188,13 @@ public class LucideIconInfo
                 Contributors = ["danielbayley", "chessurisme"],
                 Categories = ["text", "layout", "math"],
                 Tags = ["table", "rows", "columns", "data", "blocks", "plot", "land", "geometry", "measure", "size", "width", "height", "distance", "surface area", "square meter", "acre"],
+            },
+            LucideIconKind.Grid3x2 => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["qubrat"],
+                Categories = ["text", "math", "layout", "design"],
+                Tags = ["table", "rows", "columns", "blocks", "plot", "land", "geometry", "measure", "size", "width", "height", "distance", "surface area", "square meter", "acre", "window"],
             },
             LucideIconKind.Grid3x3 => new LucideIconInfo
             {
