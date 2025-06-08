@@ -10512,7 +10512,7 @@ public class LucideIconInfo
             LucideIconKind.Trophy => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["karsa-mistmere"],
+                Contributors = ["karsa-mistmere", "jguddas"],
                 Categories = ["sports", "gaming"],
                 Tags = ["prize", "sports", "winner", "achievement", "award", "champion", "celebration", "victory"],
             },
