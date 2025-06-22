@@ -877,13 +877,6 @@ public class LucideIconInfo
                 Categories = ["shopping", "finance"],
                 Tags = ["discount", "offer", "sale", "voucher", "tag", "monetization", "marketing", "finance", "financial", "exchange", "transaction", "payment", "€"],
             },
-            LucideIconKind.BadgeHelp => new LucideIconInfo
-            {
-                Kind = kind,
-                Contributors = ["karsa-mistmere", "jguddas"],
-                Categories = ["accessibility", "social"],
-                Tags = ["verified", "unverified", "help"],
-            },
             LucideIconKind.BadgeIndianRupee => new LucideIconInfo
             {
                 Kind = kind,
@@ -932,6 +925,13 @@ public class LucideIconInfo
                 Contributors = ["danielbayley"],
                 Categories = ["shopping", "finance"],
                 Tags = ["discount", "offer", "sale", "voucher", "tag", "monetization", "marketing", "finance", "financial", "exchange", "transaction", "payment", "british", "gbp", "£"],
+            },
+            LucideIconKind.BadgeQuestionMark => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["karsa-mistmere", "jguddas"],
+                Categories = ["accessibility", "social", "shapes"],
+                Tags = ["verified", "unverified", "help"],
             },
             LucideIconKind.BadgeRussianRuble => new LucideIconInfo
             {
@@ -1016,6 +1016,13 @@ public class LucideIconInfo
                 Contributors = ["danielbayley"],
                 Categories = ["shopping"],
                 Tags = ["scan", "checkout", "till", "cart", "transaction", "purchase", "buy", "product", "packaging", "retail", "consumer"],
+            },
+            LucideIconKind.Barrel => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["karsa-mistmere", "jamiemlaw"],
+                Categories = ["food-beverage", "navigation"],
+                Tags = ["keg", "drum", "tank", "wine", "beer", "oak", "wood", "firkin", "hogshead", "kilderkin", "barrique", "solera", "aging", "whiskey", "brewery", "distillery", "winery", "vineyard"],
             },
             LucideIconKind.Baseline => new LucideIconInfo
             {
@@ -1286,9 +1293,9 @@ public class LucideIconInfo
             LucideIconKind.Blocks => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["danielbayley"],
-                Categories = ["development", "shapes"],
-                Tags = ["addon", "plugin", "integration", "extension", "package", "build", "stack", "toys", "kids", "children", "learning"],
+                Contributors = ["danielbayley", "jguddas"],
+                Categories = ["development", "layout", "shapes"],
+                Tags = ["addon", "plugin", "integration", "extension", "package", "build", "stack", "toys", "kids", "children", "learning", "squares", "corner"],
             },
             LucideIconKind.Bluetooth => new LucideIconInfo
             {
@@ -2606,13 +2613,6 @@ public class LucideIconInfo
                 Categories = ["transportation", "sports", "science"],
                 Tags = ["dashboard", "dial", "meter", "speed", "pressure", "measure", "level"],
             },
-            LucideIconKind.CircleHelp => new LucideIconInfo
-            {
-                Kind = kind,
-                Contributors = ["danbovey", "colebemis", "csandman", "ericfennis", "danielbayley"],
-                Categories = ["accessibility", "text", "notifications"],
-                Tags = ["question mark"],
-            },
             LucideIconKind.CircleMinus => new LucideIconInfo
             {
                 Kind = kind,
@@ -2682,6 +2682,13 @@ public class LucideIconInfo
                 Contributors = ["danielbayley", "jguddas"],
                 Categories = ["connectivity"],
                 Tags = ["on", "off", "device", "switch", "toggle", "binary", "boolean", "reboot", "restart", "button", "keyboard", "troubleshoot"],
+            },
+            LucideIconKind.CircleQuestionMark => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["danbovey", "colebemis", "csandman", "ericfennis", "danielbayley"],
+                Categories = ["accessibility", "text", "notifications"],
+                Tags = ["question mark"],
             },
             LucideIconKind.CircleSlash => new LucideIconInfo
             {
@@ -3761,6 +3768,13 @@ public class LucideIconInfo
                 Categories = ["tools", "home", "devices"],
                 Tags = ["power", "bit", "head", "hole", "diy", "toolbox", "build", "construction"],
             },
+            LucideIconKind.Drone => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["bernatfortet", "shopped", "karsa-mistmere", "jguddas"],
+                Categories = ["transportation", "devices"],
+                Tags = ["quadcopter", "uav", "aerial", "flight", "flying", "technology", "airborne", "robotics"],
+            },
             LucideIconKind.Droplet => new LucideIconInfo
             {
                 Kind = kind,
@@ -3841,7 +3855,7 @@ public class LucideIconInfo
             LucideIconKind.Egg => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["mittalyashu", "Andreto", "ericfennis"],
+                Contributors = ["mittalyashu", "Andreto", "ericfennis", "jamiemlaw"],
                 Categories = ["food-beverage", "animals"],
                 Tags = ["bird", "chicken", "nest", "hatch", "shell", "incubate", "soft boiled", "hard", "breakfast", "brunch", "morning", "easter"],
             },
@@ -3855,7 +3869,7 @@ public class LucideIconInfo
             LucideIconKind.EggOff => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["karsa-mistmere", "ericfennis"],
+                Contributors = ["karsa-mistmere", "ericfennis", "jamiemlaw"],
                 Categories = ["food-beverage"],
                 Tags = ["egg free", "vegan", "hatched", "bad egg"],
             },
@@ -4272,7 +4286,7 @@ public class LucideIconInfo
                 Categories = ["files"],
                 Tags = ["add", "create", "new", "document"],
             },
-            LucideIconKind.FileQuestion => new LucideIconInfo
+            LucideIconKind.FileQuestionMark => new LucideIconInfo
             {
                 Kind = kind,
                 Contributors = ["karsa-mistmere", "danielbayley", "jguddas"],
@@ -4971,6 +4985,13 @@ public class LucideIconInfo
                 Contributors = ["connium", "ericfennis"],
                 Categories = ["gaming", "development", "finance"],
                 Tags = ["diamond", "crystal", "ruby", "jewellery", "price", "special", "present", "gift", "ring", "wedding", "proposal", "marriage", "rubygems"],
+            },
+            LucideIconKind.GeorgianLari => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["kivicode"],
+                Categories = ["finance"],
+                Tags = ["currency", "money", "payment"],
             },
             LucideIconKind.Ghost => new LucideIconInfo
             {
@@ -6043,6 +6064,13 @@ public class LucideIconInfo
                 Categories = ["photography"],
                 Tags = ["lights"],
             },
+            LucideIconKind.LineSquiggle => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["chessurisme", "jguddas"],
+                Categories = ["shapes", "math", "design"],
+                Tags = ["line", "snakes", "annotate", "curve", "doodle", "stroke", "pen", "tool", "gesture", "draw", "wave", "art", "road"],
+            },
             LucideIconKind.Link => new LucideIconInfo
             {
                 Kind = kind,
@@ -6344,7 +6372,7 @@ public class LucideIconInfo
                 Categories = ["mail"],
                 Tags = ["email", "message", "letter", "add", "create", "new", "compose"],
             },
-            LucideIconKind.MailQuestion => new LucideIconInfo
+            LucideIconKind.MailQuestionMark => new LucideIconInfo
             {
                 Kind = kind,
                 Contributors = ["karsa-mistmere"],
@@ -6617,7 +6645,7 @@ public class LucideIconInfo
                 Categories = ["social"],
                 Tags = ["comment", "chat", "conversation", "dialog", "feedback", "speech bubble", "add"],
             },
-            LucideIconKind.MessageCircleQuestion => new LucideIconInfo
+            LucideIconKind.MessageCircleQuestionMark => new LucideIconInfo
             {
                 Kind = kind,
                 Contributors = ["danielbayley"],
@@ -8885,7 +8913,7 @@ public class LucideIconInfo
                 Categories = ["account", "security", "development", "gaming", "medical"],
                 Tags = ["cybersecurity", "secure", "safety", "protection", "guardian", "armored", "armoured", "defense", "defence", "defender", "block", "threat", "prevention", "antivirus", "vigilance", "vigilant", "detection", "scan", "strength", "strong", "tough", "invincible", "invincibility", "invulnerable", "undamaged", "extra", "added", "professional", "enterprise", "full", "maximum", "upgraded", "ultra", "activate", "enable", "audit", "admin", "verification", "crest", "medic", "+"],
             },
-            LucideIconKind.ShieldQuestion => new LucideIconInfo
+            LucideIconKind.ShieldQuestionMark => new LucideIconInfo
             {
                 Kind = kind,
                 Contributors = ["danielbayley", "jguddas", "karsa-mistmere"],
@@ -9269,6 +9297,13 @@ public class LucideIconInfo
                 Contributors = ["karsa-mistmere", "ericfennis"],
                 Categories = ["development", "arrows"],
                 Tags = ["break", "disband", "divide", "separate", "branch", "disunite"],
+            },
+            LucideIconKind.Spool => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["karsa-mistmere"],
+                Categories = ["communication", "tools", "social"],
+                Tags = ["bobbin", "spindle", "yarn", "thread", "string", "sewing", "needlework"],
             },
             LucideIconKind.SprayCan => new LucideIconInfo
             {
@@ -9752,6 +9787,13 @@ public class LucideIconInfo
                 Contributors = ["jguddas"],
                 Categories = ["shapes"],
                 Tags = ["shape"],
+            },
+            LucideIconKind.SquircleDashed => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["jguddas", "aramsoneson"],
+                Categories = ["development", "shapes", "design"],
+                Tags = ["shape", "pending", "progress", "issue", "draft", "code", "coding", "version control"],
             },
             LucideIconKind.Squirrel => new LucideIconInfo
             {
@@ -11138,6 +11180,13 @@ public class LucideIconInfo
                 Contributors = ["colebemis", "ericfennis", "jguddas"],
                 Categories = ["connectivity", "devices"],
                 Tags = ["connection", "signal", "wireless"],
+            },
+            LucideIconKind.WifiCog => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["colebemis", "ericfennis", "jguddas", "karsa-mistmere", "luisdlopera"],
+                Categories = ["connectivity", "devices", "files"],
+                Tags = ["connection", "signal", "wireless", "directory", "settings", "control", "preferences", "cog", "edit", "gear"],
             },
             LucideIconKind.WifiHigh => new LucideIconInfo
             {
