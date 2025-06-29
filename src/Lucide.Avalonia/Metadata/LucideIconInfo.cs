@@ -1591,6 +1591,13 @@ public class LucideIconInfo
                 Categories = ["development", "social"],
                 Tags = ["robot", "ai", "chat", "assistant"],
             },
+            LucideIconKind.BottleWine => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["jamiemlaw"],
+                Categories = ["food-beverage"],
+                Tags = ["alcohol", "drink", "glass", "goblet", "chalice", "vineyard", "winery", "red", "white", "rose", "dry", "sparkling", "bar", "party", "nightclub", "nightlife", "sommelier", "restaurant", "dinner", "meal"],
+            },
             LucideIconKind.BowArrow => new LucideIconInfo
             {
                 Kind = kind,
@@ -1846,7 +1853,7 @@ public class LucideIconInfo
             LucideIconKind.CalendarClock => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["karsa-mistmere", "ericfennis"],
+                Contributors = ["karsa-mistmere", "ericfennis", "jamiemlaw"],
                 Categories = ["time"],
                 Tags = ["date", "day", "month", "year", "event", "clock", "hour"],
             },
@@ -2847,7 +2854,7 @@ public class LucideIconInfo
             LucideIconKind.Clock1 => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["wojtekmaj", "ericfennis", "danielbayley"],
+                Contributors = ["wojtekmaj", "ericfennis", "danielbayley", "jamiemlaw"],
                 Categories = ["time"],
                 Tags = ["time", "watch", "alarm"],
             },
@@ -2861,7 +2868,7 @@ public class LucideIconInfo
             LucideIconKind.Clock11 => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["wojtekmaj", "ericfennis", "danielbayley"],
+                Contributors = ["wojtekmaj", "ericfennis", "danielbayley", "jamiemlaw"],
                 Categories = ["time"],
                 Tags = ["time", "watch", "alarm"],
             },
@@ -2882,7 +2889,7 @@ public class LucideIconInfo
             LucideIconKind.Clock3 => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["wojtekmaj", "ericfennis", "danielbayley"],
+                Contributors = ["wojtekmaj", "ericfennis", "danielbayley", "jamiemlaw"],
                 Categories = ["time"],
                 Tags = ["time", "watch", "alarm"],
             },
@@ -2896,21 +2903,21 @@ public class LucideIconInfo
             LucideIconKind.Clock5 => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["wojtekmaj", "ericfennis", "danielbayley"],
+                Contributors = ["wojtekmaj", "ericfennis", "danielbayley", "jamiemlaw"],
                 Categories = ["time"],
                 Tags = ["time", "watch", "alarm"],
             },
             LucideIconKind.Clock6 => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["wojtekmaj", "ericfennis", "danielbayley"],
+                Contributors = ["wojtekmaj", "ericfennis", "danielbayley", "jamiemlaw"],
                 Categories = ["time"],
                 Tags = ["time", "watch", "alarm"],
             },
             LucideIconKind.Clock7 => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["wojtekmaj", "ericfennis", "danielbayley"],
+                Contributors = ["wojtekmaj", "ericfennis", "danielbayley", "jamiemlaw"],
                 Categories = ["time"],
                 Tags = ["time", "watch", "alarm"],
             },
@@ -2924,14 +2931,14 @@ public class LucideIconInfo
             LucideIconKind.Clock9 => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["wojtekmaj", "ericfennis", "danielbayley"],
+                Contributors = ["wojtekmaj", "ericfennis", "danielbayley", "jamiemlaw"],
                 Categories = ["time"],
                 Tags = ["time", "watch", "alarm"],
             },
             LucideIconKind.ClockAlert => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["colebemis", "jguddas"],
+                Contributors = ["colebemis", "jguddas", "jamiemlaw"],
                 Categories = ["time"],
                 Tags = ["time", "watch", "alarm", "warning", "wrong"],
             },
@@ -3533,7 +3540,7 @@ public class LucideIconInfo
             LucideIconKind.Dessert => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["danielbayley"],
+                Contributors = ["danielbayley", "jguddas"],
                 Categories = ["food-beverage"],
                 Tags = ["pudding", "christmas", "xmas", "custard", "iced bun", "icing", "fondant", "cake", "ice cream", "gelato", "sundae", "scoop", "dollop", "sugar", "food", "sweet"],
             },
@@ -4121,7 +4128,7 @@ public class LucideIconInfo
             LucideIconKind.FileClock => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["karsa-mistmere", "danielbayley"],
+                Contributors = ["karsa-mistmere", "danielbayley", "jamiemlaw"],
                 Categories = ["files", "time"],
                 Tags = ["history", "log", "clock"],
             },
@@ -4485,16 +4492,16 @@ public class LucideIconInfo
             LucideIconKind.Flag => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["colebemis", "ericfennis"],
+                Contributors = ["colebemis", "ericfennis", "jamiemlaw"],
                 Categories = ["account", "social"],
-                Tags = ["report"],
+                Tags = ["report", "marker", "notification", "warning", "milestone", "goal", "notice", "signal", "attention", "banner"],
             },
             LucideIconKind.FlagOff => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["karsa-mistmere", "cyberalien", "ericfennis"],
+                Contributors = ["karsa-mistmere", "cyberalien", "ericfennis", "jamiemlaw"],
                 Categories = ["account", "social"],
-                Tags = ["unflag"],
+                Tags = ["unflag", "unmark", "report", "marker", "notification", "warning", "milestone", "goal", "notice", "signal", "attention", "banner"],
             },
             LucideIconKind.FlagTriangleLeft => new LucideIconInfo
             {
@@ -4646,7 +4653,7 @@ public class LucideIconInfo
             LucideIconKind.FolderClock => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["karsa-mistmere", "jguddas"],
+                Contributors = ["karsa-mistmere", "jguddas", "jamiemlaw"],
                 Categories = ["files", "time"],
                 Tags = ["history", "directory", "clock"],
             },
@@ -6557,16 +6564,16 @@ public class LucideIconInfo
             LucideIconKind.Megaphone => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["mittalyashu", "ericfennis"],
+                Contributors = ["jamiemlaw"],
                 Categories = ["multimedia", "notifications"],
-                Tags = ["advertisement", "attention", "alert", "notification"],
+                Tags = ["advertisement", "announcement", "attention", "alert", "loudspeaker", "megaphone", "notification"],
             },
             LucideIconKind.MegaphoneOff => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["karsa-mistmere"],
+                Contributors = ["jamiemlaw"],
                 Categories = ["multimedia", "notifications"],
-                Tags = ["advertisement", "attention", "alert", "notification", "disable", "silent"],
+                Tags = ["advertisement", "announcement", "attention", "alert", "loudspeaker", "megaphone", "notification", "disable", "silent"],
             },
             LucideIconKind.Meh => new LucideIconInfo
             {
@@ -9014,7 +9021,7 @@ public class LucideIconInfo
             LucideIconKind.Shrub => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["karsa-mistmere", "ericfennis"],
+                Contributors = ["karsa-mistmere", "ericfennis", "jguddas"],
                 Categories = ["nature"],
                 Tags = ["forest", "undergrowth", "park", "nature"],
             },
@@ -9924,9 +9931,9 @@ public class LucideIconInfo
             LucideIconKind.SunMoon => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["itsjavi", "mittalyashu", "karsa-mistmere"],
+                Contributors = ["zishankadri", "jamiemlaw", "jguddas"],
                 Categories = ["accessibility"],
-                Tags = ["night", "dark", "light", "moon", "sun", "brightness", "theme", "auto theme", "system theme", "appearance"],
+                Tags = ["dark", "light", "moon", "sun", "brightness", "theme", "auto theme", "system theme", "appearance"],
             },
             LucideIconKind.SunSnow => new LucideIconInfo
             {
@@ -10376,6 +10383,13 @@ public class LucideIconInfo
                 Categories = ["devices", "home"],
                 Tags = ["toilet", "potty", "bathroom", "washroom"],
             },
+            LucideIconKind.ToolCase => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["AlexNaskida", "karsa-mistmere", "jguddas"],
+                Categories = ["tools", "development", "home"],
+                Tags = ["tools", "maintenance", "repair"],
+            },
             LucideIconKind.Tornado => new LucideIconInfo
             {
                 Kind = kind,
@@ -10472,7 +10486,7 @@ public class LucideIconInfo
                 Kind = kind,
                 Contributors = ["colebemis", "csandman", "ericfennis", "karsa-mistmere"],
                 Categories = ["files", "mail"],
-                Tags = ["garbage", "delete", "remove", "bin"],
+                Tags = ["empty", "deletion", "cleanup", "junk", "clear", "garbage", "delete", "remove", "bin", "waste", "recycle", "discard", "binoculars", "rubbish"],
             },
             LucideIconKind.Trash2 => new LucideIconInfo
             {
@@ -10915,6 +10929,13 @@ public class LucideIconInfo
                 Categories = ["security", "travel", "home"],
                 Tags = ["safe", "lockbox", "deposit", "locker", "coffer", "strongbox", "safety", "secure", "storage", "valuables", "bank"],
             },
+            LucideIconKind.VectorSquare => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["chessurisme", "jguddas"],
+                Categories = ["shapes", "math", "design", "tools"],
+                Tags = ["shape", "geometry", "art", "width", "height", "size", "calculate", "measure", "select", "graphics", "box"],
+            },
             LucideIconKind.Vegan => new LucideIconInfo
             {
                 Kind = kind,
@@ -11100,7 +11121,7 @@ public class LucideIconInfo
             LucideIconKind.Watch => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["colebemis", "csandman", "ericfennis", "karsa-mistmere"],
+                Contributors = ["colebemis", "csandman", "ericfennis", "karsa-mistmere", "jamiemlaw"],
                 Categories = ["time"],
                 Tags = ["clock", "time"],
             },
