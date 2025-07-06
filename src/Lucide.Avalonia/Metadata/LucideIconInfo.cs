@@ -947,6 +947,13 @@ public class LucideIconInfo
                 Categories = ["shopping", "finance"],
                 Tags = ["discount", "offer", "sale", "voucher", "tag", "monetization", "marketing", "finance", "financial", "exchange", "transaction", "payment", "chf", "₣"],
             },
+            LucideIconKind.BadgeTurkishLira => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["danielbayley", "jamiemlaw"],
+                Categories = ["shopping", "finance"],
+                Tags = ["discount", "offer", "sale", "voucher", "tag", "monetization", "marketing", "finance", "financial", "exchange", "transaction", "payment", "try", "₺"],
+            },
             LucideIconKind.BadgeX => new LucideIconInfo
             {
                 Kind = kind,
@@ -1636,9 +1643,9 @@ public class LucideIconInfo
             LucideIconKind.Brain => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["karsa-mistmere", "jguddas", "it-is-not"],
+                Contributors = ["karsa-mistmere", "jguddas", "it-is-not", "jamiemlaw"],
                 Categories = ["medical", "science"],
-                Tags = ["medical", "mind", "intellect", "cerebral", "consciousness", "genius", "artificial intelligence", "ai"],
+                Tags = ["medical", "mind", "mental", "intellect", "cerebral", "consciousness", "genius", "artificial intelligence", "ai", "think", "thought", "insight", "intelligent", "smart"],
             },
             LucideIconKind.BrainCircuit => new LucideIconInfo
             {
@@ -1776,7 +1783,7 @@ public class LucideIconInfo
             LucideIconKind.Cable => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["danielbayley"],
+                Contributors = ["danielbayley", "jguddas"],
                 Categories = ["connectivity", "devices", "multimedia"],
                 Tags = ["cord", "wire", "connector", "connection", "link", "signal", "console", "computer", "equipment", "electricity", "energy", "electronics", "recharging", "charger", "power", "supply", "disconnected", "unplugged", "plugs", "interface", "input", "output", "audio video", "av", "rca", "scart", "tv", "television", "optical"],
             },
@@ -7936,7 +7943,7 @@ public class LucideIconInfo
             LucideIconKind.Podcast => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["iiaishwarya", "ericfennis", "karsa-mistmere"],
+                Contributors = ["iiaishwarya", "ericfennis", "karsa-mistmere", "jguddas"],
                 Categories = ["multimedia", "social"],
                 Tags = ["audio", "music", "mic", "talk", "voice", "subscribe", "subscription", "stream"],
             },
@@ -8198,6 +8205,13 @@ public class LucideIconInfo
                 Contributors = ["danielbayley"],
                 Categories = ["finance", "travel"],
                 Tags = ["bill", "voucher", "slip", "check", "counterfoil", "details", "small print", "terms", "conditions", "contract"],
+            },
+            LucideIconKind.ReceiptTurkishLira => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["danielbayley", "jamiemlaw"],
+                Categories = ["finance", "travel"],
+                Tags = ["bill", "voucher", "slip", "check", "counterfoil", "currency", "try", "₺"],
             },
             LucideIconKind.RectangleCircle => new LucideIconInfo
             {
@@ -10599,6 +10613,13 @@ public class LucideIconInfo
                 Contributors = ["colebemis", "ahtohbi4", "ericfennis", "Andreto", "csandman", "karsa-mistmere", "danielbayley", "jordan808", "LienMaas", "jguddas", "AnnaSasDev"],
                 Categories = ["transportation"],
                 Tags = ["delivery", "van", "shipping", "haulage", "lorry", "electric"],
+            },
+            LucideIconKind.TurkishLira => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["jamiemlaw"],
+                Categories = ["finance"],
+                Tags = ["currency", "money", "payment"],
             },
             LucideIconKind.Turtle => new LucideIconInfo
             {
