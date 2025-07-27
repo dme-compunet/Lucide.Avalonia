@@ -971,7 +971,7 @@ public class LucideIconInfo
             LucideIconKind.Ban => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["danielbayley"],
+                Contributors = ["colebemis"],
                 Categories = ["account"],
                 Tags = ["cancel", "no", "stop", "forbidden", "prohibited", "error", "incorrect", "mistake", "wrong", "failure", "circle", "slash", "null", "void"],
             },
@@ -7642,7 +7642,7 @@ public class LucideIconInfo
             LucideIconKind.PenLine => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["colebemis", "csandman", "mittalyashu", "ericfennis", "karsa-mistmere"],
+                Contributors = ["colebemis", "csandman", "mittalyashu", "ericfennis", "karsa-mistmere", "jguddas"],
                 Categories = ["text", "design", "tools"],
                 Tags = ["pencil", "change", "create", "draw", "writer", "writing", "biro", "ink", "marker", "felt tip", "stationery", "artist"],
             },
@@ -7670,7 +7670,7 @@ public class LucideIconInfo
             LucideIconKind.PencilLine => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["colebemis", "csandman", "mittalyashu", "ericfennis", "danielbayley", "karsa-mistmere"],
+                Contributors = ["colebemis", "csandman", "mittalyashu", "ericfennis", "danielbayley", "karsa-mistmere", "jguddas"],
                 Categories = ["text", "design", "tools"],
                 Tags = ["pencil", "change", "create", "draw", "sketch", "draft", "writer", "writing", "biro", "ink", "marker", "felt tip", "stationery", "artist"],
             },
@@ -11257,6 +11257,13 @@ public class LucideIconInfo
                 Contributors = ["karsa-mistmere", "jguddas", "danielbayley", "luisdlopera"],
                 Categories = ["connectivity", "devices"],
                 Tags = ["edit", "wifi", "pen", "change", "network"],
+            },
+            LucideIconKind.WifiSync => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["colebemis", "ericfennis", "jguddas", "danielbayley", "luisdlopera"],
+                Categories = ["connectivity", "devices"],
+                Tags = ["connection", "signal", "wireless", "synchronize", "reconnect", "reset", "restart"],
             },
             LucideIconKind.WifiZero => new LucideIconInfo
             {

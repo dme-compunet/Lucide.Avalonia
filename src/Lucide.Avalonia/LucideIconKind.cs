@@ -1601,6 +1601,7 @@ public enum LucideIconKind
     WifiLow,
     WifiOff,
     WifiPen,
+    WifiSync,
     WifiZero,
     Wind,
     WindArrowDown,
