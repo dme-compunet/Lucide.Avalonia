@@ -434,7 +434,7 @@ public class LucideIconInfo
                 Kind = kind,
                 Contributors = ["karsa-mistmere"],
                 Categories = ["food-beverage"],
-                Tags = ["fruit", "food"],
+                Tags = ["fruit", "food", "healthy", "snack", "nutrition", "fresh", "produce", "grocery", "organic", "harvest", "vitamin", "red", "green", "juicy", "sweet", "tart", "bite", "orchard", "plant", "core", "raw", "diet"],
             },
             LucideIconKind.Archive => new LucideIconInfo
             {
@@ -1675,6 +1675,13 @@ public class LucideIconInfo
                 Categories = ["security", "home", "connectivity"],
                 Tags = ["firewall", "security", "bricks", "mortar", "cement", "materials", "construction", "builder", "labourer", "quantity surveyor", "blocks", "stone", "campfire", "camping", "wilderness", "outdoors", "lit", "warmth", "wood", "twigs", "sticks"],
             },
+            LucideIconKind.BrickWallShield => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["karsa-mistmere", "danielbayley"],
+                Categories = ["security", "home", "connectivity"],
+                Tags = ["firewall", "security", "bricks", "mortar", "cement", "materials", "construction", "builder", "labourer", "quantity surveyor", "blocks", "stone", "cybersecurity", "secure", "safety", "protection", "guardian", "armored", "armoured", "defense", "defence", "defender", "block", "threat", "prevention", "antivirus", "vigilance", "vigilant", "detection", "scan", "find", "strength", "strong", "tough", "invincible", "invincibility", "invulnerable", "undamaged", "audit", "admin", "verification", "crest", "bravery", "knight", "foot soldier", "infantry", "trooper", "pawn", "battle", "war", "military", "army", "cadet", "scout"],
+            },
             LucideIconKind.Briefcase => new LucideIconInfo
             {
                 Kind = kind,
@@ -2724,6 +2731,13 @@ public class LucideIconInfo
                 Contributors = ["jamiemlaw"],
                 Categories = ["shapes", "medical"],
                 Tags = ["shape", "bullet", "gender", "genderless"],
+            },
+            LucideIconKind.CircleStar => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["karsa-mistmere"],
+                Categories = ["sports", "gaming"],
+                Tags = ["badge", "medal", "honour", "decoration", "order", "pin", "laurel", "trophy", "medallion", "insignia", "bronze", "silver", "gold"],
             },
             LucideIconKind.CircleStop => new LucideIconInfo
             {
@@ -5840,6 +5854,13 @@ public class LucideIconInfo
                 Categories = ["charts", "development", "design"],
                 Tags = ["projects", "manage", "overview", "board", "tickets", "issues", "roadmap", "plan", "intentions", "productivity", "work", "agile", "code", "coding"],
             },
+            LucideIconKind.Kayak => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["jguddas", "jpjacobpadilla"],
+                Categories = ["transportation"],
+                Tags = ["kayak", "boat", "paddle", "water", "sport", "recreation", "adventure", "outdoors", "equipment", "lake", "ocean"],
+            },
             LucideIconKind.Key => new LucideIconInfo
             {
                 Kind = kind,
@@ -6858,7 +6879,7 @@ public class LucideIconInfo
             LucideIconKind.MicOff => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["colebemis", "csandman", "ericfennis", "karsa-mistmere"],
+                Contributors = ["colebemis", "csandman", "ericfennis", "karsa-mistmere", "LieOnLion"],
                 Categories = ["devices", "communication", "connectivity", "multimedia"],
                 Tags = ["record", "sound", "mute", "microphone"],
             },
@@ -9294,7 +9315,7 @@ public class LucideIconInfo
             LucideIconKind.Spade => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["danielbayley", "karsa-mistmere"],
+                Contributors = ["danielbayley", "karsa-mistmere", "jguddas"],
                 Categories = ["shapes", "gaming"],
                 Tags = ["shape", "suit", "playing", "cards"],
             },
@@ -9801,6 +9822,13 @@ public class LucideIconInfo
                 Contributors = ["danielbayley"],
                 Categories = ["text", "files", "development"],
                 Tags = ["versions", "clone", "copy", "duplicate", "multiple", "revisions", "version control", "backup", "history"],
+            },
+            LucideIconKind.SquareStar => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["karsa-mistmere"],
+                Categories = ["sports", "gaming"],
+                Tags = ["badge", "medal", "honour", "decoration", "order", "pin", "laurel", "trophy", "medallion", "insignia", "bronze", "silver", "gold"],
             },
             LucideIconKind.SquareStop => new LucideIconInfo
             {
