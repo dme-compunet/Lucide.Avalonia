@@ -1972,9 +1972,9 @@ public class LucideIconInfo
             LucideIconKind.Camera => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["colebemis", "lscheibel", "ericfennis"],
+                Contributors = ["colebemis", "lscheibel", "ericfennis", "karsa-mistmere"],
                 Categories = ["photography", "devices", "communication"],
-                Tags = ["photo", "webcam", "video"],
+                Tags = ["photography", "lens", "focus", "capture", "shot", "visual", "image", "device", "equipment", "photo", "webcam", "video"],
             },
             LucideIconKind.CameraOff => new LucideIconInfo
             {
@@ -2424,7 +2424,7 @@ public class LucideIconInfo
                 Categories = ["arrows"],
                 Tags = ["expand", "unfold", "vertical"],
             },
-            LucideIconKind.Chrome => new LucideIconInfo
+            LucideIconKind.Chromium => new LucideIconInfo
             {
                 Kind = kind,
                 Contributors = ["colebemis", "ericfennis"],
@@ -7530,9 +7530,9 @@ public class LucideIconInfo
             LucideIconKind.PanelBottomDashed => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["danielbayley", "ericfennis"],
+                Contributors = ["danielbayley", "ericfennis", "irvineacosta"],
                 Categories = ["layout"],
-                Tags = ["drawer", "dock", "show", "reveal"],
+                Tags = ["drawer", "dock", "show", "reveal", "padding", "margin", "guide", "layout", "bleed"],
             },
             LucideIconKind.PanelBottomOpen => new LucideIconInfo
             {
@@ -7558,9 +7558,9 @@ public class LucideIconInfo
             LucideIconKind.PanelLeftDashed => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["danielbayley", "ericfennis"],
+                Contributors = ["danielbayley", "ericfennis", "irvineacosta"],
                 Categories = ["layout"],
-                Tags = ["sidebar", "primary", "drawer", "show", "reveal"],
+                Tags = ["sidebar", "primary", "drawer", "show", "reveal", "padding", "margin", "guide", "layout", "bleed"],
             },
             LucideIconKind.PanelLeftOpen => new LucideIconInfo
             {
@@ -7568,6 +7568,13 @@ public class LucideIconInfo
                 Contributors = ["mittalyashu", "danielbayley", "ericfennis"],
                 Categories = ["layout", "arrows"],
                 Tags = ["primary", "drawer", "show", "reveal", "chevron", "right", ">"],
+            },
+            LucideIconKind.PanelLeftRightDashed => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["danielbayley", "ericfennis", "irvineacosta"],
+                Categories = ["layout"],
+                Tags = ["sidebar", "primary", "drawer", "show", "reveal", "padding", "margin", "guide", "layout", "vertical", "bleed"],
             },
             LucideIconKind.PanelRight => new LucideIconInfo
             {
@@ -7586,9 +7593,9 @@ public class LucideIconInfo
             LucideIconKind.PanelRightDashed => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["danielbayley", "ericfennis"],
+                Contributors = ["danielbayley", "ericfennis", "irvineacosta"],
                 Categories = ["layout"],
-                Tags = ["sidebar", "secondary", "drawer", "show", "reveal"],
+                Tags = ["sidebar", "secondary", "drawer", "show", "reveal", "padding", "margin", "guide", "layout", "bleed"],
             },
             LucideIconKind.PanelRightOpen => new LucideIconInfo
             {
@@ -7604,6 +7611,13 @@ public class LucideIconInfo
                 Categories = ["layout", "design", "development"],
                 Tags = ["drawer", "browser", "webpage"],
             },
+            LucideIconKind.PanelTopBottomDashed => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["danielbayley", "ericfennis", "irvineacosta"],
+                Categories = ["layout"],
+                Tags = ["sidebar", "primary", "drawer", "show", "reveal", "padding", "margin", "guide", "layout", "horizontal", "bleed"],
+            },
             LucideIconKind.PanelTopClose => new LucideIconInfo
             {
                 Kind = kind,
@@ -7614,9 +7628,9 @@ public class LucideIconInfo
             LucideIconKind.PanelTopDashed => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["danielbayley", "ericfennis"],
+                Contributors = ["danielbayley", "ericfennis", "irvineacosta"],
                 Categories = ["layout"],
-                Tags = ["menu bar", "drawer", "show", "reveal"],
+                Tags = ["menu bar", "drawer", "show", "reveal", "padding", "margin", "guide", "layout", "bleed"],
             },
             LucideIconKind.PanelTopOpen => new LucideIconInfo
             {
@@ -8471,6 +8485,13 @@ public class LucideIconInfo
                 Contributors = ["karsa-mistmere"],
                 Categories = ["navigation"],
                 Tags = ["attraction", "entertainment", "amusement park", "theme park", "funfair"],
+            },
+            LucideIconKind.Rose => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["danielbayley", "jguddas", "jamiemlaw", "mittalyashu"],
+                Categories = ["nature", "seasons", "sustainability", "home", "social"],
+                Tags = ["roses", "thorns", "petals", "plant", "stem", "leaves", "spring", "bloom", "blossom", "gardening", "botanical", "flora", "florist", "bouquet", "bunch", "gift", "date", "romance", "romantic", "valentines day", "special occasion"],
             },
             LucideIconKind.Rotate3d => new LucideIconInfo
             {
@@ -11212,9 +11233,9 @@ public class LucideIconInfo
             LucideIconKind.Wallpaper => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["karsa-mistmere", "ericfennis"],
+                Contributors = ["karsa-mistmere", "ericfennis", "jguddas"],
                 Categories = ["account", "devices"],
-                Tags = ["cover", "lock screen"],
+                Tags = ["background", "texture", "image", "art", "design", "visual", "decor", "pattern", "screen", "cover", "lock screen"],
             },
             LucideIconKind.Wand => new LucideIconInfo
             {
