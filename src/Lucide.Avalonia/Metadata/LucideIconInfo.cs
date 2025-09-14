@@ -3943,6 +3943,13 @@ public class LucideIconInfo
                 Categories = ["finance"],
                 Tags = ["currency", "money", "payment"],
             },
+            LucideIconKind.EvCharger => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["UsamaKhan", "karsa-mistmere", "ericfennis", "colebemis", "csandman", "johnletey"],
+                Categories = ["transportation", "navigation"],
+                Tags = ["electric", "charger", "station", "vehicle", "fast", "plug", "ev", "power", "electricity", "energy", "accumulator", "charge"],
+            },
             LucideIconKind.Expand => new LucideIconInfo
             {
                 Kind = kind,
@@ -4527,9 +4534,9 @@ public class LucideIconInfo
             LucideIconKind.Flame => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["ericfennis", "johnletey", "csandman"],
+                Contributors = ["ericfennis", "johnletey", "csandman", "jamiemlaw"],
                 Categories = ["weather", "social", "gaming"],
-                Tags = ["fire", "lit", "burning", "spark", "embers", "smoke", "firefighter", "fireman", "department", "brigade", "station", "emergency"],
+                Tags = ["heat", "burn", "light", "glow", "ignite", "passion", "ember", "fire", "lit", "burning", "spark", "embers", "smoke", "firefighter", "fireman", "department", "brigade", "station", "emergency"],
             },
             LucideIconKind.FlameKindling => new LucideIconInfo
             {
@@ -4898,7 +4905,7 @@ public class LucideIconInfo
             LucideIconKind.Fuel => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["karsa-mistmere", "ericfennis"],
+                Contributors = ["karsa-mistmere", "ericfennis", "UsamaKhan"],
                 Categories = ["transportation", "navigation"],
                 Tags = ["filling-station", "gas", "petrol", "tank"],
             },
@@ -5608,6 +5615,13 @@ public class LucideIconInfo
                 Contributors = ["jguddas", "karsa-mistmere"],
                 Categories = ["buildings", "home"],
                 Tags = ["home", "living", "building", "residence", "architecture"],
+            },
+            LucideIconKind.HouseHeart => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["danielbayley", "jguddas", "karsa-mistmere"],
+                Categories = ["home", "buildings", "medical"],
+                Tags = ["home sweet home", "abode", "building", "residence", "healthy living", "lifestyle"],
             },
             LucideIconKind.HousePlug => new LucideIconInfo
             {
@@ -9665,7 +9679,7 @@ public class LucideIconInfo
             LucideIconKind.SquareM => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["danielbayley"],
+                Contributors = ["danielbayley", "jguddas", "karsa-mistmere"],
                 Categories = ["transportation", "navigation"],
                 Tags = ["metro", "subway", "underground", "track", "line"],
             },
