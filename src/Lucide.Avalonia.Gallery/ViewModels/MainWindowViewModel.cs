@@ -14,7 +14,7 @@ public partial class MainWindowViewModel : ReactiveViewModel
 
     public partial double Size { get; set; } = 24;
 
-    public partial float StrokeWidth { get; set; } = 1.5f;
+    public partial float StrokeWidth { get; set; } = 1.8f;
 
     public partial string? SearchText { get; set; }
 

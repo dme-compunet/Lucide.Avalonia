@@ -11,7 +11,7 @@ public class LucideIcon : Control
         TextElement.ForegroundProperty.AddOwner<LucideIcon>();
 
     public static readonly StyledProperty<double> StrokeWidthProperty =
-        AvaloniaProperty.Register<LucideIcon, double>(nameof(StrokeWidth), 1.5);
+        AvaloniaProperty.Register<LucideIcon, double>(nameof(StrokeWidth), 1.8);
 
     public static readonly StyledProperty<LucideIconKind?> KindProperty =
         AvaloniaProperty.Register<LucideIcon, LucideIconKind?>(nameof(Kind));
