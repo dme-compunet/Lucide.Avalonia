@@ -93,14 +93,17 @@ public class LucideIcon : Control
             return;
         }
 
-        AddScale(context);
-
+        // Draw transparent area for pointer interaction
         context.DrawRectangle(Brushes.Transparent, null, new Rect(0, 0, Bounds.Width, Bounds.Height));
 
+        // Push scale transform for icon size
+        PushScalingTransform(context);
+
+        // Draw the icon after scaling
         context.DrawGeometry(null, _stroke, _geometry);
     }
 
-    private void AddScale(DrawingContext context)
+    private void PushScalingTransform(DrawingContext context)
     {
         if (IsSet(SizeProperty))
         {
