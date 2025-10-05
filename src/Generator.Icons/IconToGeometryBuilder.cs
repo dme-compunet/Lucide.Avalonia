@@ -42,6 +42,8 @@ public class IconToGeometryBuilder
                     _geometries = entries.ToFrozenDictionary(x => x.Key, x => x.Geometry);
                 }
 
+                public static string GetGeometryData(LucideIconKind icon) => _geometries[icon];
+
                 public static Geometry CreateGeometry(LucideIconKind icon)
                 {
                     if (_geometryCache.TryGetValue(icon, out var geometry))
@@ -49,7 +51,7 @@ public class IconToGeometryBuilder
                         return geometry;
                     }
 
-                    geometry = Geometry.Parse(_geometries[icon]);
+                    geometry = Geometry.Parse(GetGeometryData(icon));
 
                     _geometryCache.Add(icon, geometry);
 
