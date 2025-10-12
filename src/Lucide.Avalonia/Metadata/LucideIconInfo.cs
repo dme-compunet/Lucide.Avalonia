@@ -7051,6 +7051,13 @@ public class LucideIconInfo
                 Categories = ["accessibility", "weather"],
                 Tags = ["dark", "night", "star"],
             },
+            LucideIconKind.Motorbike => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["jamiemlaw"],
+                Categories = ["transportation"],
+                Tags = ["moto", "motorcycle", "transport", "vehicle", "drive", "ride", "trip", "race", "racing", "journey", "delivery"],
+            },
             LucideIconKind.Mountain => new LucideIconInfo
             {
                 Kind = kind,
@@ -8272,7 +8279,7 @@ public class LucideIconInfo
             LucideIconKind.ReceiptText => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["danielbayley"],
+                Contributors = ["danielbayley", "jguddas", "karsa-mistmere"],
                 Categories = ["finance", "travel"],
                 Tags = ["bill", "voucher", "slip", "check", "counterfoil", "details", "small print", "terms", "conditions", "contract"],
             },

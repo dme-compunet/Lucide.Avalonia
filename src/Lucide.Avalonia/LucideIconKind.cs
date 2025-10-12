@@ -1000,6 +1000,7 @@ public enum LucideIconKind
     MonitorX,
     Moon,
     MoonStar,
+    Motorbike,
     Mountain,
     MountainSnow,
     Mouse,
