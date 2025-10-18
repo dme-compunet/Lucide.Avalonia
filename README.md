@@ -11,7 +11,7 @@ Implementation of the [Lucide icon library](https://github.com/lucide-icons/luci
 
 - No styles include required.
 - No xmlns declaration required.
-- Automatic daily updates and releases.
+- Automatic weekly updates and releases.
 
 ---
 
