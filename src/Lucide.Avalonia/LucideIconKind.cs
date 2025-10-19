@@ -987,6 +987,7 @@ public enum LucideIconKind
     Minus,
     Monitor,
     MonitorCheck,
+    MonitorCloud,
     MonitorCog,
     MonitorDot,
     MonitorDown,

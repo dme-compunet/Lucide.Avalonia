@@ -6960,6 +6960,13 @@ public class LucideIconInfo
                 Categories = ["connectivity", "devices"],
                 Tags = ["tv", "screen", "display", "desktop", "running", "active", "virtual machine", "vm"],
             },
+            LucideIconKind.MonitorCloud => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["colebemis", "ericfennis", "danielbayley", "jguddas", "karsa-mistmere"],
+                Categories = ["connectivity", "devices", "development"],
+                Tags = ["virtual machine", "virtual desktop", "vm", "vdi", "computing", "remote work", "monitoring", "infrastructure", "software as a service", "saas", "workstation", "environment", "tv", "screen", "display"],
+            },
             LucideIconKind.MonitorCog => new LucideIconInfo
             {
                 Kind = kind,
