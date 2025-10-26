@@ -1248,6 +1248,13 @@ public class LucideIconInfo
                 Categories = ["animals"],
                 Tags = ["peace", "freedom", "wing", "avian", "tweet"],
             },
+            LucideIconKind.Birdhouse => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["hieu-onefold", "karsa-mistmere"],
+                Categories = ["nature", "animals", "navigation", "home"],
+                Tags = ["birdhouse", "bird", "garden", "home", "house", "woodwork"],
+            },
             LucideIconKind.Bitcoin => new LucideIconInfo
             {
                 Kind = kind,
@@ -4985,6 +4992,13 @@ public class LucideIconInfo
                 Contributors = ["ericfennis", "csandman", "johnletey"],
                 Categories = ["gaming", "devices"],
                 Tags = ["console"],
+            },
+            LucideIconKind.GamepadDirectional => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["felipeajzanetti", "jguddas"],
+                Categories = ["gaming", "devices"],
+                Tags = ["direction", "arrow", "controller", "navigation", "button", "move", "pointer", "arrowhead", "console", "game", "gaming"],
             },
             LucideIconKind.Gauge => new LucideIconInfo
             {
