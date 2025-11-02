@@ -2963,6 +2963,13 @@ public class LucideIconInfo
                 Categories = ["time"],
                 Tags = ["time", "watch", "alarm", "sort", "order", "ascending", "descending", "increasing", "decreasing", "rising", "falling"],
             },
+            LucideIconKind.ClockCheck => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["colebemis", "jguddas", "karsa-mistmere"],
+                Categories = ["time"],
+                Tags = ["time", "watch", "alarm"],
+            },
             LucideIconKind.ClockFading => new LucideIconInfo
             {
                 Kind = kind,
@@ -4062,20 +4069,6 @@ public class LucideIconInfo
                 Categories = ["files"],
                 Tags = ["zip", "package", "archive"],
             },
-            LucideIconKind.FileAudio => new LucideIconInfo
-            {
-                Kind = kind,
-                Contributors = ["karsa-mistmere", "danielbayley"],
-                Categories = ["files"],
-                Tags = ["music", "audio", "sound", "headphones"],
-            },
-            LucideIconKind.FileAudio2 => new LucideIconInfo
-            {
-                Kind = kind,
-                Contributors = ["karsa-mistmere", "danielbayley"],
-                Categories = ["files"],
-                Tags = ["music", "audio", "sound", "headphones"],
-            },
             LucideIconKind.FileAxis3d => new LucideIconInfo
             {
                 Kind = kind,
@@ -4090,19 +4083,26 @@ public class LucideIconInfo
                 Categories = ["files"],
                 Tags = ["award", "achievement", "badge", "rosette", "prize", "winner"],
             },
-            LucideIconKind.FileBadge2 => new LucideIconInfo
-            {
-                Kind = kind,
-                Contributors = ["karsa-mistmere", "danielbayley", "jguddas"],
-                Categories = ["files"],
-                Tags = ["award", "achievement", "badge", "rosette", "prize", "winner"],
-            },
             LucideIconKind.FileBox => new LucideIconInfo
             {
                 Kind = kind,
                 Contributors = ["karsa-mistmere", "danielbayley"],
                 Categories = ["files"],
                 Tags = ["box", "package", "model"],
+            },
+            LucideIconKind.FileBraces => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["karsa-mistmere", "danielbayley"],
+                Categories = ["files", "development"],
+                Tags = ["code", "json", "curly braces", "curly brackets"],
+            },
+            LucideIconKind.FileBracesCorner => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["karsa-mistmere", "danielbayley"],
+                Categories = ["files", "development"],
+                Tags = ["code", "json", "curly braces", "curly brackets"],
             },
             LucideIconKind.FileChartColumn => new LucideIconInfo
             {
@@ -4139,7 +4139,7 @@ public class LucideIconInfo
                 Categories = ["files"],
                 Tags = ["done", "document", "todo", "tick", "complete", "task"],
             },
-            LucideIconKind.FileCheck2 => new LucideIconInfo
+            LucideIconKind.FileCheckCorner => new LucideIconInfo
             {
                 Kind = kind,
                 Contributors = ["ericfennis", "karsa-mistmere", "danielbayley"],
@@ -4160,7 +4160,7 @@ public class LucideIconInfo
                 Categories = ["files", "development"],
                 Tags = ["script", "document", "gist", "html", "xml", "property list", "plist"],
             },
-            LucideIconKind.FileCode2 => new LucideIconInfo
+            LucideIconKind.FileCodeCorner => new LucideIconInfo
             {
                 Kind = kind,
                 Contributors = ["danielbayley", "ericfennis", "karsa-mistmere"],
@@ -4195,6 +4195,20 @@ public class LucideIconInfo
                 Categories = ["files", "arrows"],
                 Tags = ["download", "import", "export"],
             },
+            LucideIconKind.FileExclamationPoint => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["karsa-mistmere", "danielbayley"],
+                Categories = ["files", "notifications"],
+                Tags = ["hidden", "warning", "alert", "danger", "protected", "exclamation mark"],
+            },
+            LucideIconKind.FileHeadphone => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["karsa-mistmere", "danielbayley"],
+                Categories = ["files"],
+                Tags = ["music", "audio", "sound", "headphones"],
+            },
             LucideIconKind.FileHeart => new LucideIconInfo
             {
                 Kind = kind,
@@ -4216,28 +4230,7 @@ public class LucideIconInfo
                 Categories = ["files", "arrows"],
                 Tags = ["document"],
             },
-            LucideIconKind.FileJson => new LucideIconInfo
-            {
-                Kind = kind,
-                Contributors = ["karsa-mistmere", "danielbayley"],
-                Categories = ["files", "development"],
-                Tags = ["code", "json", "curly braces", "curly brackets"],
-            },
-            LucideIconKind.FileJson2 => new LucideIconInfo
-            {
-                Kind = kind,
-                Contributors = ["karsa-mistmere", "danielbayley"],
-                Categories = ["files", "development"],
-                Tags = ["code", "json", "curly braces", "curly brackets"],
-            },
             LucideIconKind.FileKey => new LucideIconInfo
-            {
-                Kind = kind,
-                Contributors = ["karsa-mistmere", "danielbayley"],
-                Categories = ["files", "security"],
-                Tags = ["key", "private", "public", "security"],
-            },
-            LucideIconKind.FileKey2 => new LucideIconInfo
             {
                 Kind = kind,
                 Contributors = ["karsa-mistmere", "danielbayley"],
@@ -4251,13 +4244,6 @@ public class LucideIconInfo
                 Categories = ["files", "security"],
                 Tags = ["lock", "password", "security"],
             },
-            LucideIconKind.FileLock2 => new LucideIconInfo
-            {
-                Kind = kind,
-                Contributors = ["karsa-mistmere", "ericfennis", "danielbayley"],
-                Categories = ["files", "security"],
-                Tags = ["lock", "password", "security"],
-            },
             LucideIconKind.FileMinus => new LucideIconInfo
             {
                 Kind = kind,
@@ -4265,7 +4251,7 @@ public class LucideIconInfo
                 Categories = ["files"],
                 Tags = ["delete", "remove", "erase", "document"],
             },
-            LucideIconKind.FileMinus2 => new LucideIconInfo
+            LucideIconKind.FileMinusCorner => new LucideIconInfo
             {
                 Kind = kind,
                 Contributors = ["ericfennis", "karsa-mistmere", "danielbayley"],
@@ -4314,7 +4300,7 @@ public class LucideIconInfo
                 Categories = ["files"],
                 Tags = ["add", "create", "new", "document"],
             },
-            LucideIconKind.FilePlus2 => new LucideIconInfo
+            LucideIconKind.FilePlusCorner => new LucideIconInfo
             {
                 Kind = kind,
                 Contributors = ["ericfennis", "karsa-mistmere", "danielbayley"],
@@ -4342,12 +4328,19 @@ public class LucideIconInfo
                 Categories = ["files"],
                 Tags = ["lost", "document", "find", "browser", "lens"],
             },
-            LucideIconKind.FileSearch2 => new LucideIconInfo
+            LucideIconKind.FileSearchCorner => new LucideIconInfo
             {
                 Kind = kind,
                 Contributors = ["karsa-mistmere", "danielbayley"],
                 Categories = ["files"],
                 Tags = ["lost", "document", "find", "browser", "lens"],
+            },
+            LucideIconKind.FileSignal => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["karsa-mistmere", "ericfennis", "danielbayley"],
+                Categories = ["files"],
+                Tags = ["audio", "music", "volume"],
             },
             LucideIconKind.FileSliders => new LucideIconInfo
             {
@@ -4398,7 +4391,7 @@ public class LucideIconInfo
                 Categories = ["files", "text"],
                 Tags = ["font", "text", "typography", "type"],
             },
-            LucideIconKind.FileType2 => new LucideIconInfo
+            LucideIconKind.FileTypeCorner => new LucideIconInfo
             {
                 Kind = kind,
                 Contributors = ["karsa-mistmere", "danielbayley"],
@@ -4433,20 +4426,6 @@ public class LucideIconInfo
                 Categories = ["files"],
                 Tags = ["audio", "music", "volume"],
             },
-            LucideIconKind.FileVolume2 => new LucideIconInfo
-            {
-                Kind = kind,
-                Contributors = ["karsa-mistmere", "ericfennis", "danielbayley"],
-                Categories = ["files"],
-                Tags = ["audio", "music", "volume"],
-            },
-            LucideIconKind.FileWarning => new LucideIconInfo
-            {
-                Kind = kind,
-                Contributors = ["karsa-mistmere", "danielbayley"],
-                Categories = ["files", "notifications"],
-                Tags = ["hidden", "warning", "alert", "danger", "protected", "exclamation mark"],
-            },
             LucideIconKind.FileX => new LucideIconInfo
             {
                 Kind = kind,
@@ -4454,7 +4433,7 @@ public class LucideIconInfo
                 Categories = ["files"],
                 Tags = ["lost", "delete", "remove", "document"],
             },
-            LucideIconKind.FileX2 => new LucideIconInfo
+            LucideIconKind.FileXCorner => new LucideIconInfo
             {
                 Kind = kind,
                 Contributors = ["ericfennis", "danielbayley"],
@@ -5047,14 +5026,21 @@ public class LucideIconInfo
                 Kind = kind,
                 Contributors = ["colebemis", "csandman", "ericfennis"],
                 Categories = ["development"],
-                Tags = ["code", "version control"],
+                Tags = ["code", "version control", "vcs", "repository"],
+            },
+            LucideIconKind.GitBranchMinus => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["joris-gallot"],
+                Categories = ["development"],
+                Tags = ["code", "version control", "vcs", "repository", "delete", "remove", "-"],
             },
             LucideIconKind.GitBranchPlus => new LucideIconInfo
             {
                 Kind = kind,
                 Contributors = ["mittalyashu", "ericfennis"],
                 Categories = ["development"],
-                Tags = ["add", "create", "+"],
+                Tags = ["code", "version control", "vcs", "repository", "add", "create", "+"],
             },
             LucideIconKind.GitCommitHorizontal => new LucideIconInfo
             {
@@ -5566,6 +5552,13 @@ public class LucideIconInfo
                 Contributors = ["danielbayley"],
                 Categories = ["home", "devices", "travel"],
                 Tags = ["heating", "warmth", "comfort", "fire", "stove", "electric", "electronics", "amenities"],
+            },
+            LucideIconKind.Helicopter => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["liloudreams", "ericfennis", "jamiemlaw"],
+                Categories = ["transportation", "travel"],
+                Tags = ["transport", "flying", "rotor", "aviation", "helipad", "gear", "flyer", "technology", "helicopter", "aircraft", "vehicle"],
             },
             LucideIconKind.Hexagon => new LucideIconInfo
             {
@@ -7121,6 +7114,13 @@ public class LucideIconInfo
                 Categories = ["arrows", "cursors"],
                 Tags = ["click", "select"],
             },
+            LucideIconKind.MousePointer2Off => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["ericfennis", "csandman", "domingasp", "jguddas"],
+                Categories = ["arrows", "cursors"],
+                Tags = ["pointer", "mouse", "cursor", "off", "disable", "arrow", "navigation", "selection", "select", "click", "no-click", "interaction"],
+            },
             LucideIconKind.MousePointerBan => new LucideIconInfo
             {
                 Kind = kind,
@@ -8615,7 +8615,7 @@ public class LucideIconInfo
             LucideIconKind.RulerDimensionLine => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["jguddas"],
+                Contributors = ["jguddas", "karsa-mistmere"],
                 Categories = ["tools", "design", "layout"],
                 Tags = ["measurements", "centimeters", "cm", "millimeters", "mm", "metre", "foot", "feet", "inches", "units", "size", "length", "width", "height", "dimensions", "depth", "breadth", "extent", "stationery"],
             },
@@ -9339,6 +9339,13 @@ public class LucideIconInfo
                 Contributors = ["karsa-mistmere"],
                 Categories = ["home"],
                 Tags = ["armchair", "furniture", "leisure", "lounge", "loveseat", "couch"],
+            },
+            LucideIconKind.SolarPanel => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["UsamaKhan", "jguddas", "karsa-mistmere"],
+                Categories = ["home", "science", "sustainability", "weather"],
+                Tags = ["solar panel", "solar", "panel", "sun", "energy", "electricity", "light"],
             },
             LucideIconKind.Soup => new LucideIconInfo
             {
