@@ -2298,6 +2298,48 @@ public class LucideIconInfo
                 Categories = ["food-beverage"],
                 Tags = ["fruit", "food"],
             },
+            LucideIconKind.ChessBishop => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["karsa-mistmere"],
+                Categories = ["gaming", "emoji"],
+                Tags = ["mitre", "miter", "piece", "board game", "religion"],
+            },
+            LucideIconKind.ChessKing => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["karsa-mistmere"],
+                Categories = ["gaming", "emoji"],
+                Tags = ["ruler", "crown", "piece", "board game", "stalemate"],
+            },
+            LucideIconKind.ChessKnight => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["karsa-mistmere"],
+                Categories = ["gaming", "emoji"],
+                Tags = ["piece", "horse", "board game"],
+            },
+            LucideIconKind.ChessPawn => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["karsa-mistmere"],
+                Categories = ["gaming", "emoji"],
+                Tags = ["piece", "board game"],
+            },
+            LucideIconKind.ChessQueen => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["karsa-mistmere"],
+                Categories = ["gaming", "emoji"],
+                Tags = ["ruler", "crown", "piece", "board game", "stalemate"],
+            },
+            LucideIconKind.ChessRook => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["karsa-mistmere", "jguddas"],
+                Categories = ["gaming", "emoji"],
+                Tags = ["castle", "piece", "board game"],
+            },
             LucideIconKind.ChevronDown => new LucideIconInfo
             {
                 Kind = kind,
