@@ -85,6 +85,26 @@ public class LucideIcon : Control
     protected override Size MeasureOverride(Size availableSize) => GetIconSize();
 
     protected override Size ArrangeOverride(Size finalSize) => GetIconSize();
+    
+    protected override void OnAttachedToVisualTree(VisualTreeAttachmentEventArgs e)
+    {
+        base.OnAttachedToVisualTree(e);
+        
+        var brush = Foreground;
+        var width = StrokeWidth;
+
+        if (_stroke == null && brush != null)
+        {
+            _stroke = new Pen(brush, width, null, PenLineCap.Round, PenLineJoin.Round);
+        }
+
+        var kind = Kind;
+
+        if (_geometry == null && kind != null)
+        {
+            _geometry = IconToGeometry.CreateGeometry(kind.Value);
+        }
+    }
 
     public override void Render(DrawingContext context)
     {
