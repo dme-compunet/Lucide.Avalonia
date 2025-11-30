@@ -1472,6 +1472,13 @@ public class LucideIconInfo
                 Categories = ["development", "text", "gaming"],
                 Tags = ["code", "coding", "version control", "git", "repository", "remove", "delete", "read", "write", "author", "publish", "inform", "graduate", "re-educate", "study", "learn", "research", "knowledge", "improve", "upgrade", "level up"],
             },
+            LucideIconKind.BookSearch => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["karsa-mistmere", "Muhammad-Aqib-Bashir"],
+                Categories = ["text", "development", "gaming"],
+                Tags = ["reading", "library", "study", "education", "research", "knowledge", "discover", "browsing", "lookup", "finding", "scanning"],
+            },
             LucideIconKind.BookText => new LucideIconInfo
             {
                 Kind = kind,
@@ -4908,6 +4915,13 @@ public class LucideIconInfo
                 Contributors = ["ericfennis"],
                 Categories = ["transportation"],
                 Tags = ["vehicle", "transport", "logistics"],
+            },
+            LucideIconKind.Form => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["jguddas", "karsa-mistmere"],
+                Categories = ["development"],
+                Tags = ["document", "page", "file", "layout", "paper", "stub", "formality", "structure", "template", "inputs", "design", "components"],
             },
             LucideIconKind.Forward => new LucideIconInfo
             {
@@ -8741,9 +8755,9 @@ public class LucideIconInfo
             LucideIconKind.Scale => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["mittalyashu", "ericfennis", "karsa-mistmere"],
-                Categories = ["navigation"],
-                Tags = ["balance", "legal", "license", "right", "rule", "law"],
+                Contributors = ["mittalyashu", "ericfennis", "karsa-mistmere", "jamiemlaw"],
+                Categories = ["navigation", "science", "finance"],
+                Tags = ["balance", "legal", "license", "right", "rule", "law", "justice", "weight", "measure", "compare", "judge", "fair", "ethics", "decision"],
             },
             LucideIconKind.Scale3d => new LucideIconInfo
             {
@@ -8842,6 +8856,13 @@ public class LucideIconInfo
                 Contributors = ["danielbayley"],
                 Categories = ["design", "tools"],
                 Tags = ["cut here", "along", "snip", "chop", "stationery", "crafts", "instructions", "diagram"],
+            },
+            LucideIconKind.Scooter => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["Ahmed-Dghaies", "karsa-mistmere"],
+                Categories = ["transportation"],
+                Tags = ["vehicle", "drive", "trip", "journey", "transport", "electric", "ride", "urban", "commute", "speed"],
             },
             LucideIconKind.ScreenShare => new LucideIconInfo
             {
@@ -11390,6 +11411,20 @@ public class LucideIconInfo
                 Contributors = ["karsa-mistmere", "ericfennis"],
                 Categories = ["weather", "navigation", "multimedia", "sustainability"],
                 Tags = ["water", "sea", "sound", "hertz", "wavelength", "vibrate"],
+            },
+            LucideIconKind.WavesArrowDown => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["karsa-mistmere", "ericfennis", "danielbayley"],
+                Categories = ["weather", "sustainability"],
+                Tags = ["water", "sea", "level", "sound", "hertz", "wavelength", "vibrate", "low", "tide", "ocean", "rising", "down", "falling"],
+            },
+            LucideIconKind.WavesArrowUp => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["karsa-mistmere", "ericfennis", "danielbayley"],
+                Categories = ["weather", "sustainability"],
+                Tags = ["water", "sea", "level", "sound", "hertz", "wavelength", "vibrate", "high", "tide", "ocean", "rising"],
             },
             LucideIconKind.WavesLadder => new LucideIconInfo
             {
