@@ -1720,7 +1720,7 @@ public class LucideIconInfo
             LucideIconKind.Bubbles => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["vqh2602", "jguddas"],
+                Contributors = ["vqh2602", "jguddas", "karsa-mistmere"],
                 Categories = ["weather"],
                 Tags = ["water", "cleaning", "soap", "bath", "hygiene", "freshness", "wash", "foam", "cleanliness", "shampoo", "purity", "splash", "lightness", "airy", "relaxation", "spa", "bubbly", "fluid", "floating", "drop"],
             },
@@ -4590,16 +4590,16 @@ public class LucideIconInfo
             LucideIconKind.Flashlight => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["csandman", "ericfennis"],
+                Contributors = ["csandman", "ericfennis", "jamiemlaw"],
                 Categories = ["photography", "devices"],
-                Tags = ["torch"],
+                Tags = ["torch", "light", "beam", "emergency", "safety", "tool", "bright"],
             },
             LucideIconKind.FlashlightOff => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["Andreto", "ericfennis", "karsa-mistmere", "csandman"],
+                Contributors = ["Andreto", "ericfennis", "karsa-mistmere", "csandman", "jamiemlaw"],
                 Categories = ["photography", "devices"],
-                Tags = ["torch"],
+                Tags = ["torch", "light", "beam", "emergency", "safety", "tool", "bright"],
             },
             LucideIconKind.FlaskConical => new LucideIconInfo
             {
@@ -8064,7 +8064,7 @@ public class LucideIconInfo
                 Kind = kind,
                 Contributors = ["ericfennis", "danielbayley", "karsa-mistmere"],
                 Categories = ["devices", "development"],
-                Tags = ["electricity", "energy", "electronics", "socket", "outlet"],
+                Tags = ["electricity", "energy", "electronics", "socket", "outlet", "power", "voltage", "current", "charger"],
             },
             LucideIconKind.Plug2 => new LucideIconInfo
             {
@@ -9637,7 +9637,7 @@ public class LucideIconInfo
             LucideIconKind.SquareBottomDashedScissors => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["danielbayley"],
+                Contributors = ["danielbayley", "eden881"],
                 Categories = ["text", "design", "tools", "files", "development"],
                 Tags = ["cut", "snippet", "chop", "stationery", "crafts"],
             },
@@ -9896,7 +9896,7 @@ public class LucideIconInfo
             LucideIconKind.SquareScissors => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["danielbayley"],
+                Contributors = ["danielbayley", "eden881"],
                 Categories = ["text", "design", "tools", "files", "development"],
                 Tags = ["cut", "snippet", "chop", "stationery", "crafts", "toolbar", "button"],
             },
@@ -10519,7 +10519,7 @@ public class LucideIconInfo
             LucideIconKind.ThermometerSun => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["ericfennis", "karsa-mistmere"],
+                Contributors = ["ericfennis", "karsa-mistmere", "jguddas"],
                 Categories = ["weather"],
                 Tags = ["temperature", "celsius", "fahrenheit", "weather", "warm", "hot"],
             },
@@ -11195,6 +11195,13 @@ public class LucideIconInfo
                 Categories = ["buildings", "home", "sustainability"],
                 Tags = ["electricity", "energy", "transmission line", "telegraph pole", "power lines", "phone"],
             },
+            LucideIconKind.Van => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["Ahmed-Dghaies", "karsa-mistmere"],
+                Categories = ["transportation"],
+                Tags = ["minivan", "cart", "wagon", "truck", "lorry", "trailer", "camper", "vehicle", "drive", "trip", "journey", "van", "transport", "carriage", "delivery", "travel"],
+            },
             LucideIconKind.Variable => new LucideIconInfo
             {
                 Kind = kind,
@@ -11467,6 +11474,13 @@ public class LucideIconInfo
                 Contributors = ["danielbayley", "karsa-mistmere"],
                 Categories = ["math"],
                 Tags = ["mass", "heavy", "lead", "metal", "measure", "geometry", "scales", "balance"],
+            },
+            LucideIconKind.WeightTilde => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["nathan-de-pachtere"],
+                Categories = ["math"],
+                Tags = ["measure", "scale", "estimate", "load", "balance", "size", "measurement", "quantity", "mass"],
             },
             LucideIconKind.Wheat => new LucideIconInfo
             {
