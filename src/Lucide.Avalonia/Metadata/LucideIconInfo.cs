@@ -940,6 +940,13 @@ public class LucideIconInfo
                 Categories = ["transportation", "travel"],
                 Tags = ["baggage", "luggage", "travel", "cart", "trolley", "suitcase"],
             },
+            LucideIconKind.Balloon => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["peteruithoven"],
+                Categories = ["emoji"],
+                Tags = ["party", "festival", "congratulations", "celebration", "decoration", "colorful", "floating", "fun", "birthday", "event", "entertainment"],
+            },
             LucideIconKind.Ban => new LucideIconInfo
             {
                 Kind = kind,
@@ -1713,7 +1720,7 @@ public class LucideIconInfo
             LucideIconKind.BrushCleaning => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["karsa-mistmere"],
+                Contributors = ["karsa-mistmere", "jguddas"],
                 Categories = ["home", "tools", "design"],
                 Tags = ["cleaning", "utensil", "housekeeping", "tool", "sweeping", "scrubbing", "hygiene", "maintenance", "household", "cleaner", "chores", "equipment", "sanitation", "bristles", "handle", "home care", "sanitize", "purify", "wash", "disinfect", "sterilize", "scrub", "polish", "decontaminate", "wipe", "spotless", "remove", "empty", "erase", "purge", "eliminate"],
             },
@@ -2001,6 +2008,13 @@ public class LucideIconInfo
             {
                 Kind = kind,
                 Contributors = ["jguddas", "karsa-mistmere"],
+                Categories = ["nature"],
+                Tags = ["cannabis", "weed", "leaf"],
+            },
+            LucideIconKind.CannabisOff => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["nickveles"],
                 Categories = ["nature"],
                 Tags = ["cannabis", "weed", "leaf"],
             },
@@ -2711,6 +2725,13 @@ public class LucideIconInfo
                 Categories = ["social", "finance", "shopping", "math"],
                 Tags = ["verified", "unverified", "sale", "discount", "offer", "marketing", "sticker", "price tag"],
             },
+            LucideIconKind.CirclePile => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["colebemis", "nathan-de-pachtere"],
+                Categories = ["shapes"],
+                Tags = ["off", "zero", "record", "shape", "circle-pile", "circle", "pile", "stack", "layer", "structure", "form", "group", "collection", "stock", "inventory", "materials", "warehouse"],
+            },
             LucideIconKind.CirclePlay => new LucideIconInfo
             {
                 Kind = kind,
@@ -3061,6 +3082,13 @@ public class LucideIconInfo
                 Categories = ["development"],
                 Tags = ["weather", "danger", "warning", "alert", "error", "sync", "network", "exclamation"],
             },
+            LucideIconKind.CloudBackup => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["ericfennis", "jguddas", "danielbayley", "karsa-mistmere"],
+                Categories = ["arrows", "files"],
+                Tags = ["storage", "memory", "bytes", "servers", "backup", "timemachine", "rotate", "synchronize", "synchronise", "refresh", "reconnect", "transfer", "data", "security", "upload", "save", "remote", "safety"],
+            },
             LucideIconKind.CloudCheck => new LucideIconInfo
             {
                 Kind = kind,
@@ -3165,6 +3193,13 @@ public class LucideIconInfo
                 Contributors = ["it-is-not", "karsa-mistmere"],
                 Categories = ["weather"],
                 Tags = ["weather", "partly", "rainfall"],
+            },
+            LucideIconKind.CloudSync => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["colebemis", "csandman", "ericfennis", "karsa-mistmere"],
+                Categories = ["arrows", "files"],
+                Tags = ["synchronize", "synchronise", "refresh", "reconnect", "transfer", "backup", "storage", "upload", "download", "connection", "network", "data"],
             },
             LucideIconKind.CloudUpload => new LucideIconInfo
             {
@@ -4545,6 +4580,13 @@ public class LucideIconInfo
                 Categories = ["food-beverage", "animals"],
                 Tags = ["dish", "restaurant", "course", "meal", "seafood", "pet", "sea", "marine"],
             },
+            LucideIconKind.FishingHook => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["7ender", "jguddas", "karsa-mistmere", "jamiemlaw"],
+                Categories = ["sports", "travel"],
+                Tags = ["sea", "boating", "angler", "bait", "reel", "tackle", "marine", "outdoors", "fish", "fishing", "hook", "sports", "travel"],
+            },
             LucideIconKind.Flag => new LucideIconInfo
             {
                 Kind = kind,
@@ -5483,6 +5525,13 @@ public class LucideIconInfo
                 Categories = ["weather"],
                 Tags = ["mist", "fog"],
             },
+            LucideIconKind.Hd => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["ahtohbi4", "jamiemlaw", "karsa-mistmere", "jguddas"],
+                Categories = ["devices", "multimedia"],
+                Tags = ["tv", "resolution", "video", "high definition", "720p", "1080p"],
+            },
             LucideIconKind.HdmiPort => new LucideIconInfo
             {
                 Kind = kind,
@@ -6063,6 +6112,13 @@ public class LucideIconInfo
                 Contributors = ["danielbayley", "jguddas"],
                 Categories = ["design", "layout"],
                 Tags = ["stack", "pile", "pages", "sheets", "paperwork", "copies", "copy", "duplicate", "double", "shortcuts"],
+            },
+            LucideIconKind.LayersPlus => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["juanisidoro", "karsa-mistmere"],
+                Categories = ["design", "layout"],
+                Tags = ["stack", "layers", "add", "new", "increase", "create", "positive", "copy", "upgrade"],
             },
             LucideIconKind.LayoutDashboard => new LucideIconInfo
             {
@@ -8899,6 +8955,13 @@ public class LucideIconInfo
                 Categories = ["text", "social"],
                 Tags = ["find", "scan", "magnifier", "magnifying glass", "lens"],
             },
+            LucideIconKind.SearchAlert => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["colebemis", "ericfennis", "jguddas", "Veatec22"],
+                Categories = ["text", "social"],
+                Tags = ["find", "scan", "magnifier", "magnifying glass", "stop", "warning", "alert", "error", "anomaly", "lens"],
+            },
             LucideIconKind.SearchCheck => new LucideIconInfo
             {
                 Kind = kind,
@@ -10096,6 +10159,13 @@ public class LucideIconInfo
                 Categories = ["text", "social"],
                 Tags = ["post-it", "comment", "annotation", "reaction", "memo", "reminder", "todo", "task", "idea", "brainstorm", "document", "page", "paper", "sheet", "stationary", "office"],
             },
+            LucideIconKind.Stone => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["Alportan", "karsa-mistmere"],
+                Categories = ["nature"],
+                Tags = ["mineral", "geology", "nature", "solid", "pebble", "crystal", "ore", "hard", "coal", "stone", "rock", "boulder"],
+            },
             LucideIconKind.Store => new LucideIconInfo
             {
                 Kind = kind,
@@ -10589,14 +10659,14 @@ public class LucideIconInfo
             LucideIconKind.Tickets => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["jguddas"],
+                Contributors = ["jguddas", "karsa-mistmere"],
                 Categories = ["travel", "account", "transportation"],
                 Tags = ["trip", "travel", "pass", "entry", "voucher", "event", "concert", "show", "perforated", "dashed"],
             },
             LucideIconKind.TicketsPlane => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["jguddas"],
+                Contributors = ["jguddas", "karsa-mistmere"],
                 Categories = ["transportation", "travel"],
                 Tags = ["plane", "trip", "airplane", "flight", "travel", "fly", "takeoff", "vacation", "passenger", "pass", "check-in", "airport"],
             },
