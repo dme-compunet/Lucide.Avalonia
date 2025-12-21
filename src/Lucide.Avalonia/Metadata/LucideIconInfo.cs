@@ -10719,6 +10719,13 @@ public class LucideIconInfo
                 Categories = ["tools", "development", "home"],
                 Tags = ["tools", "maintenance", "repair"],
             },
+            LucideIconKind.Toolbox => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["karsa-mistmere"],
+                Categories = ["tools", "home"],
+                Tags = ["toolkit", "tools", "trunk", "chest", "box", "storage", "utility", "utilities", "container", "kit", "set", "repair", "fix", "service", "maintenance", "mechanic", "workshop", "construction", "hardware", "equipment", "gear", "handyman", "engineering", "craft", "diy"],
+            },
             LucideIconKind.Tornado => new LucideIconInfo
             {
                 Kind = kind,

@@ -1524,6 +1524,7 @@ public enum LucideIconKind
     ToggleRight,
     Toilet,
     ToolCase,
+    Toolbox,
     Tornado,
     Torus,
     Touchpad,
