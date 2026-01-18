@@ -1531,35 +1531,35 @@ public class LucideIconInfo
             LucideIconKind.Bookmark => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["colebemis", "csandman", "siarie", "ericfennis"],
+                Contributors = ["colebemis", "csandman", "siarie", "ericfennis", "jguddas"],
                 Categories = ["account"],
-                Tags = ["read", "clip", "marker", "tag"],
+                Tags = ["save", "favorite", "mark", "label", "attachment", "file", "stick", "pin", "read", "clip", "marker", "tag"],
             },
             LucideIconKind.BookmarkCheck => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["danielbayley"],
+                Contributors = ["danielbayley", "jguddas"],
                 Categories = ["account"],
                 Tags = ["read", "finished", "complete", "clip", "marker", "tag", "task", "todo"],
             },
             LucideIconKind.BookmarkMinus => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["siarie", "ericfennis"],
+                Contributors = ["siarie", "ericfennis", "jguddas"],
                 Categories = ["account"],
                 Tags = ["delete", "remove"],
             },
             LucideIconKind.BookmarkPlus => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["siarie", "ericfennis"],
+                Contributors = ["siarie", "ericfennis", "jguddas"],
                 Categories = ["account"],
                 Tags = ["add"],
             },
             LucideIconKind.BookmarkX => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["danielbayley"],
+                Contributors = ["danielbayley", "jguddas"],
                 Categories = ["account"],
                 Tags = ["read", "clip", "marker", "tag", "cancel", "close", "delete", "remove", "clear"],
             },
@@ -3211,7 +3211,7 @@ public class LucideIconInfo
             LucideIconKind.Cloudy => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["ericfennis", "karsa-mistmere"],
+                Contributors = ["ericfennis", "karsa-mistmere", "jguddas"],
                 Categories = ["weather"],
                 Tags = ["weather", "clouds"],
             },
@@ -5279,6 +5279,13 @@ public class LucideIconInfo
                 Contributors = ["colebemis", "csandman", "ericfennis", "karsa-mistmere"],
                 Categories = ["security", "development", "devices"],
                 Tags = ["vpn", "private", "privacy", "network", "world", "browser", "security", "encryption", "protection", "connection"],
+            },
+            LucideIconKind.GlobeX => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["karsa-mistmere", "Muhammad-Aqib-Bashir"],
+                Categories = ["connectivity", "devices", "navigation"],
+                Tags = ["globe", "internet", "offline", "disconnected", "network", "connection", "world", "no connection", "network failure", "signal off"],
             },
             LucideIconKind.Goal => new LucideIconInfo
             {
@@ -11520,7 +11527,7 @@ public class LucideIconInfo
             LucideIconKind.Waypoints => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["danielbayley"],
+                Contributors = ["danielbayley", "karsa-mistmere"],
                 Categories = ["security", "account", "navigation", "development", "social"],
                 Tags = ["indirection", "vpn", "virtual private network", "proxy", "connections", "bounce", "reroute", "path", "journey", "planner", "stops", "stations", "shared", "spread", "viral"],
             },

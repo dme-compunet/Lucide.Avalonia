@@ -747,6 +747,7 @@ public enum LucideIconKind
     Glasses,
     Globe,
     GlobeLock,
+    GlobeX,
     Goal,
     Gpu,
     GraduationCap,
