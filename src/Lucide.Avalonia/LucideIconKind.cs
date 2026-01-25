@@ -1170,6 +1170,7 @@ public enum LucideIconKind
     Presentation,
     Printer,
     PrinterCheck,
+    PrinterX,
     Projector,
     Proportions,
     Puzzle,

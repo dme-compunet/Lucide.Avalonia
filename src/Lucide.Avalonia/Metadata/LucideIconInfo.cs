@@ -8241,6 +8241,13 @@ public class LucideIconInfo
                 Categories = ["devices"],
                 Tags = ["fax", "office", "device", "success", "printed"],
             },
+            LucideIconKind.PrinterX => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["colebemis", "csandman", "ericfennis", "jguddas", "lt25106"],
+                Categories = ["devices"],
+                Tags = ["fax", "office", "device", "cross", "cancel", "remove", "error"],
+            },
             LucideIconKind.Projector => new LucideIconInfo
             {
                 Kind = kind,
