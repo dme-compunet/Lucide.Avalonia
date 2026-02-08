@@ -510,6 +510,7 @@ public enum LucideIconKind
     Dam,
     Database,
     DatabaseBackup,
+    DatabaseSearch,
     DatabaseZap,
     DecimalsArrowLeft,
     DecimalsArrowRight,

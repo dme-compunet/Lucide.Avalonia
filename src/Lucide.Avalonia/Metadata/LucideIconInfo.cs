@@ -964,7 +964,7 @@ public class LucideIconInfo
             LucideIconKind.Bandage => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["karsa-mistmere", "jamiemlaw"],
+                Contributors = ["karsa-mistmere", "jamiemlaw", "jguddas"],
                 Categories = ["medical"],
                 Tags = ["plaster", "band-aid", "first aid", "medical", "health", "wound", "injury", "care", "treatment", "healing", "protection", "emergency", "aid", "safety", "patch"],
             },
@@ -1146,7 +1146,7 @@ public class LucideIconInfo
             LucideIconKind.BellDot => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["danielbayley"],
+                Contributors = ["danielbayley", "jguddas"],
                 Categories = ["account", "notifications"],
                 Tags = ["alarm", "notification", "sound", "reminder", "unread"],
             },
@@ -1741,7 +1741,7 @@ public class LucideIconInfo
             LucideIconKind.BugOff => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["danielbayley", "jamiemlaw"],
+                Contributors = ["danielbayley", "jamiemlaw", "jguddas"],
                 Categories = ["development", "animals"],
                 Tags = ["issue", "fixed", "resolved", "testing", "debug", "code", "insect", "kill", "exterminate", "pest control"],
             },
@@ -3621,6 +3621,13 @@ public class LucideIconInfo
                 Categories = ["devices", "arrows", "design", "development", "photography"],
                 Tags = ["storage", "memory", "bytes", "servers", "backup", "timemachine", "rotate", "arrow", "left"],
             },
+            LucideIconKind.DatabaseSearch => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["colebemis", "jguddas", "Spleefies"],
+                Categories = ["devices", "development"],
+                Tags = ["storage", "memory", "container", "tin", "pot", "bytes", "servers"],
+            },
             LucideIconKind.DatabaseZap => new LucideIconInfo
             {
                 Kind = kind,
@@ -5486,9 +5493,9 @@ public class LucideIconInfo
             LucideIconKind.HardDrive => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["colebemis", "csandman", "ericfennis"],
+                Contributors = ["colebemis", "csandman", "ericfennis", "jguddas"],
                 Categories = ["development", "devices"],
-                Tags = ["computer", "server", "memory", "data", "ssd", "disk", "hard disk"],
+                Tags = ["computer", "server", "memory", "data", "ssd", "disk", "hard disk", "storage", "hardware", "backup", "media"],
             },
             LucideIconKind.HardDriveDownload => new LucideIconInfo
             {
@@ -11149,7 +11156,7 @@ public class LucideIconInfo
             LucideIconKind.UserLock => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["anthony-mariotti"],
+                Contributors = ["anthony-mariotti", "jguddas"],
                 Categories = ["account", "security"],
                 Tags = ["person", "lock", "locked", "account", "secure"],
             },
