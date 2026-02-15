@@ -3078,7 +3078,7 @@ public class LucideIconInfo
             LucideIconKind.CloudAlert => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["colebemis", "csandman", "ericfennis", "karsa-mistmere", "lscheibel"],
+                Contributors = ["colebemis", "csandman", "ericfennis", "karsa-mistmere", "lscheibel", "jguddas"],
                 Categories = ["development"],
                 Tags = ["weather", "danger", "warning", "alert", "error", "sync", "network", "exclamation"],
             },
@@ -5136,7 +5136,7 @@ public class LucideIconInfo
             LucideIconKind.GitBranch => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["colebemis", "csandman", "ericfennis"],
+                Contributors = ["colebemis", "csandman", "ericfennis", "jguddas"],
                 Categories = ["development"],
                 Tags = ["code", "version control", "vcs", "repository"],
             },
@@ -11153,6 +11153,13 @@ public class LucideIconInfo
                 Categories = ["account"],
                 Tags = ["settings", "edit", "cog", "gear"],
             },
+            LucideIconKind.UserKey => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["colebemis", "csandman", "ericfennis", "mittalyashu", "karsa-mistmere"],
+                Categories = ["account"],
+                Tags = ["passkey", "password", "login", "authentication", "authorization", "roles", "permissions", "private", "public", "security", "person", "account", "contact"],
+            },
             LucideIconKind.UserLock => new LucideIconInfo
             {
                 Kind = kind,
@@ -11201,6 +11208,13 @@ public class LucideIconInfo
                 Contributors = ["karsa-mistmere", "UsamaKhan"],
                 Categories = ["account"],
                 Tags = ["settings", "edit", "cog", "gear"],
+            },
+            LucideIconKind.UserRoundKey => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["colebemis", "csandman", "ericfennis", "mittalyashu", "karsa-mistmere"],
+                Categories = ["account"],
+                Tags = ["passkey", "password", "login", "authentication", "authorization", "roles", "permissions", "private", "public", "security", "person", "account", "contact"],
             },
             LucideIconKind.UserRoundMinus => new LucideIconInfo
             {
