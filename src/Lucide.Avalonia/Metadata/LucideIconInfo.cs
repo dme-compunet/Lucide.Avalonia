@@ -3575,9 +3575,9 @@ public class LucideIconInfo
             LucideIconKind.Cuboid => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["danielbayley"],
-                Categories = ["shapes", "math", "buildings"],
-                Tags = ["brick", "block", "container", "storage", "geometry", "rectangular", "hexahedron"],
+                Contributors = ["danielbayley", "karsa-mistmere"],
+                Categories = ["shapes", "math", "food-beverage"],
+                Tags = ["brick", "block", "box", "3d", "solid", "volume", "container", "storage", "shipping", "carton", "geometry", "rectangular", "hexahedron", "butter", "tofu", "soap", "cheese", "package", "parcel", "crate"],
             },
             LucideIconKind.CupSoda => new LucideIconInfo
             {
@@ -4593,6 +4593,13 @@ public class LucideIconInfo
                 Contributors = ["7ender", "jguddas", "karsa-mistmere", "jamiemlaw"],
                 Categories = ["sports", "travel"],
                 Tags = ["sea", "boating", "angler", "bait", "reel", "tackle", "marine", "outdoors", "fish", "fishing", "hook", "sports", "travel"],
+            },
+            LucideIconKind.FishingRod => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["7ender", "jguddas", "karsa-mistmere"],
+                Categories = ["sports", "travel"],
+                Tags = ["fishing", "rod", "hobby", "equipment", "reel"],
             },
             LucideIconKind.Flag => new LucideIconInfo
             {
@@ -8461,49 +8468,49 @@ public class LucideIconInfo
             LucideIconKind.ReceiptCent => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["danielbayley"],
+                Contributors = ["danielbayley", "karsa-mistmere"],
                 Categories = ["finance", "travel"],
                 Tags = ["bill", "voucher", "slip", "check", "counterfoil", "currency", "cents", "dollar", "usd", "$", "¢"],
             },
             LucideIconKind.ReceiptEuro => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["danielbayley"],
+                Contributors = ["danielbayley", "karsa-mistmere"],
                 Categories = ["finance", "travel"],
                 Tags = ["bill", "voucher", "slip", "check", "counterfoil", "currency", "€"],
             },
             LucideIconKind.ReceiptIndianRupee => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["danielbayley"],
+                Contributors = ["danielbayley", "karsa-mistmere"],
                 Categories = ["finance", "travel"],
                 Tags = ["bill", "voucher", "slip", "check", "counterfoil", "currency", "inr", "₹"],
             },
             LucideIconKind.ReceiptJapaneseYen => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["karsa-mistmere", "it-is-not", "ericfennis"],
+                Contributors = ["it-is-not", "ericfennis", "karsa-mistmere"],
                 Categories = ["finance", "travel"],
                 Tags = ["bill", "voucher", "slip", "check", "counterfoil", "currency", "jpy", "¥"],
             },
             LucideIconKind.ReceiptPoundSterling => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["danielbayley"],
+                Contributors = ["danielbayley", "karsa-mistmere"],
                 Categories = ["finance", "travel"],
                 Tags = ["bill", "voucher", "slip", "check", "counterfoil", "british", "currency", "gbp", "£"],
             },
             LucideIconKind.ReceiptRussianRuble => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["danielbayley"],
+                Contributors = ["danielbayley", "karsa-mistmere"],
                 Categories = ["finance", "travel"],
                 Tags = ["bill", "voucher", "slip", "check", "counterfoil", "currency", "rub", "₽"],
             },
             LucideIconKind.ReceiptSwissFranc => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["danielbayley"],
+                Contributors = ["danielbayley", "karsa-mistmere"],
                 Categories = ["finance", "travel"],
                 Tags = ["bill", "voucher", "slip", "check", "counterfoil", "currency", "chf", "₣"],
             },
@@ -8517,7 +8524,7 @@ public class LucideIconInfo
             LucideIconKind.ReceiptTurkishLira => new LucideIconInfo
             {
                 Kind = kind,
-                Contributors = ["danielbayley", "jamiemlaw"],
+                Contributors = ["danielbayley", "jamiemlaw", "karsa-mistmere"],
                 Categories = ["finance", "travel"],
                 Tags = ["bill", "voucher", "slip", "check", "counterfoil", "currency", "try", "₺"],
             },
@@ -11866,6 +11873,97 @@ public class LucideIconInfo
                 Contributors = ["colebemis", "karsa-mistmere", "ericfennis"],
                 Categories = ["connectivity", "devices", "photography", "weather"],
                 Tags = ["flash", "camera", "lightning", "electricity", "energy"],
+            },
+            LucideIconKind.ZodiacAquarius => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["karsa-mistmere"],
+                Categories = ["social", "emoji"],
+                Tags = ["water bearer", "waves", "innovation", "air", "future", "astrology", "star sign", "horoscope", "constellation", "celestial"],
+            },
+            LucideIconKind.ZodiacAries => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["karsa-mistmere"],
+                Categories = ["social", "emoji"],
+                Tags = ["ram", "horns", "fire", "energy", "initiative", "astrology", "star sign", "horoscope", "constellation", "celestial"],
+            },
+            LucideIconKind.ZodiacCancer => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["karsa-mistmere", "jguddas"],
+                Categories = ["social", "emoji"],
+                Tags = ["crab", "shell", "protection", "water", "intuition", "astrology", "star sign", "horoscope", "constellation", "celestial"],
+            },
+            LucideIconKind.ZodiacCapricorn => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["karsa-mistmere", "jguddas"],
+                Categories = ["social", "emoji"],
+                Tags = ["goat", "mountain", "ambition", "earth", "discipline", "astrology", "star sign", "horoscope", "constellation", "celestial"],
+            },
+            LucideIconKind.ZodiacGemini => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["karsa-mistmere", "jguddas"],
+                Categories = ["social", "emoji"],
+                Tags = ["twins", "duality", "communication", "air", "adaptability", "astrology", "star sign", "horoscope", "constellation", "celestial"],
+            },
+            LucideIconKind.ZodiacLeo => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["karsa-mistmere"],
+                Categories = ["social", "emoji"],
+                Tags = ["lion", "crown", "leadership", "fire", "confidence", "astrology", "star sign", "horoscope", "constellation", "celestial"],
+            },
+            LucideIconKind.ZodiacLibra => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["karsa-mistmere", "jguddas"],
+                Categories = ["social", "emoji"],
+                Tags = ["scales", "balance", "justice", "air", "harmony", "astrology", "star sign", "horoscope", "constellation", "celestial"],
+            },
+            LucideIconKind.ZodiacOphiuchus => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["karsa-mistmere"],
+                Categories = ["social", "emoji"],
+                Tags = ["serpent", "snake holder", "healing", "knowledge", "astronomy", "astrology", "star sign", "horoscope", "constellation", "celestial"],
+            },
+            LucideIconKind.ZodiacPisces => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["karsa-mistmere"],
+                Categories = ["social", "emoji"],
+                Tags = ["fish", "duality", "water", "dreams", "empathy", "astrology", "star sign", "horoscope", "constellation", "celestial"],
+            },
+            LucideIconKind.ZodiacSagittarius => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["karsa-mistmere"],
+                Categories = ["social", "emoji"],
+                Tags = ["archer", "arrow", "exploration", "fire", "philosophy", "astrology", "star sign", "horoscope", "constellation", "celestial"],
+            },
+            LucideIconKind.ZodiacScorpio => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["karsa-mistmere", "jguddas"],
+                Categories = ["social", "emoji"],
+                Tags = ["scorpion", "stinger", "intensity", "water", "transformation", "astrology", "star sign", "horoscope", "constellation", "celestial"],
+            },
+            LucideIconKind.ZodiacTaurus => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["karsa-mistmere"],
+                Categories = ["social", "emoji"],
+                Tags = ["bull", "strength", "stability", "earth", "endurance", "astrology", "star sign", "horoscope", "constellation", "celestial"],
+            },
+            LucideIconKind.ZodiacVirgo => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["karsa-mistmere", "jguddas"],
+                Categories = ["social", "emoji"],
+                Tags = ["virgin", "maiden", "harvest", "precision", "earth", "analysis", "astrology", "star sign", "horoscope", "constellation", "celestial"],
             },
             LucideIconKind.ZoomIn => new LucideIconInfo
             {
