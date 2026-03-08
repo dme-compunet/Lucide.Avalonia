@@ -1267,7 +1267,7 @@ public class LucideIconInfo
                 Kind = kind,
                 Contributors = ["ericfennis", "mittalyashu"],
                 Categories = ["brands", "development", "finance"],
-                Tags = ["currency", "money", "payment"],
+                Tags = ["cryptocurrency", "digital", "blockchain", "finance", "coin", "market", "decentralized", "investment", "crypto", "currency", "money", "payment"],
             },
             LucideIconKind.Blend => new LucideIconInfo
             {
@@ -3998,6 +3998,13 @@ public class LucideIconInfo
                 Contributors = ["karsa-mistmere", "ericfennis", "jamiemlaw"],
                 Categories = ["food-beverage"],
                 Tags = ["egg free", "vegan", "hatched", "bad egg"],
+            },
+            LucideIconKind.Ellipse => new LucideIconInfo
+            {
+                Kind = kind,
+                Contributors = ["KISHORE-KUMAR-S"],
+                Categories = ["shapes"],
+                Tags = ["shape", "geometry", "rounded", "smooth", "outline", "form", "boundary", "curve", "shapes", "ellipse", "oval"],
             },
             LucideIconKind.Ellipsis => new LucideIconInfo
             {
