@@ -1,6 +1,4 @@
-﻿using SukiUI.Toasts;
-
-namespace Lucide.Avalonia.Gallery.ViewModels;
+﻿namespace Lucide.Avalonia.Gallery.ViewModels;
 
 [Reactive]
 public partial class MainWindowViewModel : ReactiveViewModel
