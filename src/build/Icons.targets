@@ -1,0 +1,19 @@
+<Project>
+
+	<PropertyGroup>
+		<IconInputFile>$([System.IO.Path]::GetFullPath($(MSBuildProjectDirectory)\..\..\icons\lucide-icons.txt))</IconInputFile>
+	</PropertyGroup>
+
+	<Target Name="GenerateIcons"
+			BeforeTargets="BeforeBuild"
+			Inputs="$(IconInputFile)"
+			Outputs="
+			  $(MSBuildProjectDirectory)\Resources\icons.bin;
+			  $(MSBuildProjectDirectory)\Resources\metadata.bin;
+			  $(MSBuildProjectDirectory)\LucideIconKind.g.cs">
+
+		<Message Importance="high" Text="Generating compact icon binary from $(IconInputFile)..." />
+
+		<Exec Command="dotnet run --project ../tools/Generator.Icons -- build $(IconInputFile) $(MSBuildProjectDirectory)" />
+	</Target>
+</Project>

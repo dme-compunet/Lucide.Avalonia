@@ -6,7 +6,6 @@ global using Avalonia.ReactiveUI;
 global using Lucide.Avalonia.Gallery.Services;
 global using Lucide.Avalonia.Gallery.ViewModels;
 global using Lucide.Avalonia.Gallery.Views;
-global using Lucide.Avalonia.Metadata;
 global using ReactiveUI;
 global using SukiUI;
 global using SukiUI.Controls;

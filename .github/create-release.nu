@@ -15,5 +15,5 @@ dotnet nuget push *.nupkg --api-key $nuget_api_key --source https://api.nuget.or
 gh release create $version --repo $repo_name --title $version --fail-on-no-commits --generate-notes --verify-tag
 
 # Dispath release workflows
-gh workflow run release-notes.yml --field release_tag_name=($version)
+# gh workflow run release-notes.yml --field release_tag_name=($version)
 gh workflow run release-gallery.yml --field release_tag_name=($version)

@@ -18,6 +18,11 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+		<EmbeddedResource Include="Resources\icons.bin" />
+		<EmbeddedResource Include="Resources\metadata.bin" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<None Include="..\..\res\logo\lucide-logo-nuget.png" Pack="True" PackagePath="" Visible="False" />
 		<None Include="..\..\README.md" Pack="True" PackagePath="" Visible="False" />
 	</ItemGroup>
@@ -25,5 +30,7 @@
 	<ItemGroup>
 		<PackageReference Include="Avalonia" Version="11.2.2" />
 	</ItemGroup>
+
+	<Import Project="../build/Icons.targets" />
 
 </Project>

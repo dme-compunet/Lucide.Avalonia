@@ -4,8 +4,7 @@ def generate-and-commit [] {
     unzip lucide-latest.zip    
     
     # Run the generator
-    dotnet restore ./src/Generator.Icons
-    dotnet run --project ./src/Generator.Icons ./lucide-main ./src/Lucide.Avalonia/
+    dotnet run --project ./src/tools/Generator.Icons generate ./lucide-main ./icons/lucide-icons.txt
 
     rm lucide-main -r
 
@@ -17,9 +16,8 @@ def generate-and-commit [] {
     git config --global user.email 'github-actions[bot]@users.noreply.github.com'
     
     # Add changed files to git
-    git add ./src/Lucide.Avalonia/IconToGeometry.cs
-    git add ./src/Lucide.Avalonia/LucideIconKind.cs
-    git add ./src/Lucide.Avalonia/Metadata/LucideIconInfo.cs
+    git add ./icons/lucide-icons.txt
+    git add ./src/Lucide.Avalonia/LucideIconKind.g.cs
 }
 
 def increment-version [version: string] {

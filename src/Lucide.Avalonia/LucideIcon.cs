@@ -61,7 +61,7 @@ public class LucideIcon : Control
 
             _geometry = kind == null
                         ? null
-                        : IconToGeometry.CreateGeometry(kind.Value);
+                        : IconGeometryProvider.GetGeometry(kind.Value);
         }
         else if (change.Property == ForegroundProperty || change.Property == StrokeWidthProperty)
         {
@@ -102,7 +102,7 @@ public class LucideIcon : Control
 
         if (_geometry == null && kind != null)
         {
-            _geometry = IconToGeometry.CreateGeometry(kind.Value);
+            _geometry = IconGeometryProvider.GetGeometry(kind.Value);
         }
     }
 
