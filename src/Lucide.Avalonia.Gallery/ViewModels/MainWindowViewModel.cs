@@ -4,7 +4,6 @@
 public partial class MainWindowViewModel : ReactiveViewModel
 {
     private readonly Lazy<IconViewModel[]> _allIconsLazy = new(IconViewModel.CreateIconCollection);
-    private readonly Lazy<FrozenDictionary<LucideIconKind, LucideIconInfo>> _iconsInfo = new(CreateIconCollectionInfo);
 
     public SukiToastManager ToastManager { get; } = NotificationService.Singleton.ToastManager;
 
@@ -73,9 +72,9 @@ public partial class MainWindowViewModel : ReactiveViewModel
 
         foreach (var icon in icons)
         {
-            var info = _iconsInfo.Value[icon.Kind];
+            var metadata = icon.Kind.GetMetadata();
 
-            if (info.Contains(value, out var priority))
+            if (metadata.Contains(value, out var priority))
             {
                 queue.Enqueue(icon, priority);
             }
@@ -103,19 +102,5 @@ public partial class MainWindowViewModel : ReactiveViewModel
         });
 
         IsBusy = false;
-    }
-
-    private static FrozenDictionary<LucideIconKind, LucideIconInfo> CreateIconCollectionInfo()
-    {
-        var kinds = Enum.GetValues<LucideIconKind>();
-
-        var result = new Dictionary<LucideIconKind, LucideIconInfo>(kinds.Length);
-
-        foreach (var kind in kinds)
-        {
-            result[kind] = LucideIconInfo.GetIconInfo(kind);
-        }
-
-        return result.ToFrozenDictionary();
     }
 }

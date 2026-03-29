@@ -1,7 +1,10 @@
 <Solution>
+  <Folder Name="/Build/">
+    <File Path="build/Icons.targets" />
+  </Folder>
   <Folder Name="/Generators/">
-    <Project Path="Generator.Icons/Generator.Icons.csproj" />
-    <Project Path="Generator.ReleaseNotes/Generator.ReleaseNotes.csproj" />
+    <Project Path="tools/Generator.Icons/Generator.Icons.csproj" />
+    <Project Path="tools/Generator.ReleaseNotes/Generator.ReleaseNotes.csproj" />
   </Folder>
   <Project Path="Lucide.Avalonia.Gallery/Lucide.Avalonia.Gallery.csproj" />
   <Project Path="Lucide.Avalonia/Lucide.Avalonia.csproj" />
