@@ -1,15 +1,5 @@
 ﻿using Generator.Icons;
 
-//var c = new GenerateCommand
-//{
-//    InputPath = @"D:\source\github\lucide",
-//    OutputPath = @"D:\source\github\lucide\ggg\lucide-icons.txt",
-//};
-
-//c.Execute();
-
-//return;
-
 if (args[0] == "build")
 {
     var command = new BuildCommand
@@ -29,4 +19,8 @@ else if (args[0] == "generate")
     };
 
     command.Execute();
+}
+else
+{
+    Console.WriteLine("Unknown command: " + args[0]);
 }
