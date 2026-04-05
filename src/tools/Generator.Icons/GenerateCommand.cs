@@ -60,18 +60,7 @@ public class GenerateCommand
     {
         Console.WriteLine("Writing icons...");
 
-        using var stream = File.Create(OutputPath);
-        using var writer = new StreamWriter(stream);
-
-        foreach (var icon in icons)
-        {
-            writer.WriteLine("name:         " + icon.Name);
-            writer.WriteLine("geometry:     " + icon.Geometry);
-            writer.WriteLine("contributors: " + string.Join(',', icon.Contributors));
-            writer.WriteLine("categories:   " + string.Join(',', icon.Categories));
-            writer.WriteLine("tags:         " + string.Join(',', icon.Tags));
-            writer.WriteLine();
-        }
+        LucideIconInfo.WriteArrayToFile(icons, OutputPath);
     }
 
     private LucideIconInfo CreateIconInfo(string pathToSvg)

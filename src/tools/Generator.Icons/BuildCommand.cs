@@ -28,7 +28,7 @@ public class BuildCommand
             throw new DirectoryNotFoundException($"The directory '{OutputPath}' does not exist.");
         }
 
-        var icons = ParseIcons(InputPath);
+        var icons = LucideIconInfo.ReadArrayFromFile(InputPath);
 
         Directory.CreateDirectory(Path.Combine(OutputPath, "Resources"));
 
@@ -95,7 +95,7 @@ public class BuildCommand
 
         foreach (var icon in icons)
         {
-            writer.WriteLine($"    {KebabToPascalCase(icon.Name)},");
+            writer.WriteLine($"    {KebabToPascal(icon.Name)},");
         }
 
         writer.WriteLine("}");
@@ -147,7 +147,7 @@ public class BuildCommand
         return [.. icons];
     }
 
-    private static string KebabToPascalCase(string input)
+    private static string KebabToPascal(string input)
     {
         if (string.IsNullOrWhiteSpace(input))
         {
