@@ -51,20 +51,6 @@ public class ChangeInfo
             builder.AppendLine();
         }
 
-        if (RemovedIcons.Length > 0)
-        {
-            builder.AppendLine("## Removed Icons 🗑️");
-
-            foreach (var icon in RemovedIcons)
-            {
-                var name = KebabToPascal(icon);
-
-                builder.AppendLine($"- The `{name}` icon is removed");
-            }
-
-            builder.AppendLine();
-        }
-
         if (ModifiedIcons.Length > 0)
         {
             builder.AppendLine("## Modified Icons 🔨");
@@ -75,6 +61,20 @@ public class ChangeInfo
                 var link = CreateLinkToWeb(icon);
 
                 builder.AppendLine($"- The `{name}` icon is modified ({link})");
+            }
+
+            builder.AppendLine();
+        }
+
+        if (RemovedIcons.Length > 0)
+        {
+            builder.AppendLine("## Removed Icons 🗑️");
+
+            foreach (var icon in RemovedIcons)
+            {
+                var name = KebabToPascal(icon);
+
+                builder.AppendLine($"- The `{name}` icon is removed");
             }
 
             builder.AppendLine();
