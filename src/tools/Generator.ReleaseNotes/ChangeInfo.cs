@@ -85,10 +85,7 @@ public class ChangeInfo
 
     private static string CreateLinkToWeb(string iconName)
     {
-        var name = KebabToPascal(iconName);
-        var link = $"https://lucide.dev/icons/{iconName}";
-
-        return $"[{name}]({link})";
+        return $"[{iconName}](https://lucide.dev/icons/{iconName})";
     }
 
     private static string KebabToPascal(string input)
