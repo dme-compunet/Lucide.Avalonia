@@ -81,13 +81,13 @@ public class ChangeInfo
 
     private static string CreateLinkToWeb(string iconName)
     {
-        var name = KebabToPascal(iconName);
+        var name = PascalToKebab(iconName);
         var link = $"https://lucide.dev/icons/{name}";
 
         return $"[{name}]({link})";
     }
 
-    private static string KebabToPascal(string input)
+    private static string PascalToKebab(string input)
     {
         if (string.IsNullOrWhiteSpace(input))
         {
@@ -95,21 +95,17 @@ public class ChangeInfo
         }
 
         var sb = new StringBuilder();
-        var nextUpper = true;
 
         for (int i = 0; i < input.Length; i++)
         {
             var c = input[i];
 
-            if (c == '-')
+            if (char.IsUpper(c) && i > 0)
             {
-                nextUpper = true;
+                sb.Append('-');
             }
-            else
-            {
-                sb.Append(nextUpper ? char.ToUpper(c) : char.ToLower(c));
-                nextUpper = false;
-            }
+
+            sb.Append(char.ToLower(c));
         }
 
         return sb.ToString();
