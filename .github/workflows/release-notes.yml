@@ -22,7 +22,7 @@ jobs:
           dotnet-version: 10.0.x
 
       - name: Generate Release Notes
-        run: dotnet run --project src/Generator.ReleaseNotes ${{ inputs.release_tag_name }}
+        run: dotnet run --project src/tools/Generator.ReleaseNotes ${{ inputs.release_tag_name }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           REPOSITORY_ID: ${{ github.event.repository.id }}
