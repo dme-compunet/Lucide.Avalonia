@@ -42,9 +42,10 @@ public class ChangeInfo
 
             foreach (var icon in AddedIcons)
             {
+                var name = KebabToPascal(icon);
                 var link = CreateLinkToWeb(icon);
 
-                builder.AppendLine($"- The `{icon}` icon is added ({link})");
+                builder.AppendLine($"- The `{name}` icon is added ({link})");
             }
 
             builder.AppendLine();
@@ -56,7 +57,9 @@ public class ChangeInfo
 
             foreach (var icon in RemovedIcons)
             {
-                builder.AppendLine($"- The `{icon}` icon is removed");
+                var name = KebabToPascal(icon);
+
+                builder.AppendLine($"- The `{name}` icon is removed");
             }
 
             builder.AppendLine();
@@ -68,9 +71,10 @@ public class ChangeInfo
 
             foreach (var icon in ModifiedIcons)
             {
+                var name = KebabToPascal(icon);
                 var link = CreateLinkToWeb(icon);
 
-                builder.AppendLine($"- The `{icon}` icon is modified ({link})");
+                builder.AppendLine($"- The `{name}` icon is modified ({link})");
             }
 
             builder.AppendLine();
@@ -81,13 +85,13 @@ public class ChangeInfo
 
     private static string CreateLinkToWeb(string iconName)
     {
-        var name = PascalToKebab(iconName);
-        var link = $"https://lucide.dev/icons/{name}";
+        var name = KebabToPascal(iconName);
+        var link = $"https://lucide.dev/icons/{iconName}";
 
         return $"[{name}]({link})";
     }
 
-    private static string PascalToKebab(string input)
+    private static string KebabToPascal(string input)
     {
         if (string.IsNullOrWhiteSpace(input))
         {
@@ -95,17 +99,21 @@ public class ChangeInfo
         }
 
         var sb = new StringBuilder();
+        var nextUpper = true;
 
         for (int i = 0; i < input.Length; i++)
         {
             var c = input[i];
 
-            if (char.IsUpper(c) && i > 0)
+            if (c == '-')
             {
-                sb.Append('-');
+                nextUpper = true;
             }
-
-            sb.Append(char.ToLower(c));
+            else
+            {
+                sb.Append(nextUpper ? char.ToUpper(c) : char.ToLower(c));
+                nextUpper = false;
+            }
         }
 
         return sb.ToString();
