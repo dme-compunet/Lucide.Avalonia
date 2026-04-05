@@ -14,3 +14,5 @@ Console.WriteLine("===== Release Notes Preview =====");
 Console.WriteLine(changeInfo.MarkdownText);
 
 await GitHubReleaseNotesUpdater.UpdateReleaseNotes(tagName, changeInfo.MarkdownText);
+
+Console.WriteLine("===== Completed! =====");

@@ -1,30 +1,33 @@
 using System.Text;
-using System.Text.RegularExpressions;
 
 namespace Generator.ReleaseNotes;
 
-public partial class ChangeInfo
+public class ChangeInfo
 {
     public required string[] AddedIcons { get; init; }
+
+    public required string[] RemovedIcons { get; init; }
 
     public required string[] ModifiedIcons { get; init; }
 
     public string MarkdownText => CreateMarkdown();
 
-    public static ChangeInfo Analyze(GitDiff iconToGeometryDiff)
+    public static ChangeInfo Analyze(LucideIconInfo[] oldIcons, LucideIconInfo[] newIcons)
     {
-        var addedLines = iconToGeometryDiff.AddedLines;
-        var removedLines = iconToGeometryDiff.RemovedLines;
+        var oldIconNames = oldIcons.Select(i => i.Name).ToHashSet();
+        var newIconNames = newIcons.Select(i => i.Name).ToHashSet();
 
-        var addedIcons = addedLines.Select(ExtractIconName).ToArray();
-        var removedIcons = removedLines.Select(ExtractIconName).ToArray();
+        var oldIconGeometry = oldIcons.ToDictionary(i => i.Name, i => i.Geometry);
 
-        var newIcons = addedIcons.Except(removedIcons).ToArray();
-        var modifiedIcons = removedIcons.Intersect(addedIcons).ToArray();
+        var modifiedIcons = newIcons
+            .Where(i => oldIconGeometry.TryGetValue(i.Name, out var oldGeometry) && oldGeometry != i.Geometry)
+            .Select(i => i.Name)
+            .ToArray();
 
         return new ChangeInfo
         {
-            AddedIcons = newIcons,
+            AddedIcons = [.. newIconNames.Except(oldIconNames)],
+            RemovedIcons = [.. oldIconNames.Except(newIconNames)],
             ModifiedIcons = modifiedIcons
         };
     }
@@ -37,11 +40,23 @@ public partial class ChangeInfo
         {
             builder.AppendLine("## New icons 🎨");
 
-            foreach (var addedIcon in AddedIcons)
+            foreach (var icon in AddedIcons)
             {
-                var link = CreateLinkToWeb(addedIcon);
+                var link = CreateLinkToWeb(icon);
 
-                builder.AppendLine($"- The `{addedIcon}` icon is added ({link})");
+                builder.AppendLine($"- The `{icon}` icon is added ({link})");
+            }
+
+            builder.AppendLine();
+        }
+
+        if (RemovedIcons.Length > 0)
+        {
+            builder.AppendLine("## Removed Icons 🗑️");
+
+            foreach (var icon in RemovedIcons)
+            {
+                builder.AppendLine($"- The `{icon}` icon is removed");
             }
 
             builder.AppendLine();
@@ -51,11 +66,11 @@ public partial class ChangeInfo
         {
             builder.AppendLine("## Modified Icons 🔨");
 
-            foreach (var modifiedIcon in ModifiedIcons)
+            foreach (var icon in ModifiedIcons)
             {
-                var link = CreateLinkToWeb(modifiedIcon);
+                var link = CreateLinkToWeb(icon);
 
-                builder.AppendLine($"- The `{modifiedIcon}` icon is modified ({link})");
+                builder.AppendLine($"- The `{icon}` icon is modified ({link})");
             }
 
             builder.AppendLine();
@@ -66,53 +81,37 @@ public partial class ChangeInfo
 
     private static string CreateLinkToWeb(string iconName)
     {
-        var name = NormalizeName(iconName);
+        var name = KebabToPascal(iconName);
         var link = $"https://lucide.dev/icons/{name}";
 
         return $"[{name}]({link})";
     }
 
-    /// <summary>
-    /// Change 'IconName' to 'icon-name'
-    /// </summary>
-    /// <param name="name">The icon name to normalize (PascalCase)</param>
-    /// <returns>The normalized icon name (kebab-case)</returns>
-    private static string NormalizeName(string name)
+    private static string KebabToPascal(string input)
     {
-        var result = new StringBuilder();
-
-        result.Append(char.ToLower(name[0]));
-
-        for (var i = 1; i < name.Length; i++)
+        if (string.IsNullOrWhiteSpace(input))
         {
-            var character = name[i];
+            return input;
+        }
 
-            if (char.IsUpper(character) || char.IsNumber(character))
+        var sb = new StringBuilder();
+        var nextUpper = true;
+
+        for (int i = 0; i < input.Length; i++)
+        {
+            var c = input[i];
+
+            if (c == '-')
             {
-                result.Append('-');
-                result.Append(char.ToLower(character));
+                nextUpper = true;
             }
             else
             {
-                result.Append(character);
+                sb.Append(nextUpper ? char.ToUpper(c) : char.ToLower(c));
+                nextUpper = false;
             }
         }
 
-        return result.ToString();
+        return sb.ToString();
     }
-
-    private static string ExtractIconName(string line)
-    {
-        var match = IconNameRegex().Match(line);
-
-        if (match.Success == false)
-        {
-            throw new Exception("Could not extract icon name");
-        }
-
-        return match.Groups[1].Value;
-    }
-
-    [GeneratedRegex(@"LucideIconKind\.(\w+)")]
-    private static partial Regex IconNameRegex();
 }

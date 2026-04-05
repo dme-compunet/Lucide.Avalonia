@@ -4,8 +4,6 @@ namespace Generator.ReleaseNotes;
 
 public static class ChangeNotesGenerator
 {
-    private const string IconToGeometryPath = "src/Lucide.Avalonia/IconToGeometry.cs";
-
     public static ChangeInfo Generate(string headTag)
     {
         var baseTag = new StringBuilder();
@@ -26,8 +24,22 @@ public static class ChangeNotesGenerator
 
         Console.WriteLine("Generating icons changes...");
 
-        var diff = GitDiff.Run(baseTag, headTag, IconToGeometryPath);
+        var baseTagIconData = new StringBuilder();
+        var headTagIconData = new StringBuilder();
 
-        return ChangeInfo.Analyze(diff);
+        ProcessRunner.Create("git")
+                     .WithArguments($"show {baseTag}:icons/lucide-icons.txt")
+                     .WithRedirectOutput(baseTagIconData)
+                     .Execute();
+
+        ProcessRunner.Create("git")
+                     .WithArguments($"show {headTag}:icons/lucide-icons.txt")
+                     .WithRedirectOutput(headTagIconData)
+                     .Execute();
+
+        var baseTagIcons = LucideIconInfo.ReadArray(baseTagIconData.ToString());
+        var headTagIcons = LucideIconInfo.ReadArray(headTagIconData.ToString());
+
+        return ChangeInfo.Analyze(baseTagIcons, headTagIcons);
     }
 }
