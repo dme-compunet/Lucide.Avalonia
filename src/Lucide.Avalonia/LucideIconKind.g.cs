@@ -216,6 +216,7 @@ public enum LucideIconKind
     Book,
     BookmarkCheck,
     BookmarkMinus,
+    BookmarkOff,
     BookmarkPlus,
     BookmarkX,
     Bookmark,
