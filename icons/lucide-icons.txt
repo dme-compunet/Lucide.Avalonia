@@ -5129,10 +5129,10 @@ categories:   design,tools,math,sports,gaming
 tags:         area,surface,square metres,allotment,parcel,property,plane,acres,measure,distance,isometric,flag,golf course,hole
 
 name:         landmark
-geometry:     F1 M10 18L10 11F1 M11.1 2.2Q11.3 2.1 11.5 2Q11.8 2 12 2Q12.2 2 12.5 2.1Q12.7 2.1 12.9 2.2L20.7 6.1C21.2 6.3 21.1 7 20.5 7L3.5 7C2.9 7 2.8 6.3 3.3 6.1L11.1 2.2ZF1 M14 18L14 11F1 M18 18L18 11F1 M3 22L21 22F1 M6 18L6 11
-contributors: connium,ericfennis,karsa-mistmere
+geometry:     F1 M10 18L10 11F1 M11.1 2.2Q11.3 2.1 11.5 2.1Q11.8 2 12 2Q12.2 2 12.5 2.1Q12.7 2.1 12.9 2.2L20.7 6.1Q20.8 6.1 20.9 6.1Q20.9 6.2 21 6.3Q21 6.4 21 6.4Q21 6.5 21 6.6Q21 6.7 20.9 6.8Q20.9 6.8 20.8 6.9Q20.7 6.9 20.7 7Q20.6 7 20.5 7L3.5 7Q3.4 7 3.3 7Q3.3 6.9 3.2 6.9Q3.1 6.8 3.1 6.8Q3 6.7 3 6.6Q3 6.5 3 6.4Q3 6.4 3 6.3Q3.1 6.2 3.1 6.1Q3.2 6.1 3.3 6.1L11.1 2.2ZF1 M14 18L14 11F1 M18 18L18 11F1 M3 22L21 22F1 M6 18L6 11
+contributors: connium,ericfennis,karsa-mistmere,jamiemlaw
 categories:   finance,navigation,buildings
-tags:         bank,building,capitol,finance,money,museum,art gallery,hall,institute,pediment,portico,columns,pillars,classical,architecture,government,institution
+tags:         bank,building,capitol,finance,money,museum,art gallery,hall,institute,pediment,portico,doric,columns,pillars,classical,architecture,government,institution,monument,site,history,historic,library,temple,ancient,structure
 
 name:         languages
 geometry:     F1 M5 8L11 14F1 M4 14L10 8L12 5F1 M2 5L14 5F1 M7 2L8 2F1 M22 22L17 12L12 22F1 M14 18L20 18
@@ -9101,10 +9101,10 @@ categories:   text,layout
 tags:         select
 
 name:         text-cursor
-geometry:     F1 M17 22L16 22Q15.8 22 15.6 22Q15.4 22 15.2 21.9Q15 21.9 14.8 21.8Q14.7 21.8 14.5 21.7Q14.3 21.6 14.1 21.5Q13.9 21.4 13.8 21.3Q13.6 21.2 13.5 21.1Q13.3 21 13.2 20.8Q13 20.7 12.9 20.5Q12.8 20.4 12.7 20.2Q12.6 20.1 12.5 19.9Q12.4 19.7 12.3 19.5Q12.2 19.3 12.2 19.2Q12.1 19 12.1 18.8Q12 18.6 12 18.4Q12 18.2 12 18L12 6Q12 5.8 12 5.6Q12 5.4 12.1 5.2Q12.1 5 12.2 4.8Q12.2 4.7 12.3 4.5Q12.4 4.3 12.5 4.1Q12.6 3.9 12.7 3.8Q12.8 3.6 12.9 3.5Q13 3.3 13.2 3.2Q13.3 3 13.5 2.9Q13.6 2.8 13.8 2.7Q13.9 2.6 14.1 2.5Q14.3 2.4 14.5 2.3Q14.7 2.2 14.8 2.2Q15 2.1 15.2 2.1Q15.4 2 15.6 2Q15.8 2 16 2L17 2F1 M7 22L8 22Q8.2 22 8.4 22Q8.6 22 8.8 21.9Q9 21.9 9.2 21.8Q9.3 21.8 9.5 21.7Q9.7 21.6 9.9 21.5Q10.1 21.4 10.2 21.3Q10.4 21.2 10.5 21.1Q10.7 21 10.8 20.8Q11 20.7 11.1 20.5Q11.2 20.4 11.3 20.2Q11.4 20.1 11.5 19.9Q11.6 19.7 11.7 19.5Q11.8 19.3 11.8 19.2Q11.9 19 11.9 18.8Q12 18.6 12 18.4Q12 18.2 12 18L12 17F1 M7 2L8 2Q8.2 2 8.4 2Q8.6 2 8.8 2.1Q9 2.1 9.2 2.2Q9.3 2.2 9.5 2.3Q9.7 2.4 9.9 2.5Q10.1 2.6 10.2 2.7Q10.4 2.8 10.5 2.9Q10.7 3 10.8 3.2Q11 3.3 11.1 3.5Q11.2 3.6 11.3 3.8Q11.4 3.9 11.5 4.1Q11.6 4.3 11.7 4.5Q11.8 4.7 11.8 4.8Q11.9 5 11.9 5.2Q12 5.4 12 5.6Q12 5.8 12 6L12 7
+geometry:     F1 M17 22L16 22Q15.8 22 15.6 22Q15.4 22 15.2 21.9Q15 21.9 14.8 21.8Q14.7 21.8 14.5 21.7Q14.3 21.6 14.1 21.5Q13.9 21.4 13.8 21.3Q13.6 21.2 13.5 21.1Q13.3 21 13.2 20.8Q13 20.7 12.9 20.5Q12.8 20.4 12.7 20.2Q12.6 20.1 12.5 19.9Q12.4 19.7 12.3 19.5Q12.2 19.3 12.2 19.2Q12.1 19 12.1 18.8Q12 18.6 12 18.4Q12 18.2 12 18L12 6Q12 5.8 12 5.6Q12 5.4 12.1 5.2Q12.1 5 12.2 4.8Q12.2 4.7 12.3 4.5Q12.4 4.3 12.5 4.1Q12.6 3.9 12.7 3.8Q12.8 3.6 12.9 3.5Q13 3.3 13.2 3.2Q13.3 3 13.5 2.9Q13.6 2.8 13.8 2.7Q13.9 2.6 14.1 2.5Q14.3 2.4 14.5 2.3Q14.7 2.2 14.8 2.2Q15 2.1 15.2 2.1Q15.4 2 15.6 2Q15.8 2 16 2L17 2F1 M7 22L8 22Q8.2 22 8.4 22Q8.6 22 8.8 21.9Q9 21.9 9.2 21.8Q9.3 21.8 9.5 21.7Q9.7 21.6 9.9 21.5Q10.1 21.4 10.2 21.3Q10.4 21.2 10.5 21.1Q10.7 21 10.8 20.8Q11 20.7 11.1 20.5Q11.2 20.4 11.3 20.2Q11.4 20.1 11.5 19.9Q11.6 19.7 11.7 19.5Q11.8 19.3 11.8 19.2Q11.9 19 11.9 18.8Q12 18.6 12 18.4Q12 18.2 12 18F1 M7 2L8 2Q8.2 2 8.4 2Q8.6 2 8.8 2.1Q9 2.1 9.2 2.2Q9.3 2.2 9.5 2.3Q9.7 2.4 9.9 2.5Q10.1 2.6 10.2 2.7Q10.4 2.8 10.5 2.9Q10.7 3 10.8 3.2Q11 3.3 11.1 3.5Q11.2 3.6 11.3 3.8Q11.4 3.9 11.5 4.1Q11.6 4.3 11.7 4.5Q11.8 4.7 11.8 4.8Q11.9 5 11.9 5.2Q12 5.4 12 5.6Q12 5.8 12 6
 contributors: ericfennis
 categories:   text,cursors
-tags:         select
+tags:         select,caret,type,typing,write,writing,edit,insert,input,textarea
 
 name:         text-initial
 geometry:     F1 M15 5L21 5F1 M15 12L21 12F1 M3 19L21 19F1 M3 12L6.6 4.3Q6.6 4.2 6.6 4.2Q6.7 4.1 6.7 4.1Q6.8 4 6.9 4Q6.9 4 7 4Q7.1 4 7.1 4Q7.2 4 7.3 4.1Q7.3 4.1 7.4 4.2Q7.4 4.2 7.4 4.3L11 12F1 M3.9 10L10.1 10
