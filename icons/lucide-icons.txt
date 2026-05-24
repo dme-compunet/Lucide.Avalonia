@@ -5753,10 +5753,10 @@ categories:   medical
 tags:         gender,sex,male,masculine,man,boy
 
 name:         martini
-geometry:     F1 M8 22L16 22F1 M12 11L12 22F1 M19 3L12 11L5 3L19 3Z
-contributors: karsa-mistmere,ericfennis,danielbayley
+geometry:     F1 M12 12L4.2 4.2Q4.1 4.1 4.1 4Q4 3.9 4 3.8Q4 3.7 4 3.6Q4 3.5 4.1 3.4Q4.1 3.3 4.2 3.3Q4.2 3.2 4.3 3.1Q4.4 3.1 4.5 3Q4.6 3 4.7 3L19.3 3Q19.4 3 19.5 3Q19.6 3.1 19.7 3.1Q19.8 3.2 19.8 3.3Q19.9 3.3 19.9 3.4Q20 3.5 20 3.6Q20 3.7 20 3.8Q20 3.9 19.9 4Q19.9 4.1 19.8 4.2L12 12ZF1 M12 12L12 22F1 M7 22L17 22
+contributors: karsa-mistmere,ericfennis,danielbayley,jamiemlaw
 categories:   food-beverage
-tags:         cocktail,alcohol,beverage,bar,drink,glass
+tags:         cocktail,alcohol,beverage,bar,drink,glass,spirit,party,celebration,mixer
 
 name:         maximize-2
 geometry:     F1 M15 3L21 3L21 9F1 M21 3L14 10F1 M3 21L10 14F1 M9 21L3 21L3 15
