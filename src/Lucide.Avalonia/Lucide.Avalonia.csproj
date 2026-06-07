@@ -28,7 +28,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Avalonia" Version="11.2.2" />
+		<PackageReference Include="Avalonia" Version="11.3.17" />
 	</ItemGroup>
 
 	<Import Project="../build/Icons.targets" />
