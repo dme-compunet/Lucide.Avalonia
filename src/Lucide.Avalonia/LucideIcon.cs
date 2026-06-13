@@ -85,11 +85,11 @@ public class LucideIcon : Control
     protected override Size MeasureOverride(Size availableSize) => GetIconSize();
 
     protected override Size ArrangeOverride(Size finalSize) => GetIconSize();
-    
+
     protected override void OnAttachedToVisualTree(VisualTreeAttachmentEventArgs e)
     {
         base.OnAttachedToVisualTree(e);
-        
+
         var brush = Foreground;
         var width = StrokeWidth;
 
@@ -113,23 +113,21 @@ public class LucideIcon : Control
             return;
         }
 
-        // Draw transparent area for pointer interaction
+        // Draw transparent background for pointer interaction
         context.DrawRectangle(Brushes.Transparent, null, new Rect(0, 0, Bounds.Width, Bounds.Height));
 
-        // Push scale transform for icon size
-        PushScalingTransform(context);
-
-        // Draw the icon after scaling
-        context.DrawGeometry(null, _stroke, _geometry);
-    }
-
-    private void PushScalingTransform(DrawingContext context)
-    {
         if (IsSet(SizeProperty))
         {
             var scale = Size / RawIconSize;
 
-            context.PushTransform(Matrix.CreateScale(scale, scale));
+            using (context.PushTransform(Matrix.CreateScale(scale, scale)))
+            {
+                context.DrawGeometry(null, _stroke, _geometry);
+            }
+        }
+        else
+        {
+            context.DrawGeometry(null, _stroke, _geometry);
         }
     }
 
