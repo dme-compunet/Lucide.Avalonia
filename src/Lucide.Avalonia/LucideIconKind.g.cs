@@ -1299,6 +1299,7 @@ public enum LucideIconKind
     Scale,
     Scaling,
     ScanBarcode,
+    ScanBox,
     ScanEye,
     ScanFace,
     ScanHeart,
