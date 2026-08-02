@@ -10,8 +10,9 @@ Implementation of the [Lucide icon library](https://github.com/lucide-icons/luci
 ## ⚡ Advantages
 
 - No styles include required.
-- No xmlns declaration required.
-- Automatic weekly updates and releases.
+- No `xmlns` declaration required.
+- **Compact:** Only ~300 KB for the entire icon set.
+- **Always up to date:** Automatic weekly updates.
 
 ---
 
