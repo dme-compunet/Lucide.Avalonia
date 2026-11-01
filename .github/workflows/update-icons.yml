@@ -10,6 +10,10 @@ jobs:
   update:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write # push the commit and the new tag
+      actions: write # dispatch release.yml for the new tag
+
     steps:
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
@@ -28,9 +32,9 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Release
+      # Publishing is done by release.yml (NuGet Trusted Publishing),
+      # this workflow only commits, tags and dispatches it.
+      - name: Update icons
         run: nu .github/update-icons.nu
         env:
-          REPO_NAME: ${{ github.event.repository.full_name }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

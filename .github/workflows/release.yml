@@ -1,14 +1,29 @@
 name: Build & Publish
 
+# This is the only workflow that publishes to nuget.org.
+# It authenticates with NuGet Trusted Publishing (OIDC), so the nuget.org
+# trusted publishing policy must point to the workflow file `release.yml`.
+
 on:
   push:
     tags:
       - "*.*.*"
-  workflow_dispatch:
+  workflow_dispatch: # Run from a tag (e.g. `gh workflow run release.yml --ref 1.2.3`)
 
 jobs:
   publish:
     runs-on: ubuntu-latest
+    if: github.ref_type == 'tag'
+
+    permissions:
+      contents: write # create the GitHub release
+      actions: write # dispatch the follow-up release workflows
+      id-token: write # request the OIDC token for NuGet Trusted Publishing
+
+    env:
+      PROJECT_PATH: src/Lucide.Avalonia/Lucide.Avalonia.csproj
+      VERSION: ${{ github.ref_name }}
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
       - name: Checkout
@@ -19,16 +34,25 @@ jobs:
         with:
           dotnet-version: 10.0.x
 
-      - name: Setup Nushell
-        run: |
-          curl -fsSL https://apt.fury.io/nushell/gpg.key | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/fury-nushell.gpg
-          echo "deb https://apt.fury.io/nushell/ /" | sudo tee /etc/apt/sources.list.d/fury.list
-          sudo apt update
-          sudo apt install nushell
+      - name: Pack
+        run: dotnet pack -c Release "$PROJECT_PATH" -o artifacts -p:Version="$VERSION"
 
-      - name: Release
-        run: nu .github/create-release.nu
+      # Exchange the GitHub OIDC token for a short-lived (1 hour) NuGet API key
+      - name: NuGet login
+        uses: NuGet/login@v1
+        id: nuget-login
+        with:
+          user: ${{ secrets.NUGET_USER }}
+
+      - name: Push to NuGet
+        run: dotnet nuget push "artifacts/*.nupkg" --api-key "$NUGET_API_KEY" --source https://api.nuget.org/v3/index.json --skip-duplicate
         env:
-          REPO_NAME: ${{ github.event.repository.full_name }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
+          NUGET_API_KEY: ${{ steps.nuget-login.outputs.NUGET_API_KEY }}
+
+      - name: Create GitHub release
+        run: gh release create "$VERSION" --repo "$GITHUB_REPOSITORY" --title "$VERSION" --fail-on-no-commits --generate-notes --verify-tag
+
+      - name: Dispatch release workflows
+        run: |
+          gh workflow run release-notes.yml --repo "$GITHUB_REPOSITORY" --field release_tag_name="$VERSION"
+          gh workflow run release-gallery.yml --repo "$GITHUB_REPOSITORY" --field release_tag_name="$VERSION"

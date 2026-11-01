@@ -42,10 +42,14 @@ generate-and-commit
 let has_changes = (git diff --cached --name-only | str length) > 0
 
 if $has_changes {
+    let version = (increment-version (git describe --tags --abbrev=0))
+
     git commit -m "🔄 Update Icon Collection"
-    git tag (increment-version (git describe --tags --abbrev=0))
+    git tag $version
     git push origin master --tags
-    source create-release.nu
+
+    # Tags pushed with GITHUB_TOKEN don't trigger workflows, so dispatch the release explicitly
+    gh workflow run release.yml --ref $version
 } else {
     print "No changes to commit"
 }
